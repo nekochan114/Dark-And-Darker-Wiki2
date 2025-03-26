@@ -1,0 +1,138 @@
+{
+  "es": {
+    "classes_page": {
+      "title": "Clases de Dark and Darker",
+      "description": "Explora las 10 clases disponibles en el juego, cada una con sus propias habilidades, ventajas y estilos de juego únicos.",
+      "filters": {
+        "all": "Todas",
+        "melee": "Cuerpo a Cuerpo",
+        "ranged": "A Distancia",
+        "magic": "Magia",
+        "support": "Apoyo"
+      },
+      "difficulty_label": "Dificultad:",
+      "view_details_button": "Ver Detalles",
+      "class_info": {
+        "fighter": {
+          "description": "Especialistas en combate cuerpo a cuerpo con excelente defensa y resistencia. Ideales para principiantes.",
+          "stats": ["Fuerza", "Agilidad", "Resistencia"]
+        },
+        "barbarian": {
+          "description": "Guerreros feroces con gran poder ofensivo y resistencia. Excelentes para combate agresivo.",
+          "stats": ["Fuerza", "Agilidad", "Resistencia"]
+        },
+        "rogue": {
+          "description": "Maestros del sigilo y ataques rápidos. Excelentes para emboscadas y golpes críticos.",
+          "stats": ["Fuerza", "Agilidad", "Sigilo"]
+        },
+        "ranger": {
+          "description": "Expertos en combate a distancia con arcos. Excelentes para ataques de largo alcance y exploración.",
+          "stats": ["Precisión", "Agilidad", "Percepción"]
+        },
+        "wizard": {
+          "description": "Maestros de la magia ofensiva. Capaces de causar gran daño a distancia pero vulnerables en combate cercano.",
+          "stats": ["Poder Mágico", "Conocimiento", "Resistencia"]
+        },
+        "cleric": {
+          "description": "Sanadores y combatientes versátiles. Excelentes para apoyo en grupo y supervivencia.",
+          "stats": ["Curación", "Defensa", "Poder Divino"]
+        },
+        "bard": {
+          "description": "Maestros de la música y el apoyo. Proporcionan potentes mejoras al grupo y debilitan a los enemigos.",
+          "stats": ["Apoyo", "Agilidad", "Versatilidad"]
+        },
+        "warlock": {
+          "description": "Practicantes de magia oscura. Especializados en maldiciones, control y daño sostenido.",
+          "stats": ["Poder Oscuro", "Control", "Resistencia"]
+        },
+        "druid": {
+          "description": "Canalizadores de la naturaleza. Pueden transformarse en bestias y controlar elementos naturales.",
+          "stats": ["Transformación", "Adaptabilidad", "Supervivencia"]
+        },
+        "sorcerer": {
+          "description": "Maestros de la magia innata. Combinan diferentes escuelas de magia con gran poder y versatilidad.",
+          "stats": ["Poder Mágico", "Versatilidad", "Resistencia"]
+        }
+      },
+      "comparison": {
+        "title": "Comparativa de Clases",
+        "description": "Esta tabla muestra una comparación de las estadísticas base y características principales de cada clase.",
+        "table_headers": ["Clase", "Tipo", "Dificultad", "Daño", "Defensa", "Movilidad", "Utilidad", "Armas Principales"],
+        "types": {
+          "melee": "Cuerpo a Cuerpo",
+          "ranged": "A Distancia",
+          "magic": "Magia",
+          "support": "Apoyo"
+        }
+      }
+    }
+  },
+  "en": {
+    "classes_page": {
+      "title": "Dark and Darker Classes",
+      "description": "Explore the 10 available classes in the game, each with their own unique abilities, advantages, and playstyles.",
+      "filters": {
+        "all": "All",
+        "melee": "Melee",
+        "ranged": "Ranged",
+        "magic": "Magic",
+        "support": "Support"
+      },
+      "difficulty_label": "Difficulty:",
+      "view_details_button": "View Details",
+      "class_info": {
+        "fighter": {
+          "description": "Melee combat specialists with excellent defense and endurance. Ideal for beginners.",
+          "stats": ["Strength", "Agility", "Endurance"]
+        },
+        "barbarian": {
+          "description": "Fierce warriors with great offensive power and resistance. Excellent for aggressive combat.",
+          "stats": ["Strength", "Agility", "Endurance"]
+        },
+        "rogue": {
+          "description": "Masters of stealth and quick attacks. Excellent for ambushes and critical strikes.",
+          "stats": ["Strength", "Agility", "Stealth"]
+        },
+        "ranger": {
+          "description": "Experts in ranged combat with bows. Excellent for long-range attacks and exploration.",
+          "stats": ["Precision", "Agility", "Perception"]
+        },
+        "wizard": {
+          "description": "Masters of offensive magic. Capable of dealing great damage at a distance but vulnerable in close combat.",
+          "stats": ["Magical Power", "Knowledge", "Endurance"]
+        },
+        "cleric": {
+          "description": "Healers and versatile combatants. Excellent for group support and survival.",
+          "stats": ["Healing", "Defense", "Divine Power"]
+        },
+        "bard": {
+          "description": "Masters of music and support. Provide powerful group buffs and weaken enemies.",
+          "stats": ["Support", "Agility", "Versatility"]
+        },
+        "warlock": {
+          "description": "Practitioners of dark magic. Specialized in curses, control, and sustained damage.",
+          "stats": ["Dark Power", "Control", "Endurance"]
+        },
+        "druid": {
+          "description": "Channelers of nature. Can transform into beasts and control natural elements.",
+          "stats": ["Transformation", "Adaptability", "Survival"]
+        },
+        "sorcerer": {
+          "description": "Masters of innate magic. Combine different schools of magic with great power and versatility.",
+          "stats": ["Magical Power", "Versatility", "Endurance"]
+        }
+      },
+      "comparison": {
+        "title": "Class Comparison",
+        "description": "This table shows a comparison of the base statistics and main characteristics of each class.",
+        "table_headers": ["Class", "Type", "Difficulty", "Damage", "Defense", "Mobility", "Utility", "Main Weapons"],
+        "types": {
+          "melee": "Melee",
+          "ranged": "Ranged",
+          "magic": "Magic",
+          "support": "Support"
+        }
+      }
+    }
+  }
+}

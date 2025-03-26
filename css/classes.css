@@ -1,0 +1,210 @@
+/* Estilos específicos para la página de clases */
+.classes-header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/classes-bg-placeholder.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 3rem 2rem;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.classes-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.classes-header p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  color: var(--gray-text);
+}
+
+.class-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+.filter-btn {
+  background-color: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--gray-text);
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-btn.active {
+  background-color: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+.classes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.class-card {
+  background-color: var(--dark-bg);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.class-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.class-image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.class-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.class-card:hover .class-image img {
+  transform: scale(1.05);
+}
+
+.class-info {
+  padding: 1.5rem;
+}
+
+.class-info h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+.class-difficulty {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.difficulty-label {
+  margin-right: 0.5rem;
+  color: var(--gray-text);
+}
+
+.difficulty-stars {
+  color: var(--accent-color);
+}
+
+.class-description {
+  margin-bottom: 1.5rem;
+  color: var(--gray-text);
+}
+
+.class-stats {
+  margin-bottom: 1.5rem;
+}
+
+.stat {
+  margin-bottom: 0.75rem;
+}
+
+.stat-label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-size: 0.9rem;
+  color: var(--light-text);
+}
+
+.stat-bar {
+  height: 8px;
+  background-color: var(--darker-bg);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.stat-fill {
+  height: 100%;
+  background-color: var(--primary-color);
+  border-radius: 4px;
+}
+
+.class-card .btn {
+  width: 100%;
+  text-align: center;
+}
+
+/* Tabla de comparación */
+.class-comparison {
+  margin-bottom: 3rem;
+}
+
+.class-comparison h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.class-comparison p {
+  margin-bottom: 1.5rem;
+  color: var(--gray-text);
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px;
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.comparison-table th {
+  background-color: var(--dark-bg);
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.comparison-table tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.comparison-table tr:hover {
+  background-color: rgba(139, 92, 246, 0.1);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .class-filters {
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+  }
+  
+  .filter-btn {
+    flex-shrink: 0;
+  }
+  
+  .classes-grid {
+    grid-template-columns: 1fr;
+  }
+}

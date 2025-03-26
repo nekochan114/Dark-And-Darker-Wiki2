@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Daño - Dark and Darker Wiki</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/calculator.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/logo-placeholder.png" alt="Dark and Darker Logo">
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="classes.html">Clases</a></li>
+                    <li><a href="attributes.html">Atributos</a></li>
+                    <li><a href="equipment.html">Equipamiento</a></li>
+                    <li><a href="mechanics.html">Mecánicas</a></li>
+                    <li><a href="calculator.html" class="active">Calculadora</a></li>
+                    <li><a href="guides.html">Guías</a></li>
+                </ul>
+            </nav>
+            <div class="language-selector">
+                <button id="es-btn" class="active">ES</button>
+                <button id="en-btn">EN</button>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar...">
+                <button type="submit">🔍</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="calculator-header">
+            <h1>Calculadora de Daño</h1>
+            <p>Optimiza tu construcción calculando el daño exacto basado en tus estadísticas, equipo y habilidades.</p>
+        </section>
+
+        <section class="calculator-container">
+            <div class="calculator-sidebar">
+                <div class="calculator-section">
+                    <h2>Personaje</h2>
+                    <div class="form-group">
+                        <label for="calc-class">Clase:</label>
+                        <select id="calc-class">
+                            <option value="fighter">Luchador</option>
+                            <option value="barbarian">Bárbaro</option>
+                            <option value="rogue">Pícaro</option>
+                            <option value="ranger">Guardabosques</option>
+                            <option value="wizard">Mago</option>
+                            <option value="cleric">Clérigo</option>
+                            <option value="bard">Bardo</option>
+                            <option value="warlock">Brujo</option>
+                            <option value="druid">Druida</option>
+                            <option value="sorcerer">Hechicero</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="calculator-section">
+                    <h2>Atributos</h2>
+                    <div class="attribute-sliders">
+                        <div class="attribute-slider">
+                            <label for="strength-slider">Fuerza: <span id="strength-value">20</span></label>
+                            <input type="range" id="strength-slider" min="0" max="100" value="20">
+                        </div>
+                        <div class="attribute-slider">
+                            <label for="vigor-slider">Vigor: <span id="vigor-value">15</span></label>
+                            <input type="range" id="vigor-slider" min="0" max="100" value="15">
+                        </div>
+                        <div class="attribute-slider">
+                            <label for="agility-slider">Agilidad: <span id="agility-value">15</span></label>
+                            <input type="range" id="agility-slider" min="0" max="100" value="15">
+                        </div>
+                        <div class="attribute-slider">
+                            <label for="dexterity-slider">Destreza: <span id="dexterity-value">20</span></label>
+                            <input type="range" id="dexterity-slider" min="0" max="100" value="20">
+                        </div>
+                        <div class="attribute-slider">
+                            <label for="will-slider">Voluntad: <span id="will-value">10</span></label>
+                            <input type="range" id="will-slider" min="0" max="100" value="10">
+                        </div>
+                        <div class="attribute-slider">
+                            <label for="knowledge-slider">Conocimiento: <span id="knowledge-value">10</span></label>
+                            <input type="range" id="knowledge-slider" min="0" max="100" value="10">
+                        </div>
+                        <div class="attribute-slider">
+                            <label for="resourcefulness-slider">Ingenio: <span id="resourcefulness-value">15</span></label>
+                            <input type="range" id="resourcefulness-slider" min="0" max="100" value="15">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="calculator-section">
+                    <h2>Equipamiento</h2>
+                    <div class="form-group">
+                        <label for="weapon-type">Tipo de Arma:</label>
+                        <select id="weapon-type">
+                            <option value="sword">Espada</option>
+                            <option value="axe">Hacha</option>
+                            <option value="dagger">Daga</option>
+                            <option value="bow">Arco</option>
+                            <option value="staff">Bastón</option>
+                            <option value="mace">Maza</option>
+                            <option value="spear">Lanza</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="weapon-quality">Calidad del Arma:</label>
+                        <select id="weapon-quality">
+                            <option value="poor">Pobre</option>
+                            <option value="common">Común</option>
+                            <option value="uncommon">Poco común</option>
+                            <option value="rare">Raro</option>
+                            <option value="epic">Épico</option>
+                            <option value="legendary">Legendario</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="weapon-damage">Daño Base del Arma:</label>
+                        <input type="number" id="weapon-damage" value="25" min="1" max="100">
+                    </div>
+                </div>
+
+                <div class="calculator-section">
+                    <h2>Bonificaciones</h2>
+                    <div class="form-group">
+                        <label for="additional-damage">Daño Adicional:</label>
+                        <input type="number" id="additional-damage" value="0" min="0" max="100">
+                    </div>
+                    <div class="form-group">
+                        <label for="power-bonus">Bonificación de Poder (%):</label>
+                        <input type="number" id="power-bonus" value="0" min="-100" max="100">
+                    </div>
+                    <div class="form-group">
+                        <label for="penetration">Penetración (%):</label>
+                        <input type="number" id="penetration" value="0" min="0" max="100">
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="headshot">
+                        <label for="headshot">Golpe en la Cabeza</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="critical">
+                        <label for="critical">Golpe Crítico</label>
+                    </div>
+                </div>
+
+                <div class="calculator-section">
+                    <h2>Objetivo</h2>
+                    <div class="form-group">
+                        <label for="target-type">Tipo de Objetivo:</label>
+                        <select id="target-type">
+                            <option value="player">Jugador</option>
+                            <option value="skeleton">Esqueleto</option>
+                            <option value="zombie">Zombi</option>
+                            <option value="goblin">Goblin</option>
+                            <option value="troll">Troll</option>
+                            <option value="demon">Demonio</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="target-armor">Armadura del Objetivo:</label>
+                        <input type="number" id="target-armor" value="20" min="0" max="100">
+                    </div>
+                    <div class="form-group">
+                        <label for="damage-reduction">Reducción de Daño (%):</label>
+                        <input type="number" id="damage-reduction" value="20" min="0" max="100">
+                    </div>
+                </div>
+
+                <button id="calculate-btn" class="btn primary">Calcular Daño</button>
+                <button id="reset-btn" class="btn secondary">Reiniciar</button>
+            </div>
+
+            <div class="calculator-results">
+                <div class="results-header">
+                    <h2>Resultados</h2>
+                    <div class="tabs">
+                        <button class="tab-btn active" data-tab="damage">Daño</button>
+                        <button class="tab-btn" data-tab="stats">Estadísticas</button>
+                        <button class="tab-btn" data-tab="formula">Fórmula</button>
+                    </div>
+                </div>
+
+                <div class="tab-content active" id="damage-tab">
+                    <div class="damage-summary">
+                        <div class="damage-value">
+                            <span id="min-damage">20</span> - <span id="max-damage">30</span>
+                        </div>
+                        <div class="damage-label">Daño Final</div>
+                    </div>
+
+                    <div class="damage-breakdown">
+                        <h3>Desglose del Daño</h3>
+                        <table>
+                            <tr>
+                                <td>Daño Base:</td>
+                                <td id="base-damage-value">25</td>
+                            </tr>
+                            <tr>
+                                <td>Bonificación de Poder:</td>
+                                <td id="power-bonus-value">+0</td>
+                            </tr>
+                            <tr>
+                                <td>Daño Adicional:</td>
+                                <td id="additional-damage-value">+0</td>
+                            </tr>
+                            <tr>
+                                <td>Multiplicador de Ubicación:</td>
+                                <td id="location-multiplier-value">x1.0</td>
+                            </tr>
+                            <tr>
+                                <td>Reducción de Daño:</td>
+                                <td id="damage-reduction-value">-20%</td>
+                            </tr>
+                            <tr>
+                                <td>Penetración:</td>
+                                <td id="penetration-value">0%</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="damage-chart-container">
+                        <h3>Comparativa de Daño</h3>
+                        <canvas id="damage-comparison-chart"></canvas>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="stats-tab">
+                    <div class="stats-summary">
+                        <h3>Estadísticas Derivadas</h3>
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <div class="stat-label">Poder Físico</div>
+                                <div class="stat-value" id="physical-power">20</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-label">Bonificación de Poder Físico</div>
+                                <div class="stat-value" id="physical-power-bonus">5%</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-label">Poder Mágico</div>
+                                <div class="stat-value" id="magical-power">10</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-label">Bonificación de Poder Mágico</div>
+                                <div class="stat-value" id="magical-power-bonus">-10%</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-label">Salud Base</div>
+                                <div class="stat-value" id="base-health">100</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-label">Velocidad de Acción</div>
+                                <div class="stat-value" id="action-speed">100%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="attribute-chart-container">
+                        <h3>Distribución de Atributos</h3>
+                        <canvas id="attributes-chart"></canvas>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="formula-tab">
+                    <div class="formula-explanation">
+                        <h3>Fórmula de Daño</h3>
+                        <div class="formula-container">
+                            <pre>
+(
+  (
+    (
+        + (Daño Base + Daño de Arma por Buff) * Multiplicador de Combo * Multiplicador de Zona de Impacto
+        + Daño de Arma por Equipo|Daño Mágico
+        + Daño de Golpe Divino
+    )
+    * (1 + Bonificación de Poder)
+    + Daño Adicional
+  )
+  * (1 + Bonificación por Ubicación de Golpe)
+  * (1 + Bonificación de Daño por Raza)
+  * (1 - Reducción de Daño por Raza)
+  * (1 - Reducción de Daño * (1 + Modificador de Reducción de Daño) * (1 - Penetración))
+  * (1 - Reducción de Proyectil)
+)
+* Caída de Proyectil
++ Daño Verdadero
+                            </pre>
+                        </div>
+
+                        <h3>Explicación de Componentes</h3>
+                        <ul class="formula-components">
+                            <li><strong>Daño Base</strong>: El daño mostrado de un efecto dañino como Daño de Arma, una habilidad o un hechizo.</li>
+                            <li><strong>Multiplicador de Combo</strong>: Multiplicador aplicado al golpear con los últimos golpes de los combos de ciertas armas.</li>
+                            <li><strong>Multiplicador de Zona de Impacto</strong>: Multiplicador aplicado al golpear con los "puntos débiles" de ciertas armas.</li>
+                            <li><strong>Bonificación de Poder</strong>: Multiplicador que afecta a todos los tipos de daño mencionados hasta ahora.</li>
+                            <li><strong>Daño Adicional</strong>: Daño añadido por ventajas específicas o por el afijo "Daño Físico/Mágico Adicional" en el equipo.</li>
+                            <li><strong>Bonificación por Ubicación de Golpe</strong>: Multiplicador aplicado según la parte del cuerpo golpeada (cabeza, torso, extremidades).</li>
+                            <li><strong>Reducción de Daño</strong>: Porcentaje de daño reducido por la armadura del objetivo.</li>
+                            <li><strong>Penetración</strong>: Porcentaje de la reducción de daño del objetivo que es ignorada.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Dark and Darker Wiki Interactiva</h3>
+                <p>Una guía completa y calculadora para el juego Dark and Darker.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="classes.html">Clases</a></li>
+                    <li><a href="calculator.html">Calculadora</a></li>
+                    <li><a href="guides.html">Guías</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Recursos</h3>
+                <ul>
+                    <li><a href="https://darkanddarker.wiki.spellsandguns.com/" target="_blank">Wiki Oficial</a></li>
+                    <li><a href="https://discord.gg/darkanddarker" target="_blank">Discord Oficial</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2025 Dark and Darker Wiki Interactiva. No afiliado oficialmente con IRONMACE.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/calculator.js"></script>
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark and Darker Wiki Interactiva</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/logo-placeholder.png" alt="Dark and Darker Logo">
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="classes.html">Clases</a></li>
+                    <li><a href="attributes.html">Atributos</a></li>
+                    <li><a href="equipment.html">Equipamiento</a></li>
+                    <li><a href="mechanics.html">Mecánicas</a></li>
+                    <li><a href="calculator.html">Calculadora</a></li>
+                    <li><a href="guides.html">Guías</a></li>
+                </ul>
+            </nav>
+            <div class="language-selector">
+                <button id="es-btn" class="active">ES</button>
+                <button id="en-btn">EN</button>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar...">
+                <button type="submit">🔍</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Dark and Darker Wiki Interactiva</h1>
+                <p>Tu guía completa para dominar las mazmorras</p>
+                <div class="hero-buttons">
+                    <a href="calculator.html" class="btn primary">Calculadora de Daño</a>
+                    <a href="guides.html" class="btn secondary">Guías para Principiantes</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="quick-access">
+            <h2>Acceso Rápido</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="images/fighter-placeholder.png" alt="Clases">
+                    <h3>Clases</h3>
+                    <p>Explora las 10 clases disponibles</p>
+                    <a href="classes.html" class="btn">Ver Clases</a>
+                </div>
+                <div class="card">
+                    <img src="images/attributes-placeholder.png" alt="Atributos">
+                    <h3>Atributos</h3>
+                    <p>Comprende las estadísticas del juego</p>
+                    <a href="attributes.html" class="btn">Ver Atributos</a>
+                </div>
+                <div class="card">
+                    <img src="images/weapons-placeholder.png" alt="Equipamiento">
+                    <h3>Equipamiento</h3>
+                    <p>Armas, armaduras y objetos</p>
+                    <a href="equipment.html" class="btn">Ver Equipamiento</a>
+                </div>
+                <div class="card">
+                    <img src="images/calculator-placeholder.png" alt="Calculadora">
+                    <h3>Calculadora</h3>
+                    <p>Optimiza tu construcción</p>
+                    <a href="calculator.html" class="btn">Usar Calculadora</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="latest-updates">
+            <h2>Últimas Actualizaciones</h2>
+            <div class="updates-container">
+                <div class="update">
+                    <span class="date">Marzo 2025</span>
+                    <h3>Nueva clase: Hechicero</h3>
+                    <p>Descubre todo sobre la nueva clase añadida al juego en la última actualización.</p>
+                    <a href="classes/sorcerer.html">Leer más</a>
+                </div>
+                <div class="update">
+                    <span class="date">Marzo 2025</span>
+                    <h3>Cambios en el sistema de daño</h3>
+                    <p>Análisis de los cambios recientes en las fórmulas de daño y sus implicaciones.</p>
+                    <a href="mechanics/damage-changes.html">Leer más</a>
+                </div>
+                <div class="update">
+                    <span class="date">Febrero 2025</span>
+                    <h3>Guía de supervivencia</h3>
+                    <p>Consejos avanzados para sobrevivir más tiempo en las mazmorras.</p>
+                    <a href="guides/survival.html">Leer más</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-calculator">
+            <h2>Calculadora de Daño</h2>
+            <div class="calculator-preview">
+                <div class="calculator-form">
+                    <div class="form-group">
+                        <label for="class-select">Clase:</label>
+                        <select id="class-select">
+                            <option value="fighter">Luchador</option>
+                            <option value="barbarian">Bárbaro</option>
+                            <option value="rogue">Pícaro</option>
+                            <option value="ranger">Guardabosques</option>
+                            <option value="wizard">Mago</option>
+                            <option value="cleric">Clérigo</option>
+                            <option value="bard">Bardo</option>
+                            <option value="warlock">Brujo</option>
+                            <option value="druid">Druida</option>
+                            <option value="sorcerer">Hechicero</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="weapon-select">Arma:</label>
+                        <select id="weapon-select">
+                            <option value="sword">Espada</option>
+                            <option value="axe">Hacha</option>
+                            <option value="dagger">Daga</option>
+                            <option value="bow">Arco</option>
+                            <option value="staff">Bastón</option>
+                        </select>
+                    </div>
+                    <div class="attributes-preview">
+                        <div class="attribute">
+                            <label for="strength">Fuerza:</label>
+                            <input type="number" id="strength" value="20" min="0" max="100">
+                        </div>
+                        <div class="attribute">
+                            <label for="dexterity">Destreza:</label>
+                            <input type="number" id="dexterity" value="15" min="0" max="100">
+                        </div>
+                    </div>
+                    <a href="calculator.html" class="btn primary">Calculadora Completa</a>
+                </div>
+                <div class="calculator-result">
+                    <h3>Vista Previa de Daño</h3>
+                    <div class="damage-preview">
+                        <div class="damage-value">25-30</div>
+                        <div class="damage-label">Daño Base</div>
+                    </div>
+                    <canvas id="damage-chart"></canvas>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Dark and Darker Wiki Interactiva</h3>
+                <p>Una guía completa y calculadora para el juego Dark and Darker.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="classes.html">Clases</a></li>
+                    <li><a href="calculator.html">Calculadora</a></li>
+                    <li><a href="guides.html">Guías</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Recursos</h3>
+                <ul>
+                    <li><a href="https://darkanddarker.wiki.spellsandguns.com/" target="_blank">Wiki Oficial</a></li>
+                    <li><a href="https://discord.gg/darkanddarker" target="_blank">Discord Oficial</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2025 Dark and Darker Wiki Interactiva. No afiliado oficialmente con IRONMACE.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/chart-preview.js"></script>
+</body>
+</html>

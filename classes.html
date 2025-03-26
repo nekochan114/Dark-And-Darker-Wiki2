@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clases - Dark and Darker Wiki</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/classes.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/logo-placeholder.png" alt="Dark and Darker Logo">
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="classes.html" class="active">Clases</a></li>
+                    <li><a href="attributes.html">Atributos</a></li>
+                    <li><a href="equipment.html">Equipamiento</a></li>
+                    <li><a href="mechanics.html">Mecánicas</a></li>
+                    <li><a href="calculator.html">Calculadora</a></li>
+                    <li><a href="guides.html">Guías</a></li>
+                </ul>
+            </nav>
+            <div class="language-selector">
+                <button id="es-btn" class="active">ES</button>
+                <button id="en-btn">EN</button>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar...">
+                <button type="submit">🔍</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="classes-header">
+            <h1>Clases de Dark and Darker</h1>
+            <p>Explora las 10 clases disponibles en el juego, cada una con sus propias habilidades, ventajas y estilos de juego únicos.</p>
+        </section>
+
+        <section class="classes-overview">
+            <div class="class-filters">
+                <button class="filter-btn active" data-filter="all">Todas</button>
+                <button class="filter-btn" data-filter="melee">Cuerpo a Cuerpo</button>
+                <button class="filter-btn" data-filter="ranged">A Distancia</button>
+                <button class="filter-btn" data-filter="magic">Magia</button>
+                <button class="filter-btn" data-filter="support">Apoyo</button>
+            </div>
+
+            <div class="classes-grid">
+                <!-- Luchador -->
+                <div class="class-card" data-type="melee">
+                    <div class="class-image">
+                        <img src="images/fighter-placeholder.png" alt="Luchador">
+                    </div>
+                    <div class="class-info">
+                        <h2>Luchador</h2>
+                        <div class="class-difficulty">
+                            <span class="difficulty-label">Dificultad:</span>
+                            <span class="difficulty-stars">★★☆☆☆</span>
+                        </div>
+                        <p class="class-description">Especialistas en combate cuerpo a cuerpo con excelente defensa y resistencia. Ideales para principiantes.</p>
+                        <div class="class-stats">
+                            <div class="stat">
+                                <span class="stat-label">Fuerza</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Agilidad</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 60%"></div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Resistencia</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="classes/fighter.html" class="btn">Ver Detalles</a>
+                    </div>
+                </div>
+
+                <!-- Bárbaro -->
+                <div class="class-card" data-type="melee">
+                    <div class="class-image">
+                        <img src="images/barbarian-placeholder.png" alt="Bárbaro">
+                    </div>
+                    <div class="class-info">
+                        <h2>Bárbaro</h2>
+                        <div class="class-difficulty">
+                            <span class="difficulty-label">Dificultad:</span>
+                            <span class="difficulty-stars">★★★☆☆</span>
+                        </div>
+                        <p class="class-description">Guerreros feroces con gran poder ofensivo y resistencia. Excelentes para combate agresivo.</p>
+                        <div class="class-stats">
+                            <div class="stat">
+                                <span class="stat-label">Fuerza</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Agilidad</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 50%"></div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Resistencia</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="classes/barbarian.html" class="btn">Ver Detalles</a>
+                    </div>
+                </div>
+
+                <!-- Pícaro -->
+                <div class="class-card" data-type="melee">
+                    <div class="class-image">
+                        <img src="images/rogue-placeholder.png" alt="Pícaro">
+                    </div>
+                    <div class="class-info">
+                        <h2>Pícaro</h2>
+                        <div class="class-difficulty">
+                            <span class="difficulty-label">Dificultad:</span>
+                            <span class="difficulty-stars">★★★★☆</span>
+                        </div>
+                        <p class="class-description">Maestros del sigilo y ataques rápidos. Excelentes para emboscadas y golpes críticos.</p>
+                        <div class="class-stats">
+                            <div class="stat">
+                                <span class="stat-label">Fuerza</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 60%"></div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Agilidad</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Sigilo</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="classes/rogue.html" class="btn">Ver Detalles</a>
+                    </div>
+                </div>
+
+                <!-- Guardabosques -->
+                <div class="class-card" data-type="ranged">
+                    <div class="class-image">
+                        <img src="images/ranger-placeholder.png" alt="Guardabosques">
+                    </div>
+                    <div class="class-info">
+                        <h2>Guardabosques</h2>
+                        <div class="class-difficulty">
+                            <span class="difficulty-label">Dificultad:</span>
+                            <span class="difficulty-stars">★★★☆☆</span>
+                        </div>
+                        <p class="class-description">Expertos en combate a distancia con arcos. Excelentes para ataques de largo alcance y exploración.</p>
+                        <div class="class-stats">
+                            <div class="stat">
+                                <span class="stat-label">Precisión</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Agilidad</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Percepción</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="classes/ranger.html" class="btn">Ver Detalles</a>
+                    </div>
+                </div>
+
+                <!-- Mago -->
+                <div class="class-card" data-type="magic">
+                    <div class="class-image">
+                        <img src="images/wizard-placeholder.png" alt="Mago">
+                    </div>
+                    <div class="class-info">
+                        <h2>Mago</h2>
+                        <div class="class-difficulty">
+                            <span class="difficulty-label">Dificultad:</span>
+                            <span class="difficulty-stars">★★★★★</span>
+                        </div>
+                        <p class="class-description">Maestros de la magia ofensiva. Capaces de causar gran daño a distancia pero vulnerables en combate cercano.</p>
+                        <div class="class-stats">
+                            <div class="stat">
+                                <span class="stat-label">Poder Mágico</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Conocimiento</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Resistencia</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 40%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="classes/wizard.html" class="btn">Ver Detalles</a>
+                    </div>
+                </div>
+
+                <!-- Clérigo -->
+                <div class="class-card" data-type="support">
+                    <div class="class-image">
+                        <img src="images/cleric-placeholder.png" alt="Clérigo">
+                    </div>
+                    <div class="class-info">
+                        <h2>Clérigo</h2>
+                        <div class="class-difficulty">
+                            <span class="difficulty-label">Dificultad:</span>
+                            <span class="difficulty-stars">★★★☆☆</span>
+                        </div>
+                        <p class="class-description">Sanadores y combatientes versátiles. Excelentes para apoyo en grupo y supervivencia.</p>
+                        <div class="class-stats">
+                            <div class="stat">
+                                <span class="stat-label">Curación</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Defensa</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Poder Divino</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="classes/cleric.html" class="btn">Ver Detalles</a>
+                    </div>
+                </div>
+
+                <!-- Bardo -->
+                <div class="class-card" data-type="support">
+                    <div class="class-image">
+                        <img src="images/bard-placeholder.png" alt="Bardo">
+                    </div>
+                    <div class="class-info">
+                        <h2>Bardo</h2>
+                        <div class="class-difficulty">
+                            <span class="difficulty-label">Dificultad:</span>
+                            <span class="difficulty-stars">★★★★☆</span>
+                        </div>
+                        <p class="class-description">Maestros de la música y el apoyo. Proporcionan potentes mejoras al grupo y debilitan a los enemigos.</p>
+                        <div class="class-stats">
+                            <div class="stat">
+                                <span class="stat-label">Apoyo</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Agilidad</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Versatilidad</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="classes/bard.html" class="btn">Ver Detalles</a>
+                    </div>
+                </div>
+
+                <!-- Brujo -->
+                <div class="class-card" data-type="magic">
+                    <div class="class-image">
+                        <img src="images/warlock-placeholder.png" alt="Brujo">
+                    </div>
+                    <div class="class-info">
+                        <h2>Brujo</h2>
+                        <div class="class-difficulty">
+                            <span class="difficulty-label">Dificultad:</span>
+                            <span class="difficulty-stars">★★★★☆</span>
+                        </div>
+                        <p class="class-description">Practicantes de magia oscura. Especializados en maldiciones, control y daño sostenido.</p>
+                        <div class="class-stats">
+                            <div class="stat">
+                                <span class="stat-label">Poder Oscuro</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Control</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Resistencia</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 60%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="classes/warlock.html" class="btn">Ver Detalles</a>
+                    </div>
+                </div>
+
+                <!-- Druida -->
+                <div class="class-card" data-type="magic">
+                    <div class="class-image">
+                        <img src="images/druid-placeholder.png" alt="Druida">
+                    </div>
+                    <div class="class-info">
+                        <h2>Druida</h2>
+                        <div class="class-difficulty">
+                            <span class="difficulty-label">Dificultad:</span>
+                            <span class="difficulty-stars">★★★★☆</span>
+                        </div>
+                        <p class="class-description">Canalizadores de la naturaleza. Pueden transformarse en bestias y controlar elementos naturales.</p>
+                        <div class="class-stats">
+                            <div class="stat">
+                                <span class="stat-label">Transformación</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Adaptabilidad</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Supervivencia</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="classes/druid.html" class="btn">Ver Detalles</a>
+                    </div>
+                </div>
+
+                <!-- Hechicero -->
+                <div class="class-card" data-type="magic">
+                    <div class="class-image">
+                        <img src="images/sorcerer-placeholder.png" alt="Hechicero">
+                    </div>
+                    <div class="class-info">
+                        <h2>Hechicero</h2>
+                        <div class="class-difficulty">
+                            <span class="difficulty-label">Dificultad:</span>
+                            <span class="difficulty-stars">★★★★★</span>
+                        </div>
+                        <p class="class-description">Maestros de la magia innata. Combinan diferentes escuelas de magia con gran poder y versatilidad.</p>
+                        <div class="class-stats">
+                            <div class="stat">
+                                <span class="stat-label">Poder Mágico</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Versatilidad</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Resistencia</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 45%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="classes/sorcerer.html" class="btn">Ver Detalles</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="class-comparison">
+            <h2>Comparativa de Clases</h2>
+            <p>Esta tabla muestra una comparación de las estadísticas base y características principales de cada clase.</p>
+            
+            <div class="table-container">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Clase</th>
+                            <th>Tipo</th>
+                            <th>Dificultad</th>
+                            <th>Daño</th>
+                            <th>Defensa</th>
+                            <th>Movilidad</th>
+                            <th>Utilidad</th>
+                            <th>Armas Principales</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Luchador</td>
+                            <td>Cuerpo a Cuerpo</td>
+                            <td>★★☆☆☆</td>
+                            <td>Alto</td>
+                            <td>Muy Alta</td>
+                            <td>Media</td>
+                            <td>Baja</td>
+                            <td>Espada, Escudo</td>
+                        </tr>
+                        <tr>
+                            <td>Bárbaro</td>
+                            <td>Cuerpo a Cuerpo</td>
+                            <td>★★★☆☆</td>
+                            <td>Muy Alto</td>
+                            <td>Alta</td>
+                            <td>Media</td>
+                            <td>Muy Baja</td>
+                            <td>Hacha, Martillo</td>
+                        </tr>
+                        <tr>
+                            <td>Pícaro</td>
+                            <td>Cuerpo a Cuerpo</td>
+                            <td>★★★★☆</td>
+                            <td>Alto</td>
+                            <td>Baja</td>
+                            <td>Muy Alta</td>
+                            <td>Alta</td>
+                            <td>Daga, Espada Corta</td>
+                        </tr>
+                        <tr>
+                            <td>Guardabosques</td>
+                            <td>A Distancia</td>
+                            <td>★★★☆☆</td>
+                            <td>Alto</td>
+                            <td>Media</td>
+                            <td>Alta</td>
+                            <td>Media</td>
+                            <td>Arco, Ballesta</td>
+                        </tr>
+                        <tr>
+                            <td>Mago</td>
+                            <td>Magia</td>
+                            <td>★★★★★</td>
+                            <td>Muy Alto</td>
+                            <td>Muy Baja</td>
+                            <td>Baja</td>
+                            <td>Alta</td>
+                            <td>Bastón, Varita</td>
+                        </tr>
+                        <tr>
+                            <td>Clérigo</td>
+                            <td>Apoyo</td>
+                            <td>★★★☆☆</td>
+                            <td>Medio</td>
+                            <td>Alta</td>
+                            <td>Baja</td>
+                            <td>Muy Alta</td>
+                            <td>Maza, Libro Sagrado</td>
+                        </tr>
+                        <tr>
+                            <td>Bardo</td>
+                            <td>Apoyo</td>
+                            <td>★★★★☆</td>
+                            <td>Medio</td>
+                            <td>Media</td>
+                            <td>Alta</td>
+                            <td>Muy Alta</td>
+                            <td>Instrumento, Estoque</td>
+                        </tr>
+                        <tr>
+                            <td>Brujo</td>
+                            <td>Magia</td>
+                            <td>★★★★☆</td>
+                            <td>Alto</td>
+                            <td>Media</td>
+                            <td>Media</td>
+                            <td>Alta</td>
+                            <td>Bastón, Grimorio</td>
+                        </tr>
+                        <tr>
+                            <td>Druida</td>
+                            <td>Magia</td>
+                            <td>★★★★☆</td>
+                            <td>Alto</td>
+                            <td>Alta</td>
+                            <td>Alta</td>
+                            <td>Alta</td>
+                            <td>Bastón, Tótem</td>
+                        </tr>
+                        <tr>
+                            <td>Hechicero</td>
+                            <td>Magia</td>
+                            <td>★★★★★</td>
+                            <td>Muy Alto</td>
+                            <td>Baja</td>
+                            <td>Media</td>
+                            <td>Alta</td>
+                            <td>Orbe, Varita</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Dark and Darker Wiki Interactiva</h3>
+                <p>Una guía completa y calculadora para el juego Dark and Darker.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="classes.html">Clases</a></li>
+                    <li><a href="calculator.html">Calculadora</a></li>
+                    <li><a href="guides.html">Guías</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Recursos</h3>
+                <ul>
+                    <li><a href="https://darkanddarker.wiki.spellsandguns.com/" target="_blank">Wiki Oficial</a></li>
+                    <li><a href="https://discord.gg/darkanddarker" target="_blank">Discord Oficial</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2025 Dark and Darker Wiki Interactiva. No afiliado oficialmente con IRONMACE.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/classes.js"></script>
+</body>
+</html>

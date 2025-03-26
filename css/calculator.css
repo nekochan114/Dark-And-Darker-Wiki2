@@ -1,0 +1,313 @@
+/* Estilos específicos para la calculadora de daño */
+.calculator-header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/calculator-bg-placeholder.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 3rem 2rem;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.calculator-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.calculator-header p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  color: var(--gray-text);
+}
+
+.calculator-container {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+/* Sidebar styles */
+.calculator-sidebar {
+  background-color: var(--dark-bg);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  border: 1px solid var(--border-color);
+}
+
+.calculator-section {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.calculator-section h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.attribute-sliders {
+  display: grid;
+  gap: 1rem;
+}
+
+.attribute-slider label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.25rem;
+}
+
+.attribute-slider input[type="range"] {
+  width: 100%;
+  background-color: var(--darker-bg);
+  height: 8px;
+  border-radius: 4px;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.attribute-slider input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  cursor: pointer;
+}
+
+.checkbox-group {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-group input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+#calculate-btn, #reset-btn {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+/* Results styles */
+.calculator-results {
+  background-color: var(--dark-bg);
+  border-radius: 0.5rem;
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+}
+
+.results-header {
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.results-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.tabs {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.tab-btn {
+  background-color: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--gray-text);
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab-btn.active {
+  background-color: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+.tab-content {
+  display: none;
+  padding: 1.5rem;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.damage-summary {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.damage-value {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--accent-color);
+}
+
+.damage-label {
+  color: var(--gray-text);
+  font-size: 1.1rem;
+}
+
+.damage-breakdown {
+  margin-bottom: 2rem;
+}
+
+.damage-breakdown h3 {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  color: var(--light-text);
+}
+
+.damage-breakdown table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.damage-breakdown td {
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.damage-breakdown td:first-child {
+  color: var(--gray-text);
+}
+
+.damage-breakdown td:last-child {
+  text-align: right;
+  font-weight: 600;
+}
+
+.damage-chart-container, .attribute-chart-container {
+  margin-top: 2rem;
+}
+
+.damage-chart-container h3, .attribute-chart-container h3 {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  color: var(--light-text);
+}
+
+.stats-summary {
+  margin-bottom: 2rem;
+}
+
+.stats-summary h3 {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  color: var(--light-text);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.stat-item {
+  background-color: var(--darker-bg);
+  padding: 1rem;
+  border-radius: 0.25rem;
+  border: 1px solid var(--border-color);
+}
+
+.stat-label {
+  color: var(--gray-text);
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.formula-explanation {
+  margin-bottom: 2rem;
+}
+
+.formula-explanation h3 {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  color: var(--light-text);
+}
+
+.formula-container {
+  background-color: var(--darker-bg);
+  padding: 1rem;
+  border-radius: 0.25rem;
+  border: 1px solid var(--border-color);
+  overflow-x: auto;
+  margin-bottom: 2rem;
+}
+
+.formula-container pre {
+  color: var(--light-text);
+  font-family: monospace;
+  white-space: pre-wrap;
+}
+
+.formula-components {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.formula-components li {
+  margin-bottom: 0.5rem;
+  color: var(--gray-text);
+}
+
+.formula-components strong {
+  color: var(--light-text);
+}
+
+/* Responsive design */
+@media (max-width: 992px) {
+  .calculator-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .calculator-sidebar {
+    order: 2;
+  }
+  
+  .calculator-results {
+    order: 1;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .results-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .tabs {
+    margin-top: 1rem;
+    width: 100%;
+  }
+  
+  .tab-btn {
+    flex-grow: 1;
+    text-align: center;
+  }
+}

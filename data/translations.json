@@ -1,0 +1,214 @@
+{
+  "es": {
+    "navigation": {
+      "home": "Inicio",
+      "classes": "Clases",
+      "attributes": "Atributos",
+      "equipment": "Equipamiento",
+      "mechanics": "Mecánicas",
+      "calculator": "Calculadora",
+      "guides": "Guías"
+    },
+    "search": {
+      "placeholder": "Buscar..."
+    },
+    "hero": {
+      "title": "Dark and Darker Wiki Interactiva",
+      "subtitle": "Tu guía completa para dominar las mazmorras",
+      "calculator_button": "Calculadora de Daño",
+      "guides_button": "Guías para Principiantes"
+    },
+    "sections": {
+      "quick_access": "Acceso Rápido",
+      "latest_updates": "Últimas Actualizaciones",
+      "damage_calculator": "Calculadora de Daño"
+    },
+    "cards": {
+      "classes": {
+        "title": "Clases",
+        "description": "Explora las 10 clases disponibles",
+        "button": "Ver Clases"
+      },
+      "attributes": {
+        "title": "Atributos",
+        "description": "Comprende las estadísticas del juego",
+        "button": "Ver Atributos"
+      },
+      "equipment": {
+        "title": "Equipamiento",
+        "description": "Armas, armaduras y objetos",
+        "button": "Ver Equipamiento"
+      },
+      "calculator": {
+        "title": "Calculadora",
+        "description": "Optimiza tu construcción",
+        "button": "Usar Calculadora"
+      }
+    },
+    "updates": {
+      "sorcerer": {
+        "date": "Marzo 2025",
+        "title": "Nueva clase: Hechicero",
+        "description": "Descubre todo sobre la nueva clase añadida al juego en la última actualización.",
+        "link": "Leer más"
+      },
+      "damage_changes": {
+        "date": "Marzo 2025",
+        "title": "Cambios en el sistema de daño",
+        "description": "Análisis de los cambios recientes en las fórmulas de daño y sus implicaciones.",
+        "link": "Leer más"
+      },
+      "survival_guide": {
+        "date": "Febrero 2025",
+        "title": "Guía de supervivencia",
+        "description": "Consejos avanzados para sobrevivir más tiempo en las mazmorras.",
+        "link": "Leer más"
+      }
+    },
+    "calculator": {
+      "class_label": "Clase:",
+      "weapon_label": "Arma:",
+      "strength_label": "Fuerza:",
+      "dexterity_label": "Destreza:",
+      "complete_calculator": "Calculadora Completa",
+      "preview_title": "Vista Previa de Daño",
+      "base_damage": "Daño Base",
+      "with_bonuses": "Con Bonificaciones",
+      "critical": "Crítico"
+    },
+    "classes": {
+      "fighter": "Luchador",
+      "barbarian": "Bárbaro",
+      "rogue": "Pícaro",
+      "ranger": "Guardabosques",
+      "wizard": "Mago",
+      "cleric": "Clérigo",
+      "bard": "Bardo",
+      "warlock": "Brujo",
+      "druid": "Druida",
+      "sorcerer": "Hechicero"
+    },
+    "weapons": {
+      "sword": "Espada",
+      "axe": "Hacha",
+      "dagger": "Daga",
+      "bow": "Arco",
+      "staff": "Bastón"
+    },
+    "footer": {
+      "title": "Dark and Darker Wiki Interactiva",
+      "description": "Una guía completa y calculadora para el juego Dark and Darker.",
+      "quick_links": "Enlaces Rápidos",
+      "resources": "Recursos",
+      "official_wiki": "Wiki Oficial",
+      "official_discord": "Discord Oficial",
+      "copyright": "© 2025 Dark and Darker Wiki Interactiva. No afiliado oficialmente con IRONMACE."
+    }
+  },
+  "en": {
+    "navigation": {
+      "home": "Home",
+      "classes": "Classes",
+      "attributes": "Attributes",
+      "equipment": "Equipment",
+      "mechanics": "Mechanics",
+      "calculator": "Calculator",
+      "guides": "Guides"
+    },
+    "search": {
+      "placeholder": "Search..."
+    },
+    "hero": {
+      "title": "Dark and Darker Interactive Wiki",
+      "subtitle": "Your complete guide to mastering the dungeons",
+      "calculator_button": "Damage Calculator",
+      "guides_button": "Beginner Guides"
+    },
+    "sections": {
+      "quick_access": "Quick Access",
+      "latest_updates": "Latest Updates",
+      "damage_calculator": "Damage Calculator"
+    },
+    "cards": {
+      "classes": {
+        "title": "Classes",
+        "description": "Explore all 10 available classes",
+        "button": "View Classes"
+      },
+      "attributes": {
+        "title": "Attributes",
+        "description": "Understand the game statistics",
+        "button": "View Attributes"
+      },
+      "equipment": {
+        "title": "Equipment",
+        "description": "Weapons, armor and items",
+        "button": "View Equipment"
+      },
+      "calculator": {
+        "title": "Calculator",
+        "description": "Optimize your build",
+        "button": "Use Calculator"
+      }
+    },
+    "updates": {
+      "sorcerer": {
+        "date": "March 2025",
+        "title": "New class: Sorcerer",
+        "description": "Discover everything about the new class added to the game in the latest update.",
+        "link": "Read more"
+      },
+      "damage_changes": {
+        "date": "March 2025",
+        "title": "Changes to the damage system",
+        "description": "Analysis of recent changes to damage formulas and their implications.",
+        "link": "Read more"
+      },
+      "survival_guide": {
+        "date": "February 2025",
+        "title": "Survival Guide",
+        "description": "Advanced tips for surviving longer in the dungeons.",
+        "link": "Read more"
+      }
+    },
+    "calculator": {
+      "class_label": "Class:",
+      "weapon_label": "Weapon:",
+      "strength_label": "Strength:",
+      "dexterity_label": "Dexterity:",
+      "complete_calculator": "Complete Calculator",
+      "preview_title": "Damage Preview",
+      "base_damage": "Base Damage",
+      "with_bonuses": "With Bonuses",
+      "critical": "Critical"
+    },
+    "classes": {
+      "fighter": "Fighter",
+      "barbarian": "Barbarian",
+      "rogue": "Rogue",
+      "ranger": "Ranger",
+      "wizard": "Wizard",
+      "cleric": "Cleric",
+      "bard": "Bard",
+      "warlock": "Warlock",
+      "druid": "Druid",
+      "sorcerer": "Sorcerer"
+    },
+    "weapons": {
+      "sword": "Sword",
+      "axe": "Axe",
+      "dagger": "Dagger",
+      "bow": "Bow",
+      "staff": "Staff"
+    },
+    "footer": {
+      "title": "Dark and Darker Interactive Wiki",
+      "description": "A complete guide and calculator for the Dark and Darker game.",
+      "quick_links": "Quick Links",
+      "resources": "Resources",
+      "official_wiki": "Official Wiki",
+      "official_discord": "Official Discord",
+      "copyright": "© 2025 Dark and Darker Interactive Wiki. Not officially affiliated with IRONMACE."
+    }
+  }
+}
