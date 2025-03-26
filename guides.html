@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guías - Dark and Darker Wiki</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/guides.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/logo-placeholder.png" alt="Dark and Darker Logo">
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="classes.html">Clases</a></li>
+                    <li><a href="attributes.html">Atributos</a></li>
+                    <li><a href="equipment.html">Equipamiento</a></li>
+                    <li><a href="mechanics.html">Mecánicas</a></li>
+                    <li><a href="calculator.html">Calculadora</a></li>
+                    <li><a href="guides.html" class="active">Guías</a></li>
+                </ul>
+            </nav>
+            <div class="language-selector">
+                <button id="es-btn" class="active">ES</button>
+                <button id="en-btn">EN</button>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar...">
+                <button type="submit">🔍</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="guides-header">
+            <h1>Guías de Dark and Darker</h1>
+            <p>Domina el juego con nuestras guías detalladas para principiantes y veteranos. Aprende estrategias, builds óptimas y consejos avanzados para cada clase.</p>
+        </section>
+
+        <section class="guides-filter">
+            <div class="filter-container">
+                <div class="filter-group">
+                    <label>Filtrar por:</label>
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="beginner">Principiante</button>
+                    <button class="filter-btn" data-filter="intermediate">Intermedio</button>
+                    <button class="filter-btn" data-filter="advanced">Avanzado</button>
+                </div>
+                <div class="filter-group">
+                    <label>Clase:</label>
+                    <button class="filter-btn" data-filter="barbarian">Bárbaro</button>
+                    <button class="filter-btn" data-filter="fighter">Luchador</button>
+                    <button class="filter-btn" data-filter="rogue">Pícaro</button>
+                    <button class="filter-btn" data-filter="ranger">Explorador</button>
+                    <button class="filter-btn" data-filter="wizard">Mago</button>
+                    <button class="filter-btn" data-filter="cleric">Clérigo</button>
+                    <button class="filter-btn" data-filter="bard">Bardo</button>
+                    <button class="filter-btn" data-filter="warlock">Brujo</button>
+                    <button class="filter-btn" data-filter="druid">Druida</button>
+                    <button class="filter-btn" data-filter="sorcerer">Hechicero</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="guides-grid">
+            <!-- Guías para principiantes -->
+            <div class="guide-card beginner" data-categories="beginner all">
+                <div class="guide-image">
+                    <img src="images/guides/beginner-guide.jpg" alt="Guía para principiantes">
+                    <div class="guide-difficulty">Principiante</div>
+                </div>
+                <div class="guide-content">
+                    <h2>Guía completa para principiantes</h2>
+                    <p>Todo lo que necesitas saber para empezar en Dark and Darker: controles básicos, mecánicas fundamentales y consejos para sobrevivir a tus primeras mazmorras.</p>
+                    <div class="guide-meta">
+                        <span class="guide-date">Actualizado: Marzo 2025</span>
+                        <a href="#" class="guide-link">Leer guía</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="guide-card beginner" data-categories="beginner all">
+                <div class="guide-image">
+                    <img src="images/guides/class-selection.jpg" alt="Selección de clase">
+                    <div class="guide-difficulty">Principiante</div>
+                </div>
+                <div class="guide-content">
+                    <h2>¿Qué clase elegir? Guía de selección</h2>
+                    <p>Análisis detallado de cada clase, sus fortalezas, debilidades y curva de aprendizaje. Encuentra la clase perfecta para tu estilo de juego.</p>
+                    <div class="guide-meta">
+                        <span class="guide-date">Actualizado: Marzo 2025</span>
+                        <a href="#" class="guide-link">Leer guía</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="guide-card beginner" data-categories="beginner all">
+                <div class="guide-image">
+                    <img src="images/guides/looting-guide.jpg" alt="Guía de saqueo">
+                    <div class="guide-difficulty">Principiante</div>
+                </div>
+                <div class="guide-content">
+                    <h2>Guía de saqueo eficiente</h2>
+                    <p>Aprende a maximizar tu botín, qué objetos priorizar y cómo gestionar tu inventario limitado para obtener el máximo valor en cada incursión.</p>
+                    <div class="guide-meta">
+                        <span class="guide-date">Actualizado: Marzo 2025</span>
+                        <a href="#" class="guide-link">Leer guía</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Guías de clase específicas -->
+            <div class="guide-card intermediate barbarian" data-categories="intermediate barbarian all">
+                <div class="guide-image">
+                    <img src="images/guides/barbarian-guide.jpg" alt="Guía de Bárbaro">
+                    <div class="guide-difficulty">Intermedio</div>
+                </div>
+                <div class="guide-content">
+                    <h2>Domina el Bárbaro: Build de Berserker</h2>
+                    <p>Guía completa para construir un Bárbaro enfocado en daño masivo. Incluye distribución de atributos, equipamiento recomendado y técnicas de combate.</p>
+                    <div class="guide-meta">
+                        <span class="guide-date">Actualizado: Marzo 2025</span>
+                        <a href="#" class="guide-link">Leer guía</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="guide-card intermediate fighter" data-categories="intermediate fighter all">
+                <div class="guide-image">
+                    <img src="images/guides/fighter-guide.jpg" alt="Guía de Luchador">
+                    <div class="guide-difficulty">Intermedio</div>
+                </div>
+                <div class="guide-content">
+                    <h2>Luchador Tanque: Construye un muro impenetrable</h2>
+                    <p>Aprende a crear un Luchador capaz de absorber enormes cantidades de daño mientras protege a tu equipo. Incluye tácticas de posicionamiento y control de grupo.</p>
+                    <div class="guide-meta">
+                        <span class="guide-date">Actualizado: Marzo 2025</span>
+                        <a href="#" class="guide-link">Leer guía</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="guide-card intermediate rogue" data-categories="intermediate rogue all">
+                <div class="guide-image">
+                    <img src="images/guides/rogue-guide.jpg" alt="Guía de Pícaro">
+                    <div class="guide-difficulty">Intermedio</div>
+                </div>
+                <div class="guide-content">
+                    <h2>Pícaro Asesino: Maximiza tu daño crítico</h2>
+                    <p>Guía detallada para construir un Pícaro especializado en ataques furtivos y daño crítico. Incluye rutas de sigilo y técnicas de emboscada.</p>
+                    <div class="guide-meta">
+                        <span class="guide-date">Actualizado: Marzo 2025</span>
+                        <a href="#" class="guide-link">Leer guía</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="guide-card intermediate wizard" data-categories="intermediate wizard all">
+                <div class="guide-image">
+                    <img src="images/guides/wizard-guide.jpg" alt="Guía de Mago">
+                    <div class="guide-difficulty">Intermedio</div>
+                </div>
+                <div class="guide-content">
+                    <h2>Mago Piromante: Domina el arte del fuego</h2>
+                    <p>Construye un Mago especializado en hechizos de fuego para maximizar el daño por área. Incluye combinaciones de hechizos y gestión de maná.</p>
+                    <div class="guide-meta">
+                        <span class="guide-date">Actualizado: Marzo 2025</span>
+                        <a href="#" class="guide-link">Leer guía</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Guías avanzadas -->
+            <div class="guide-card advanced" data-categories="advanced all">
+                <div class="guide-image">
+                    <img src="images/guides/pvp-tactics.jpg" alt="Tácticas PvP">
+                    <div class="guide-difficulty">Avanzado</div>
+                </div>
+                <div class="guide-content">
+                    <h2>Tácticas avanzadas de PvP</h2>
+                    <p>Domina el combate jugador contra jugador con estrategias avanzadas, técnicas de contraataque y cómo enfrentarte a cada clase del juego.</p>
+                    <div class="guide-meta">
+                        <span class="guide-date">Actualizado: Marzo 2025</span>
+                        <a href="#" class="guide-link">Leer guía</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="guide-card advanced" data-categories="advanced all">
+                <div class="guide-image">
+                    <img src="images/guides/team-composition.jpg" alt="Composición de equipo">
+                    <div class="guide-difficulty">Avanzado</div>
+                </div>
+                <div class="guide-content">
+                    <h2>Composiciones de equipo óptimas</h2>
+                    <p>Aprende las mejores combinaciones de clases para diferentes escenarios, sinergia entre habilidades y estrategias de comunicación en equipo.</p>
+                    <div class="guide-meta">
+                        <span class="guide-date">Actualizado: Marzo 2025</span>
+                        <a href="#" class="guide-link">Leer guía</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="guide-card advanced" data-categories="advanced all">
+                <div class="guide-image">
+                    <img src="images/guides/boss-strategies.jpg" alt="Estrategias contra jefes">
+                    <div class="guide-difficulty">Avanzado</div>
+                </div>
+                <div class="guide-content">
+                    <h2>Guía completa de jefes</h2>
+                    <p>Estrategias detalladas para derrotar a todos los jefes del juego, patrones de ataque, fases y recompensas específicas.</p>
+                    <div class="guide-meta">
+                        <span class="guide-date">Actualizado: Marzo 2025</span>
+                        <a href="#" class="guide-link">Leer guía</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Guías de temporada -->
+            <div class="guide-card" data-categories="all">
+                <div class="guide-image">
+                    <img src="images/guides/season-guide.jpg" alt="Guía de temporada actual">
+                    <div class="guide-difficulty special">Temporada Actual</div>
+                </div>
+                <div class="guide-content">
+                    <h2>Guía de la Temporada 5: Sombras del Abismo</h2>
+                    <p>Todo sobre la temporada actual: nuevos objetos, mecánicas exclusivas, cambios en el meta y cómo maximizar tus recompensas de temporada.</p>
+                    <div class="guide-meta">
+                        <span class="guide-date">Actualizado: Marzo 2025</span>
+                        <a href="#" class="guide-link">Leer guía</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="video-guides">
+            <div class="card">
+                <h2 class="card-title">Videotutoriales Recomendados</h2>
+                <p>Nuestra selección de los mejores videotutoriales de la comunidad para complementar tu aprendizaje.</p>
+                
+                <div class="video-grid">
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <img src="images/guides/video-beginner.jpg" alt="Tutorial para principiantes">
+                            <div class="video-play-button">▶</div>
+                        </div>
+                        <div class="video-info">
+                            <h3>Guía completa para principiantes 2025</h3>
+                            <p>Por DarkMaster</p>
+                            <span class="video-duration">32:15</span>
+                        </div>
+                    </div>
+                    
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <img src="images/guides/video-advanced.jpg" alt="Técnicas avanzadas">
+                            <div class="video-play-button">▶</div>
+                        </div>
+                        <div class="video-info">
+                            <h3>10 técnicas avanzadas que debes conocer</h3>
+                            <p>Por ProGamerX</p>
+                            <span class="video-duration">24:48</span>
+                        </div>
+                    </div>
+                    
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <img src="images/guides/video-builds.jpg" alt="Mejores builds">
+                            <div class="video-play-button">▶</div>
+                        </div>
+                        <div class="video-info">
+                            <h3>Top 5 builds meta para la Temporada 5</h3>
+                            <p>Por GameSage</p>
+                            <span class="video-duration">41:22</span>
+                        </div>
+                    </div>
+                    
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <img src="images/guides/video-secrets.jpg" alt="Secretos y trucos">
+                            <div class="video-play-button">▶</div>
+                        </div>
+                        <div class="video-info">
+                            <h3>Secretos y ubicaciones ocultas</h3>
+                            <p>Por DungeonHunter</p>
+                            <span class="video-duration">18:37</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="community-guides">
+            <div class="card">
+                <h2 class="card-title">Guías de la Comunidad</h2>
+                <p>Las mejores guías creadas por la comunidad de Dark and Darker. ¿Tienes una guía que quieras compartir? ¡Envíanosla!</p>
+                
+                <div class="community-guides-list">
+                    <div class="community-guide-item">
+                        <div class="guide-author">
+                            <img src="images/guides/author1.jpg" alt="Autor de la guía">
+                            <span>DarkKnight92</span>
+                        </div>
+                        <div class="guide-info">
+                            <h3>Guía definitiva de supervivencia en solitario</h3>
+                            <p>Estrategias detalladas para sobrevivir y prosperar cuando juegas en solitario contra grupos.</p>
+                            <div class="guide-stats">
+                                <span>👍 1.2k</span>
+                                <span>💬 324</span>
+                                <span>📅 15/03/2025</span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn">Ver guía</a>
+                    </div>
+                    
+                    <div class="community-guide-item">
+                        <div class="guide-author">
+                            <img src="images/guides/author2.jpg" alt="Autor de la guía">
+                            <span>MagicMaster</span>
+                        </div>
+                        <div class="guide-info">
+                            <h3>Combinaciones de hechizos para cada situación</h3>
+                            <p>Guía exhaustiva de todas las combinaciones de hechizos efectivas para diferentes escenarios de combate.</p>
+                            <div class="guide-stats">
+                                <span>👍 876</span>
+                                <span>💬 192</span>
+                                <span>📅 22/03/2025</span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn">Ver guía</a>
+                    </div>
+                    
+                    <div class="community-guide-item">
+                        <div class="guide-author">
+                            <img src="images/guides/author3.jpg" alt="Autor de la guía">
+                            <span>TreasureHunter</span>
+                        </div>
+                        <div class="guide-info">
+                            <h3>Mapa completo de tesoros y cofres raros</h3>
+                            <p>Ubicaciones de todos los cofres raros y tesoros ocultos en cada mapa, con rutas óptimas de saqueo.</p>
+                            <div class="guide-stats">
+                                <span>👍 2.4k</span>
+                                <span>💬 518</span>
+                                <span>📅 10/03/2025</span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn">Ver guía</a>
+                    </div>
+                </div>
+                
+                <div class="submit-guide">
+                    <h3>¿Tienes una guía que compartir?</h3>
+                    <p>Envíanos tu guía y, si cumple con nuestros estándares de calidad, la publicaremos en nuestra wiki con tu nombre.</p>
+                    <a href="#" class="btn">Enviar guía</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Dark and Darker Wiki Interactiva</h3>
+                <p>Una guía completa y calculadora para el juego Dark and Darker.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="classes.html">Clases</a></li>
+                    <li><a href="calculator.html">Calculadora</a></li>
+                    <li><a href="guides.html">Guías</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Recursos</h3>
+                <ul>
+                    <li><a href="https://darkanddarker.wiki.spellsandguns.com/" target="_blank">Wiki Oficial</a></li>
+                    <li><a href="https://discord.gg/darkanddarker" target="_blank">Discord Oficial</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2025 Dark and Darker Wiki Interactiva. No afiliado oficialmente con IRONMACE.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/guides.js"></script>
+</body>
+</html>

@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clasificación - Dark and Darker Wiki</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/leaderboard.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Dark and Darker Wiki Logo">
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="classes.html">Clases</a></li>
+                    <li><a href="attributes.html">Atributos</a></li>
+                    <li><a href="equipment.html">Equipamiento</a></li>
+                    <li><a href="mechanics.html">Mecánicas</a></li>
+                    <li><a href="calculator.html">Calculadora</a></li>
+                    <li><a href="guides.html">Guías</a></li>
+                    <li><a href="skins.html">Skins</a></li>
+                    <li><a href="seasons.html">Temporadas</a></li>
+                    <li><a href="leaderboard.html" class="active">Clasificación</a></li>
+                </ul>
+            </nav>
+            <div class="language-selector">
+                <button id="es-btn" class="active"><img src="images/flags/es.png" alt="Español">ES</button>
+                <button id="en-btn"><img src="images/flags/en.png" alt="English">EN</button>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar...">
+                <button type="submit">🔍</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="leaderboard-header">
+            <h1>Clasificación de Dark and Darker</h1>
+            <p>Explora los mejores jugadores del juego, sus estadísticas y logros.</p>
+        </section>
+
+        <section class="leaderboard-filters">
+            <div class="filters-container">
+                <div class="filter-group">
+                    <label for="season-select">Temporada:</label>
+                    <select id="season-select">
+                        <option value="current">Temporada 6 (Actual)</option>
+                        <option value="season5">Temporada 5</option>
+                        <option value="season4">Temporada 4</option>
+                        <option value="season3">Temporada 3</option>
+                        <option value="season2">Temporada 2</option>
+                        <option value="season1">Temporada 1</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="class-select">Clase:</label>
+                    <select id="class-select">
+                        <option value="all">Todas las clases</option>
+                        <option value="barbarian">Bárbaro</option>
+                        <option value="fighter">Luchador</option>
+                        <option value="rogue">Pícaro</option>
+                        <option value="ranger">Explorador</option>
+                        <option value="wizard">Mago</option>
+                        <option value="cleric">Clérigo</option>
+                        <option value="bard">Bardo</option>
+                        <option value="warlock">Brujo</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="region-select">Región:</label>
+                    <select id="region-select">
+                        <option value="global">Global</option>
+                        <option value="na">Norteamérica</option>
+                        <option value="eu">Europa</option>
+                        <option value="asia">Asia</option>
+                        <option value="sa">Sudamérica</option>
+                        <option value="oce">Oceanía</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="category-select">Categoría:</label>
+                    <select id="category-select">
+                        <option value="rating">Clasificación</option>
+                        <option value="kills">Eliminaciones</option>
+                        <option value="gold">Oro acumulado</option>
+                        <option value="survival">Supervivencia</option>
+                        <option value="boss">Jefes derrotados</option>
+                    </select>
+                </div>
+                <button id="apply-filters" class="filter-btn">Aplicar Filtros</button>
+            </div>
+        </section>
+
+        <section class="leaderboard-stats">
+            <div class="stats-container">
+                <div class="stat-card">
+                    <div class="stat-icon">👑</div>
+                    <div class="stat-info">
+                        <h3>Jugador #1</h3>
+                        <p>DarkLord789</p>
+                        <span class="stat-value">Rating: 2845</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">⚔️</div>
+                    <div class="stat-info">
+                        <h3>Total Eliminaciones</h3>
+                        <p>Top 100 Jugadores</p>
+                        <span class="stat-value">124,567</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">🏆</div>
+                    <div class="stat-info">
+                        <h3>Clase Más Popular</h3>
+                        <p>Top 100 Jugadores</p>
+                        <span class="stat-value">Pícaro (27%)</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">📈</div>
+                    <div class="stat-info">
+                        <h3>Rating Promedio</h3>
+                        <p>Top 100 Jugadores</p>
+                        <span class="stat-value">2,356</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="leaderboard-table">
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Posición</th>
+                            <th>Jugador</th>
+                            <th>Clase</th>
+                            <th>Nivel</th>
+                            <th>Rating</th>
+                            <th>Eliminaciones</th>
+                            <th>K/D Ratio</th>
+                            <th>Supervivencia</th>
+                            <th>Oro Acumulado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="rank-1">
+                            <td class="position">1</td>
+                            <td class="player">
+                                <div class="player-info">
+                                    <img src="images/avatars/player1.jpg" alt="Avatar de DarkLord789">
+                                    <div>
+                                        <span class="player-name">DarkLord789</span>
+                                        <span class="player-guild">Guardianes del Abismo</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="class">
+                                <div class="class-info">
+                                    <img src="images/classes/warlock.png" alt="Brujo">
+                                    <span>Brujo</span>
+                                </div>
+                            </td>
+                            <td class="level">100</td>
+                            <td class="rating">2845</td>
+                            <td class="kills">3,421</td>
+                            <td class="kd">4.8</td>
+                            <td class="survival">78%</td>
+                            <td class="gold">1,245,678</td>
+                        </tr>
+                        <tr class="rank-2">
+                            <td class="position">2</td>
+                            <td class="player">
+                                <div class="player-info">
+                                    <img src="images/avatars/player2.jpg" alt="Avatar de ShadowBlade">
+                                    <div>
+                                        <span class="player-name">ShadowBlade</span>
+                                        <span class="player-guild">Asesinos Nocturnos</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="class">
+                                <div class="class-info">
+                                    <img src="images/classes/rogue.png" alt="Pícaro">
+                                    <span>Pícaro</span>
+                                </div>
+                            </td>
+                            <td class="level">100</td>
+                            <td class="rating">2789</td>
+                            <td class="kills">3,156</td>
+                            <td class="kd">4.2</td>
+                            <td class="survival">82%</td>
+                            <td class="gold">1,189,432</td>
+                        </tr>
+                        <tr class="rank-3">
+                            <td class="position">3</td>
+                            <td class="player">
+                                <div class="player-info">
+                                    <img src="images/avatars/player3.jpg" alt="Avatar de FireMage42">
+                                    <div>
+                                        <span class="player-name">FireMage42</span>
+                                        <span class="player-guild">Círculo Arcano</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="class">
+                                <div class="class-info">
+                                    <img src="images/classes/wizard.png" alt="Mago">
+                                    <span>Mago</span>
+                                </div>
+                            </td>
+                            <td class="level">100</td>
+                            <td class="rating">2756</td>
+                            <td class="kills">2,987</td>
+                            <td class="kd">3.9</td>
+                            <td class="survival">71%</td>
+                            <td class="gold">1,076,543</td>
+                        </tr>
+                        <tr>
+                            <td class="position">4</td>
+                            <td class="player">
+                                <div class="player-info">
+                                    <img src="images/avatars/player4.jpg" alt="Avatar de AxeWarrior">
+                                    <div>
+                                        <span class="player-name">AxeWarrior</span>
+                                        <span class="player-guild">Horda Salvaje</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="class">
+                                <div class="class-info">
+                                    <img src="images/classes/barbarian.png" alt="Bárbaro">
+                                    <span>Bárbaro</span>
+                                </div>
+                            </td>
+                            <td class="level">100</td>
+                            <td class="rating">2721</td>
+                            <td class="kills">2,876</td>
+                            <td class="kd">3.7</td>
+                            <td class="survival">68%</td>
+                            <td class="gold">987,654</td>
+                        </tr>
+                        <tr>
+                            <td class="position">5</td>
+                            <td class="player">
+                                <div class="player-info">
+                                    <img src="images/avatars/player5.jpg" alt="Avatar de HolyPriest">
+                                    <div>
+                                        <span class="player-name">HolyPriest</span>
+                                        <span class="player-guild">Orden de la Luz</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="class">
+                                <div class="class-info">
+                                    <img src="images/classes/cleric.png" alt="Clérigo">
+                                    <span>Clérigo</span>
+                                </div>
+                            </td>
+                            <td class="level">100</td>
+                            <td class="rating">2698</td>
+                            <td class="kills">2,543</td>
+                            <td class="kd">3.4</td>
+                            <td class="survival">85%</td>
+                            <td class="gold">932,187</td>
+                        </tr>
+                        <tr>
+                            <td class="position">6</td>
+                            <td class="player">
+                                <div class="player-info">
+                                    <img src="images/avatars/player6.jpg" alt="Avatar de ArrowStorm">
+                                    <div>
+                                        <span class="player-name">ArrowStorm</span>
+                                        <span class="player-guild">Vigilantes del Bosque</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="class">
+                                <div class="class-info">
+                                    <img src="images/classes/ranger.png" alt="Explorador">
+                                    <span>Explorador</span>
+                                </div>
+                            </td>
+                            <td class="level">100</td>
+                            <td class="rating">2675</td>
+                            <td class="kills">2,765</td>
+                            <td class="kd">3.6</td>
+                            <td class="survival">74%</td>
+                            <td class="gold">912,345</td>
+                        </tr>
+                        <tr>
+                            <td class="position">7</td>
+                            <td class="player">
+                                <div class="player-info">
+                                    <img src="images/avatars/player7.jpg" alt="Avatar de MelodyMaster">
+                                    <div>
+                                        <span class="player-name">MelodyMaster</span>
+                                        <span class="player-guild">Trovadores Errantes</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="class">
+                                <div class="class-info">
+                                    <img src="images/classes/bard.png" alt="Bardo">
+                                    <span>Bardo</span>
+                                </div>
+                            </td>
+                            <td class="level">100</td>
+                            <td class="rating">2654</td>
+                            <td class="kills">2,432</td>
+                            <td class="kd">3.2</td>
+                            <td class="survival">79%</td>
+                            <td class="gold">876,543</td>
+                        </tr>
+                        <tr>
+                            <td class="position">8</td>
+                            <td class="player">
+                                <div class="player-info">
+                                    <img src="images/avatars/player8.jpg" alt="Avatar de ShieldMaiden">
+                                    <div>
+                                        <span class="player-name">ShieldMaiden</span>
+                                        <span class="player-guild">Defensores del Reino</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="class">
+                                <div class="class-info">
+                                    <img src="images/classes/fighter.png" alt="Luchador">
+                                    <span>Luchador</span>
+                                </div>
+                            </td>
+                            <td class="level">100</td>
+                            <td class="rating">2632</td>
+                            <td class="kills">2,321</td>
+                            <td class="kd">3.1</td>
+                            <td class="survival">83%</td>
+                            <td class="gold">854,321</td>
+                        </tr>
+                        <tr>
+                            <td class="position">9</td>
+                            <td class="player">
+                                <div class="player-info">
+                                    <img src="images/avatars/player9.jpg" alt="Avatar de DemonHunter">
+                                    <div>
+                                        <span class="player-name">DemonHunter</span>
+                                        <span class="player-guild">Cazadores de Sombras</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="class">
+                                <div class="class-info">
+                                    <img src="images/classes/warlock.png" alt="Brujo">
+                                    <span>Brujo</span>
+                                </div>
+                            </td>
+                            <td class="level">100</td>
+                            <td class="rating">2609</td>
+                            <td class="kills">2,287</td>
+                            <td class="kd">3.0</td>
+                            <td class="survival">72%</td>
+                            <td class="gold">832,109</td>
+                        </tr>
+                        <tr>
+                            <td class="position">10</td>
+                            <td class="player">
+                                <div class="player-info">
+                                    <img src="images/avatars/player10.jpg" alt="Avatar de SilentAssassin">
+                                    <div>
+                                        <span class="player-name">SilentAssassin</span>
+                                        <span class="player-guild">Gremio de Asesinos</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="class">
+                                <div class="class-info">
+                                    <img src="images/classes/rogue.png" alt="Pícaro">
+                                    <span>Pícaro</span>
+                                </div>
+                            </td>
+                            <td class="level">100</td>
+                            <td class="rating">2587</td>
+                            <td class="kills">2,198</td>
+                            <td class="kd">2.9</td>
+                            <td class="survival">76%</td>
+                            <td class="gold">798,654</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="pagination">
+                <button class="pagination-btn" disabled>Anterior</button>
+                <div class="page-numbers">
+                    <button class="page-btn active">1</button>
+                    <button class="page-btn">2</button>
+                    <button class="page-btn">3</button>
+                    <button class="page-btn">4</button>
+                    <button class="page-btn">5</button>
+                    <span>...</span>
+                    <button class="page-btn">20</button>
+                </div>
+                <button class="pagination-btn">Siguiente</button>
+            </div>
+        </section>
+
+        <section class="class-distribution">
+            <h2>Distribución de Clases en Top 100</h2>
+            <div class="chart-container">
+                <canvas id="class-chart"></canvas>
+            </div>
+            <div class="chart-legend">
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #e74c3c;"></div>
+                    <div class="legend-text">Pícaro (27%)</div>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #3498db;"></div>
+                    <div class="legend-text">Mago (18%)</div>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #2ecc71;"></div>
+                    <div class="legend-text">Brujo (15%)</div>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #f39c12;"></div>
+                    <div class="legend-text">Bárbaro (12%)</div>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #9b59b6;"></div>
+                    <div class="legend-text">Explorador (10%)</div>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #1abc9c;"></div>
+                    <div class="legend-text">Clérigo (8%)</div>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #34495e;"></div>
+                    <div class="legend-text">Luchador (6%)</div>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #e67e22;"></div>
+                    <div class="legend-text">Bardo (4%)</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="rating-history">
+            <h2>Evolución del Rating (Top 10 Jugadores)</h2>
+            <div class="chart-container">
+                <canvas id="rating-chart"></canvas>
+            </div>
+            <div class="chart-info">
+                <p>Este gráfico muestra la evolución del rating de los 10 mejores jugadores a lo largo de la Temporada 6. Puedes observar cómo ha cambiado su rendimiento semana a semana.</p>
+            </div>
+        </section>
+
+        <section class="player-search">
+            <h2>Buscar Jugador</h2>
+            <div class="search-container">
+                <div class="search-form">
+                    <input type="text" id="player-search-input" placeholder="Nombre de jugador...">
+                    <button id="player-search-btn">Buscar</button>
+                </div>
+                <div class="search-results">
+                    <p>Introduce el nombre de un jugador para ver su posición en la clasificación y estadísticas detalladas.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="leaderboard-faq">
+            <h2>Preguntas Frecuentes sobre la Clasificación</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Cómo se calcula el rating de los jugadores?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>El rating de los jugadores se calcula utilizando un sistema similar al ELO, donde se tienen en cuenta factores como las victorias y derrotas contra otros jugadores, el nivel de los oponentes, el rendimiento en mazmorras de alto nivel y la cantidad de tesoro extraído con éxito. La fórmula exacta es propiedad de los desarrolladores, pero estos son los principales componentes que influyen en tu puntuación.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Con qué frecuencia se actualiza la clasificación?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>La clasificación se actualiza diariamente a las 00:00 UTC. Sin embargo, puede haber un retraso de hasta 2 horas en la actualización de los datos debido al procesamiento necesario. Para eventos especiales y torneos, las actualizaciones pueden ser más frecuentes, llegando a ser cada hora durante la fase final.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Qué recompensas obtienen los jugadores mejor clasificados?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Los jugadores que terminan la temporada en el Top 100 reciben recompensas exclusivas, incluyendo títulos únicos, skins especiales y monedas premium. El Top 10 recibe además armas y armaduras legendarias exclusivas con estadísticas únicas. El jugador número 1 al final de la temporada recibe el título "Campeón de la Temporada" y una skin única que no se puede obtener de ninguna otra manera.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Se reinicia la clasificación con cada temporada?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sí, la clasificación se reinicia completamente al inicio de cada nueva temporada. Sin embargo, los jugadores que terminaron en posiciones altas en la temporada anterior reciben un pequeño impulso inicial en su rating para la nueva temporada, lo que refleja su habilidad demostrada anteriormente.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Puedo ver mi historial de clasificación de temporadas anteriores?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sí, puedes ver tu historial de clasificación y el de otros jugadores seleccionando la temporada correspondiente en el menú desplegable de filtros. El juego mantiene registros de todas las temporadas anteriores, lo que te permite comparar tu progreso a lo largo del tiempo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Dark and Darker Wiki Interactiva</h3>
+                <p>Una guía completa y calculadora para el juego Dark and Darker.</p>
+                <div class="disclaimer">
+                    <h4>Descargo de Responsabilidad</h4>
+                    <p>Esta wiki no está asociada a Dark and Darker ni a IRONMACE de ninguna forma. Todo el contenido es meramente orientativo y puede no representar exactamente todos los valores correctamente. La información se irá actualizando con el tiempo.</p>
+                </div>
+                <div class="privacy-policy">
+                    <h4>Política de Privacidad</h4>
+                    <p>Los datos de los usuarios no serán usados para fines ilegítimos. Esta página es segura y confiable, y no almacena información personal de los visitantes.</p>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="classes.html">Clases</a></li>
+                    <li><a href="calculator.html">Calculadora</a></li>
+                    <li><a href="guides.html">Guías</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Recursos</h3>
+                <ul>
+                    <li><a href="https://darkanddarker.wiki.spellsandguns.com/" target="_blank">Wiki Oficial</a></li>
+                    <li><a href="https://discord.gg/darkanddarker" target="_blank">Discord Oficial</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2025 Dark and Darker Wiki Interactiva. No afiliado oficialmente con IRONMACE.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/leaderboard.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>

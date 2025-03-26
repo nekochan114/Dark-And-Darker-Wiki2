@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributos - Dark and Darker Wiki</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/attributes.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/logo-placeholder.png" alt="Dark and Darker Logo">
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="classes.html">Clases</a></li>
+                    <li><a href="attributes.html" class="active">Atributos</a></li>
+                    <li><a href="equipment.html">Equipamiento</a></li>
+                    <li><a href="mechanics.html">Mecánicas</a></li>
+                    <li><a href="calculator.html">Calculadora</a></li>
+                    <li><a href="guides.html">Guías</a></li>
+                </ul>
+            </nav>
+            <div class="language-selector">
+                <button id="es-btn" class="active">ES</button>
+                <button id="en-btn">EN</button>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar...">
+                <button type="submit">🔍</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="attributes-header">
+            <h1>Atributos en Dark and Darker</h1>
+            <p>Los atributos definen las capacidades de tu personaje y determinan tu efectividad en combate, supervivencia y utilidad en el grupo.</p>
+        </section>
+
+        <section class="attributes-overview">
+            <div class="card">
+                <h2 class="card-title">Visión General de Atributos</h2>
+                <p>En Dark and Darker, cada personaje tiene seis atributos principales que afectan diferentes aspectos del juego. Al subir de nivel, obtienes puntos para distribuir entre estos atributos según tu estilo de juego y la clase que elijas.</p>
+                <div class="attributes-diagram">
+                    <img src="images/attributes-diagram.png" alt="Diagrama de Atributos" class="interactive-image" data-modal="attributes-diagram-modal">
+                </div>
+            </div>
+        </section>
+
+        <section class="attributes-grid">
+            <div class="attribute-card" data-attribute="strength">
+                <div class="attribute-icon">💪</div>
+                <h2>Fuerza</h2>
+                <div class="attribute-description">
+                    <p>La Fuerza determina tu capacidad para infligir daño físico y llevar equipamiento pesado. Es crucial para clases cuerpo a cuerpo como el Bárbaro y el Luchador.</p>
+                    <div class="attribute-effects">
+                        <h3>Efectos:</h3>
+                        <ul>
+                            <li>Aumenta el daño de armas cuerpo a cuerpo</li>
+                            <li>Incrementa la capacidad de carga</li>
+                            <li>Permite equipar armas y armaduras pesadas</li>
+                            <li>Mejora la resistencia al aturdimiento</li>
+                        </ul>
+                    </div>
+                    <div class="attribute-formula">
+                        <h3>Fórmula:</h3>
+                        <div class="formula-box">
+                            <code>Daño Físico = Daño Base × (1 + (Fuerza × 0.01))</code>
+                        </div>
+                    </div>
+                    <div class="attribute-classes">
+                        <h3>Clases Recomendadas:</h3>
+                        <div class="class-tags">
+                            <span class="class-tag">Bárbaro</span>
+                            <span class="class-tag">Luchador</span>
+                            <span class="class-tag">Clérigo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="attribute-chart">
+                    <canvas id="strengthChart"></canvas>
+                </div>
+            </div>
+
+            <div class="attribute-card" data-attribute="dexterity">
+                <div class="attribute-icon">🏹</div>
+                <h2>Destreza</h2>
+                <div class="attribute-description">
+                    <p>La Destreza afecta tu precisión, velocidad de ataque y habilidad con armas a distancia. Es esencial para clases como el Pícaro y el Explorador.</p>
+                    <div class="attribute-effects">
+                        <h3>Efectos:</h3>
+                        <ul>
+                            <li>Aumenta el daño de armas a distancia</li>
+                            <li>Mejora la precisión de ataques</li>
+                            <li>Incrementa la velocidad de ataque</li>
+                            <li>Reduce el tiempo de preparación de arco</li>
+                        </ul>
+                    </div>
+                    <div class="attribute-formula">
+                        <h3>Fórmula:</h3>
+                        <div class="formula-box">
+                            <code>Daño a Distancia = Daño Base × (1 + (Destreza × 0.01))</code>
+                        </div>
+                    </div>
+                    <div class="attribute-classes">
+                        <h3>Clases Recomendadas:</h3>
+                        <div class="class-tags">
+                            <span class="class-tag">Pícaro</span>
+                            <span class="class-tag">Explorador</span>
+                            <span class="class-tag">Bardo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="attribute-chart">
+                    <canvas id="dexterityChart"></canvas>
+                </div>
+            </div>
+
+            <div class="attribute-card" data-attribute="vitality">
+                <div class="attribute-icon">❤️</div>
+                <h2>Vitalidad</h2>
+                <div class="attribute-description">
+                    <p>La Vitalidad determina tus puntos de vida y resistencia física. Es importante para todas las clases, pero especialmente para tanques y personajes frontales.</p>
+                    <div class="attribute-effects">
+                        <h3>Efectos:</h3>
+                        <ul>
+                            <li>Aumenta los puntos de vida máximos</li>
+                            <li>Mejora la regeneración de salud</li>
+                            <li>Incrementa la resistencia a venenos</li>
+                            <li>Reduce el daño por caídas</li>
+                        </ul>
+                    </div>
+                    <div class="attribute-formula">
+                        <h3>Fórmula:</h3>
+                        <div class="formula-box">
+                            <code>Puntos de Vida = Base de Clase + (Vitalidad × 2.5)</code>
+                        </div>
+                    </div>
+                    <div class="attribute-classes">
+                        <h3>Clases Recomendadas:</h3>
+                        <div class="class-tags">
+                            <span class="class-tag">Bárbaro</span>
+                            <span class="class-tag">Luchador</span>
+                            <span class="class-tag">Druida</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="attribute-chart">
+                    <canvas id="vitalityChart"></canvas>
+                </div>
+            </div>
+
+            <div class="attribute-card" data-attribute="intelligence">
+                <div class="attribute-icon">🧠</div>
+                <h2>Inteligencia</h2>
+                <div class="attribute-description">
+                    <p>La Inteligencia afecta tu poder mágico, reserva de maná y eficacia de hechizos. Es fundamental para lanzadores de hechizos como el Mago y el Brujo.</p>
+                    <div class="attribute-effects">
+                        <h3>Efectos:</h3>
+                        <ul>
+                            <li>Aumenta el daño mágico</li>
+                            <li>Incrementa la reserva máxima de maná</li>
+                            <li>Mejora la regeneración de maná</li>
+                            <li>Reduce el tiempo de lanzamiento de hechizos</li>
+                        </ul>
+                    </div>
+                    <div class="attribute-formula">
+                        <h3>Fórmula:</h3>
+                        <div class="formula-box">
+                            <code>Daño Mágico = Daño Base × (1 + (Inteligencia × 0.015))</code>
+                        </div>
+                    </div>
+                    <div class="attribute-classes">
+                        <h3>Clases Recomendadas:</h3>
+                        <div class="class-tags">
+                            <span class="class-tag">Mago</span>
+                            <span class="class-tag">Brujo</span>
+                            <span class="class-tag">Hechicero</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="attribute-chart">
+                    <canvas id="intelligenceChart"></canvas>
+                </div>
+            </div>
+
+            <div class="attribute-card" data-attribute="wisdom">
+                <div class="attribute-icon">📚</div>
+                <h2>Sabiduría</h2>
+                <div class="attribute-description">
+                    <p>La Sabiduría mejora tus habilidades de apoyo, detección y resistencia mágica. Es vital para clases de apoyo como el Clérigo y el Bardo.</p>
+                    <div class="attribute-effects">
+                        <h3>Efectos:</h3>
+                        <ul>
+                            <li>Aumenta la potencia de hechizos de curación</li>
+                            <li>Mejora la resistencia mágica</li>
+                            <li>Incrementa la capacidad de detección</li>
+                            <li>Reduce el costo de maná de habilidades</li>
+                        </ul>
+                    </div>
+                    <div class="attribute-formula">
+                        <h3>Fórmula:</h3>
+                        <div class="formula-box">
+                            <code>Curación = Base × (1 + (Sabiduría × 0.012))</code>
+                        </div>
+                    </div>
+                    <div class="attribute-classes">
+                        <h3>Clases Recomendadas:</h3>
+                        <div class="class-tags">
+                            <span class="class-tag">Clérigo</span>
+                            <span class="class-tag">Bardo</span>
+                            <span class="class-tag">Druida</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="attribute-chart">
+                    <canvas id="wisdomChart"></canvas>
+                </div>
+            </div>
+
+            <div class="attribute-card" data-attribute="willpower">
+                <div class="attribute-icon">🛡️</div>
+                <h2>Voluntad</h2>
+                <div class="attribute-description">
+                    <p>La Voluntad determina tu resistencia a efectos negativos y control mental. Proporciona defensa contra hechizos y mejora la concentración.</p>
+                    <div class="attribute-effects">
+                        <h3>Efectos:</h3>
+                        <ul>
+                            <li>Aumenta la resistencia a control mental</li>
+                            <li>Mejora la concentración durante el daño</li>
+                            <li>Reduce la duración de efectos negativos</li>
+                            <li>Incrementa la resistencia a miedo y terror</li>
+                        </ul>
+                    </div>
+                    <div class="attribute-formula">
+                        <h3>Fórmula:</h3>
+                        <div class="formula-box">
+                            <code>Resistencia = Base + (Voluntad × 0.5)%</code>
+                        </div>
+                    </div>
+                    <div class="attribute-classes">
+                        <h3>Clases Recomendadas:</h3>
+                        <div class="class-tags">
+                            <span class="class-tag">Brujo</span>
+                            <span class="class-tag">Clérigo</span>
+                            <span class="class-tag">Hechicero</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="attribute-chart">
+                    <canvas id="willpowerChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <section class="attributes-synergy">
+            <div class="card">
+                <h2 class="card-title">Sinergias entre Atributos</h2>
+                <p>Los atributos en Dark and Darker no funcionan de forma aislada. Existen importantes sinergias que pueden potenciar significativamente tu personaje cuando se combinan correctamente.</p>
+                
+                <div class="synergy-grid">
+                    <div class="synergy-card">
+                        <h3>Fuerza + Vitalidad</h3>
+                        <p>Combinación ideal para tanques y guerreros frontales. Maximiza el daño cuerpo a cuerpo mientras proporciona la durabilidad necesaria para sobrevivir en primera línea.</p>
+                        <div class="synergy-classes">
+                            <span class="class-tag">Bárbaro</span>
+                            <span class="class-tag">Luchador</span>
+                        </div>
+                    </div>
+                    
+                    <div class="synergy-card">
+                        <h3>Destreza + Inteligencia</h3>
+                        <p>Perfecta para arqueros mágicos y pícaros que utilizan encantamientos. Combina la precisión a distancia con potencia mágica para ataques versátiles.</p>
+                        <div class="synergy-classes">
+                            <span class="class-tag">Explorador</span>
+                            <span class="class-tag">Pícaro</span>
+                        </div>
+                    </div>
+                    
+                    <div class="synergy-card">
+                        <h3>Inteligencia + Sabiduría</h3>
+                        <p>Ideal para lanzadores de hechizos híbridos que necesitan tanto poder ofensivo como defensivo. Maximiza el daño mágico mientras proporciona resistencias.</p>
+                        <div class="synergy-classes">
+                            <span class="class-tag">Brujo</span>
+                            <span class="class-tag">Druida</span>
+                        </div>
+                    </div>
+                    
+                    <div class="synergy-card">
+                        <h3>Sabiduría + Voluntad</h3>
+                        <p>Combinación defensiva que maximiza la supervivencia contra ataques mágicos y efectos de control. Esencial para sanadores y personajes de apoyo.</p>
+                        <div class="synergy-classes">
+                            <span class="class-tag">Clérigo</span>
+                            <span class="class-tag">Bardo</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="attributes-calculator">
+            <div class="card">
+                <h2 class="card-title">Calculadora de Atributos</h2>
+                <p>Utiliza esta herramienta para planificar la distribución de tus puntos de atributo y ver cómo afectarán a tu personaje.</p>
+                
+                <div class="calculator-container">
+                    <div class="calculator-inputs">
+                        <div class="calculator-class">
+                            <label for="class-select">Clase:</label>
+                            <select id="class-select">
+                                <option value="barbarian">Bárbaro</option>
+                                <option value="fighter">Luchador</option>
+                                <option value="rogue">Pícaro</option>
+                                <option value="ranger">Explorador</option>
+                                <option value="wizard">Mago</option>
+                                <option value="cleric">Clérigo</option>
+                                <option value="bard">Bardo</option>
+                                <option value="warlock">Brujo</option>
+                                <option value="druid">Druida</option>
+                                <option value="sorcerer">Hechicero</option>
+                            </select>
+                        </div>
+                        
+                        <div class="calculator-level">
+                            <label for="level-input">Nivel:</label>
+                            <input type="number" id="level-input" min="1" max="50" value="1">
+                            <span id="points-available">Puntos disponibles: 0</span>
+                        </div>
+                        
+                        <div class="attribute-sliders">
+                            <div class="attribute-slider">
+                                <label for="strength-slider">Fuerza:</label>
+                                <input type="range" id="strength-slider" min="1" max="50" value="10">
+                                <span id="strength-value">10</span>
+                            </div>
+                            
+                            <div class="attribute-slider">
+                                <label for="dexterity-slider">Destreza:</label>
+                                <input type="range" id="dexterity-slider" min="1" max="50" value="10">
+                                <span id="dexterity-value">10</span>
+                            </div>
+                            
+                            <div class="attribute-slider">
+                                <label for="vitality-slider">Vitalidad:</label>
+                                <input type="range" id="vitality-slider" min="1" max="50" value="10">
+                                <span id="vitality-value">10</span>
+                            </div>
+                            
+                            <div class="attribute-slider">
+                                <label for="intelligence-slider">Inteligencia:</label>
+                                <input type="range" id="intelligence-slider" min="1" max="50" value="10">
+                                <span id="intelligence-value">10</span>
+                            </div>
+                            
+                            <div class="attribute-slider">
+                                <label for="wisdom-slider">Sabiduría:</label>
+                                <input type="range" id="wisdom-slider" min="1" max="50" value="10">
+                                <span id="wisdom-value">10</span>
+                            </div>
+                            
+                            <div class="attribute-slider">
+                                <label for="willpower-slider">Voluntad:</label>
+                                <input type="range" id="willpower-slider" min="1" max="50" value="10">
+                                <span id="willpower-value">10</span>
+                            </div>
+                        </div>
+                        
+                        <div class="calculator-buttons">
+                            <button id="reset-attributes" class="btn">Reiniciar</button>
+                            <button id="optimize-attributes" class="btn">Optimizar para Clase</button>
+                        </div>
+                    </div>
+                    
+                    <div class="calculator-results">
+                        <h3>Estadísticas Resultantes</h3>
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <span class="stat-name">Puntos de Vida:</span>
+                                <span id="hp-result" class="stat-value">100</span>
+                            </div>
+                            
+                            <div class="stat-item">
+                                <span class="stat-name">Maná:</span>
+                                <span id="mana-result" class="stat-value">50</span>
+                            </div>
+                            
+                            <div class="stat-item">
+                                <span class="stat-name">Daño Físico:</span>
+                                <span id="physical-damage-result" class="stat-value">10-15</span>
+                            </div>
+                            
+                            <div class="stat-item">
+                                <span class="stat-name">Daño Mágico:</span>
+                                <span id="magic-damage-result" class="stat-value">8-12</span>
+                            </div>
+                            
+                            <div class="stat-item">
+                                <span class="stat-name">Defensa Física:</span>
+                                <span id="physical-defense-result" class="stat-value">5</span>
+                            </div>
+                            
+                            <div class="stat-item">
+                                <span class="stat-name">Resistencia Mágica:</span>
+                                <span id="magic-resistance-result" class="stat-value">3</span>
+                            </div>
+                            
+                            <div class="stat-item">
+                                <span class="stat-name">Velocidad de Movimiento:</span>
+                                <span id="movement-speed-result" class="stat-value">100%</span>
+                            </div>
+                            
+                            <div class="stat-item">
+                                <span class="stat-name">Capacidad de Carga:</span>
+                                <span id="carry-capacity-result" class="stat-value">50</span>
+                            </div>
+                        </div>
+                        
+                        <div class="attribute-radar-chart">
+                            <canvas id="attributeRadarChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Dark and Darker Wiki Interactiva</h3>
+                <p>Una guía completa y calculadora para el juego Dark and Darker.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="classes.html">Clases</a></li>
+                    <li><a href="calculator.html">Calculadora</a></li>
+                    <li><a href="guides.html">Guías</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Recursos</h3>
+                <ul>
+                    <li><a href="https://darkanddarker.wiki.spellsandguns.com/" target="_blank">Wiki Oficial</a></li>
+                    <li><a href="https://discord.gg/darkanddarker" target="_blank">Discord Oficial</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2025 Dark and Darker Wiki Interactiva. No afiliado oficialmente con IRONMACE.</p>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div id="attributes-diagram-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2>Diagrama de Atributos</h2>
+            <img src="images/attributes-diagram-large.png" alt="Diagrama de Atributos Ampliado">
+            <p>Este diagrama muestra cómo los diferentes atributos afectan a las estadísticas de tu personaje. Las líneas conectan cada atributo con las estadísticas que influencia, y el grosor de la línea indica la fuerza de esa influencia.</p>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/attributes.js"></script>
+</body>
+</html>

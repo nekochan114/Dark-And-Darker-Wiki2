@@ -1,0 +1,670 @@
+/* Estilos específicos para la página de temporadas */
+.seasons-header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/seasons-bg-placeholder.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 3rem 2rem;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.seasons-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.seasons-header p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  color: var(--gray-text);
+}
+
+.current-season {
+  margin-bottom: 3rem;
+}
+
+.season-banner {
+  position: relative;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--border-color);
+  background-color: var(--darker-bg);
+}
+
+.season-banner img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.season-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5), transparent);
+  padding: 2rem 1.5rem 1.5rem;
+  color: var(--light-text);
+}
+
+.season-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.season-title h2 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: var(--primary-color);
+}
+
+.season-status {
+  background-color: var(--darker-bg);
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.season-status.active {
+  background-color: #2ecc71;
+  color: #fff;
+}
+
+.season-status.upcoming {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.season-status.ended {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.season-dates {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.season-dates p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.season-progress {
+  margin-top: 1rem;
+}
+
+.progress-bar {
+  height: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.progress {
+  height: 100%;
+  background-color: var(--primary-color);
+  border-radius: 4px;
+}
+
+.progress-text {
+  font-size: 0.85rem;
+  color: var(--gray-text);
+}
+
+.season-description {
+  background-color: var(--darker-bg);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  border: 1px solid var(--border-color);
+}
+
+.season-description h3 {
+  color: var(--primary-color);
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.season-description p {
+  color: var(--gray-text);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.season-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.feature-icon {
+  font-size: 2rem;
+  color: var(--primary-color);
+  flex-shrink: 0;
+}
+
+.feature-text h4 {
+  color: var(--light-text);
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.feature-text p {
+  color: var(--gray-text);
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.season-rewards {
+  margin-bottom: 3rem;
+}
+
+.season-rewards h2 {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.rewards-container {
+  background-color: var(--darker-bg);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  border: 1px solid var(--border-color);
+}
+
+.rewards-track {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.reward-tier {
+  background-color: var(--dark-bg);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  transition: transform 0.3s ease;
+}
+
+.reward-tier:hover {
+  transform: translateY(-5px);
+}
+
+.reward-tier.free {
+  border-top: 3px solid #3498db;
+}
+
+.reward-tier.premium {
+  border-top: 3px solid #f39c12;
+}
+
+.tier-level {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 0.5rem;
+  text-align: center;
+  font-weight: 500;
+  color: var(--light-text);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.tier-content {
+  display: flex;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.tier-content img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 0.25rem;
+  border: 1px solid var(--border-color);
+}
+
+.reward-info {
+  flex: 1;
+}
+
+.reward-info h4 {
+  color: var(--light-text);
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.reward-info p {
+  color: var(--gray-text);
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+}
+
+.reward-type {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.reward-tier.free .reward-type {
+  background-color: rgba(52, 152, 219, 0.2);
+  color: #3498db;
+}
+
+.reward-tier.premium .reward-type {
+  background-color: rgba(243, 156, 18, 0.2);
+  color: #f39c12;
+}
+
+.past-seasons {
+  margin-bottom: 3rem;
+}
+
+.past-seasons h2 {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.seasons-timeline {
+  position: relative;
+  padding: 2rem 0;
+}
+
+.timeline-container {
+  position: relative;
+}
+
+.timeline-container:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  background-color: var(--border-color);
+  transform: translateX(-50%);
+}
+
+.timeline-season {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.timeline-marker {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.timeline-content {
+  width: 45%;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.timeline-season:nth-child(even) .timeline-content {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.season-card {
+  background-color: var(--darker-bg);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  transition: transform 0.3s ease;
+}
+
+.season-card:hover {
+  transform: translateY(-5px);
+}
+
+.season-card-header {
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.season-card-header h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: var(--primary-color);
+}
+
+.season-dates {
+  font-size: 0.9rem;
+  color: var(--gray-text);
+}
+
+.season-card-image {
+  height: 180px;
+  overflow: hidden;
+}
+
+.season-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.season-card-content {
+  padding: 1.5rem;
+}
+
+.season-card-content p {
+  color: var(--gray-text);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.season-highlights {
+  margin-bottom: 1.5rem;
+}
+
+.highlight {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.highlight-label {
+  color: var(--light-text);
+  font-weight: 500;
+}
+
+.highlight-value {
+  color: var(--gray-text);
+}
+
+.season-details-btn {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.season-details-btn:hover {
+  background-color: var(--primary-color-dark);
+}
+
+.season-changes {
+  margin-bottom: 3rem;
+}
+
+.season-changes h2 {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.changes-container {
+  background-color: var(--darker-bg);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+}
+
+.changes-tabs {
+  display: flex;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.tab-btn {
+  flex: 1;
+  padding: 1rem;
+  background-color: transparent;
+  border: none;
+  color: var(--gray-text);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab-btn:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: var(--light-text);
+}
+
+.tab-btn.active {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.changes-content {
+  padding: 1.5rem;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.change-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.change-item {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.change-season {
+  flex: 0 0 120px;
+  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 0.25rem;
+  text-align: center;
+  font-weight: 500;
+  color: var(--primary-color);
+  height: fit-content;
+}
+
+.change-details {
+  flex: 1;
+}
+
+.change-details h4 {
+  color: var(--light-text);
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.change-details ul {
+  margin: 0;
+  padding-left: 1.5rem;
+  color: var(--gray-text);
+}
+
+.change-details li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.season-faq {
+  margin-bottom: 3rem;
+}
+
+.season-faq h2 {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.faq-container {
+  background-color: var(--darker-bg);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  border: 1px solid var(--border-color);
+}
+
+.faq-item {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  cursor: pointer;
+}
+
+.faq-question h3 {
+  color: var(--light-text);
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.faq-toggle {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.faq-answer {
+  padding: 0 0 1rem 0;
+  display: none;
+}
+
+.faq-answer p {
+  color: var(--gray-text);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.faq-item.active .faq-answer {
+  display: block;
+}
+
+.faq-item.active .faq-toggle {
+  content: "-";
+}
+
+/* Colores para rareza de items */
+.item-common {
+  color: var(--item-common-color);
+}
+
+.item-uncommon {
+  color: var(--item-uncommon-color);
+}
+
+.item-rare {
+  color: var(--item-rare-color);
+}
+
+.item-epic {
+  color: var(--item-epic-color);
+}
+
+.item-legendary {
+  color: var(--item-legendary-color);
+}
+
+.item-unique {
+  color: var(--item-unique-color);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .timeline-container:before {
+    left: 20px;
+  }
+  
+  .timeline-marker {
+    left: 20px;
+  }
+  
+  .timeline-content {
+    width: 85%;
+    margin-left: 40px;
+    margin-right: 0;
+  }
+  
+  .timeline-season:nth-child(even) .timeline-content {
+    margin-left: 40px;
+    margin-right: 0;
+  }
+  
+  .season-features {
+    grid-template-columns: 1fr;
+  }
+  
+  .rewards-track {
+    grid-template-columns: 1fr;
+  }
+  
+  .change-item {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .change-season {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+
+/* Estilos para el footer */
+.disclaimer, .privacy-policy {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.disclaimer h4, .privacy-policy h4 {
+  color: var(--light-text);
+  margin-bottom: 0.5rem;
+}
+
+.disclaimer p, .privacy-policy p {
+  color: var(--gray-text);
+  line-height: 1.4;
+}

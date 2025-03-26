@@ -1,0 +1,499 @@
+/* Estilos específicos para la página de clasificación */
+.leaderboard-header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/leaderboard-bg-placeholder.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 3rem 2rem;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.leaderboard-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.leaderboard-header p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  color: var(--gray-text);
+}
+
+.leaderboard-filters {
+  margin-bottom: 2rem;
+}
+
+.filters-container {
+  background-color: var(--darker-bg);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  border: 1px solid var(--border-color);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: flex-end;
+}
+
+.filter-group {
+  flex: 1;
+  min-width: 150px;
+}
+
+.filter-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--light-text);
+  font-weight: 500;
+}
+
+.filter-group select {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: var(--dark-bg);
+  color: var(--light-text);
+  border: 1px solid var(--border-color);
+  border-radius: 0.25rem;
+}
+
+.filter-btn {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.filter-btn:hover {
+  background-color: var(--primary-color-dark);
+}
+
+.leaderboard-stats {
+  margin-bottom: 2rem;
+}
+
+.stats-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.stat-card {
+  background-color: var(--darker-bg);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  border: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.stat-icon {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+}
+
+.stat-info h3 {
+  color: var(--light-text);
+  margin: 0 0 0.25rem 0;
+  font-size: 1.1rem;
+}
+
+.stat-info p {
+  color: var(--gray-text);
+  margin: 0 0 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+.stat-value {
+  display: block;
+  color: var(--primary-color);
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.leaderboard-table {
+  margin-bottom: 3rem;
+}
+
+.table-container {
+  background-color: var(--darker-bg);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  margin-bottom: 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: var(--dark-bg);
+  color: var(--primary-color);
+}
+
+th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 500;
+  border-bottom: 1px solid var(--border-color);
+}
+
+tbody tr {
+  border-bottom: 1px solid var(--border-color);
+  transition: background-color 0.3s ease;
+}
+
+tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+tbody tr:last-child {
+  border-bottom: none;
+}
+
+td {
+  padding: 0.75rem 1rem;
+  color: var(--gray-text);
+}
+
+.position {
+  font-weight: 500;
+  color: var(--light-text);
+}
+
+.rank-1 .position {
+  color: gold;
+  font-weight: 700;
+}
+
+.rank-2 .position {
+  color: silver;
+  font-weight: 700;
+}
+
+.rank-3 .position {
+  color: #cd7f32; /* Bronze */
+  font-weight: 700;
+}
+
+.player-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.player-info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--border-color);
+}
+
+.player-name {
+  display: block;
+  color: var(--light-text);
+  font-weight: 500;
+}
+
+.player-guild {
+  display: block;
+  color: var(--gray-text);
+  font-size: 0.85rem;
+}
+
+.class-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.class-info img {
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+}
+
+.level, .rating {
+  font-weight: 500;
+  color: var(--light-text);
+}
+
+.rank-1 .rating {
+  color: gold;
+  font-weight: 700;
+}
+
+.rank-2 .rating {
+  color: silver;
+  font-weight: 700;
+}
+
+.rank-3 .rating {
+  color: #cd7f32; /* Bronze */
+  font-weight: 700;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.pagination-btn {
+  background-color: var(--dark-bg);
+  color: var(--light-text);
+  border: 1px solid var(--border-color);
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.pagination-btn:hover:not([disabled]) {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.pagination-btn[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.page-numbers {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.page-btn {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dark-bg);
+  color: var(--light-text);
+  border: 1px solid var(--border-color);
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.page-btn:hover {
+  background-color: var(--primary-color-light);
+}
+
+.page-btn.active {
+  background-color: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+.class-distribution, .rating-history {
+  margin-bottom: 3rem;
+}
+
+.class-distribution h2, .rating-history h2, .player-search h2, .leaderboard-faq h2 {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.chart-container {
+  background-color: var(--darker-bg);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  border: 1px solid var(--border-color);
+  margin-bottom: 1rem;
+  height: 300px;
+}
+
+.chart-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.legend-color {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+}
+
+.legend-text {
+  color: var(--gray-text);
+  font-size: 0.9rem;
+}
+
+.chart-info {
+  text-align: center;
+  color: var(--gray-text);
+  font-size: 0.95rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.player-search {
+  margin-bottom: 3rem;
+}
+
+.search-container {
+  background-color: var(--darker-bg);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  border: 1px solid var(--border-color);
+}
+
+.search-form {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.search-form input {
+  flex: 1;
+  padding: 0.75rem;
+  background-color: var(--dark-bg);
+  color: var(--light-text);
+  border: 1px solid var(--border-color);
+  border-radius: 0.25rem;
+}
+
+.search-form button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0 1.5rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.search-form button:hover {
+  background-color: var(--primary-color-dark);
+}
+
+.search-results {
+  color: var(--gray-text);
+  text-align: center;
+}
+
+.leaderboard-faq {
+  margin-bottom: 3rem;
+}
+
+.faq-container {
+  background-color: var(--darker-bg);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  border: 1px solid var(--border-color);
+}
+
+.faq-item {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  cursor: pointer;
+}
+
+.faq-question h3 {
+  color: var(--light-text);
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.faq-toggle {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.faq-answer {
+  padding: 0 0 1rem 0;
+  display: none;
+}
+
+.faq-answer p {
+  color: var(--gray-text);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.faq-item.active .faq-answer {
+  display: block;
+}
+
+.faq-item.active .faq-toggle {
+  content: "-";
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+  .table-container {
+    overflow-x: auto;
+  }
+  
+  table {
+    min-width: 1000px;
+  }
+}
+
+@media (max-width: 768px) {
+  .filters-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .filter-group {
+    width: 100%;
+  }
+  
+  .stats-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .search-form {
+    flex-direction: column;
+  }
+}
+
+/* Estilos para el footer */
+.disclaimer, .privacy-policy {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.disclaimer h4, .privacy-policy h4 {
+  color: var(--light-text);
+  margin-bottom: 0.5rem;
+}
+
+.disclaimer p, .privacy-policy p {
+  color: var(--gray-text);
+  line-height: 1.4;
+}

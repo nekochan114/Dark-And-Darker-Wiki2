@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temporadas - Dark and Darker Wiki</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/seasons.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Dark and Darker Wiki Logo">
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="classes.html">Clases</a></li>
+                    <li><a href="attributes.html">Atributos</a></li>
+                    <li><a href="equipment.html">Equipamiento</a></li>
+                    <li><a href="mechanics.html">Mecánicas</a></li>
+                    <li><a href="calculator.html">Calculadora</a></li>
+                    <li><a href="guides.html">Guías</a></li>
+                    <li><a href="skins.html">Skins</a></li>
+                    <li><a href="seasons.html" class="active">Temporadas</a></li>
+                    <li><a href="leaderboard.html">Clasificación</a></li>
+                </ul>
+            </nav>
+            <div class="language-selector">
+                <button id="es-btn" class="active"><img src="images/flags/es.png" alt="Español">ES</button>
+                <button id="en-btn"><img src="images/flags/en.png" alt="English">EN</button>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar...">
+                <button type="submit">🔍</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="seasons-header">
+            <h1>Temporadas de Dark and Darker</h1>
+            <p>Explora todas las temporadas del juego, sus recompensas exclusivas y cambios importantes.</p>
+        </section>
+
+        <section class="current-season">
+            <div class="season-banner">
+                <img src="images/seasons/season6_banner.jpg" alt="Temporada 6: Legado de los Antiguos">
+                <div class="season-info">
+                    <div class="season-title">
+                        <h2>Temporada 6: Legado de los Antiguos</h2>
+                        <span class="season-status active">ACTIVA</span>
+                    </div>
+                    <div class="season-dates">
+                        <p><strong>Inicio:</strong> 15 de Febrero, 2025</p>
+                        <p><strong>Fin:</strong> 15 de Mayo, 2025</p>
+                    </div>
+                    <div class="season-progress">
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 45%"></div>
+                        </div>
+                        <span class="progress-text">45% completado (45 días restantes)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="season-description">
+                <h3>Descripción</h3>
+                <p>La Temporada 6 introduce una nueva zona de exploración basada en ruinas antiguas, donde los jugadores pueden descubrir artefactos perdidos y aprender sobre una civilización olvidada. Esta temporada trae consigo un nuevo conjunto de equipamiento temático, nuevos enemigos y desafíos únicos.</p>
+                
+                <div class="season-features">
+                    <div class="feature">
+                        <div class="feature-icon">🏛️</div>
+                        <div class="feature-text">
+                            <h4>Ruinas de los Antiguos</h4>
+                            <p>Nueva zona de exploración con arquitectura única y tesoros ocultos.</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">⚔️</div>
+                        <div class="feature-text">
+                            <h4>Conjunto de los Antiguos</h4>
+                            <p>Nuevo conjunto de equipamiento legendario con bonificaciones especiales.</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">👹</div>
+                        <div class="feature-text">
+                            <h4>Guardianes Ancestrales</h4>
+                            <p>Nuevos enemigos con habilidades únicas que protegen las ruinas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="season-rewards">
+            <h2>Recompensas de la Temporada 6</h2>
+            <div class="rewards-container">
+                <div class="rewards-track">
+                    <div class="reward-tier free">
+                        <div class="tier-level">Nivel 1</div>
+                        <div class="tier-content">
+                            <img src="images/rewards/gold_pouch.jpg" alt="Bolsa de Oro">
+                            <div class="reward-info">
+                                <h4>Bolsa de Oro</h4>
+                                <p>1000 monedas de oro para gastar en la tienda del juego.</p>
+                                <span class="reward-type">Gratuito</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reward-tier premium">
+                        <div class="tier-level">Nivel 1</div>
+                        <div class="tier-content">
+                            <img src="images/rewards/ancient_talisman.jpg" alt="Talismán Antiguo">
+                            <div class="reward-info">
+                                <h4>Talismán Antiguo</h4>
+                                <p>Amuleto decorativo que otorga +5% de experiencia durante la temporada.</p>
+                                <span class="reward-type">Premium</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reward-tier free">
+                        <div class="tier-level">Nivel 10</div>
+                        <div class="tier-content">
+                            <img src="images/rewards/common_chest.jpg" alt="Cofre Común">
+                            <div class="reward-info">
+                                <h4>Cofre Común</h4>
+                                <p>Contiene equipamiento aleatorio de rareza común o poco común.</p>
+                                <span class="reward-type">Gratuito</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reward-tier premium">
+                        <div class="tier-level">Nivel 10</div>
+                        <div class="tier-content">
+                            <img src="images/rewards/rare_chest.jpg" alt="Cofre Raro">
+                            <div class="reward-info">
+                                <h4>Cofre Raro</h4>
+                                <p>Contiene equipamiento aleatorio de rareza rara o superior.</p>
+                                <span class="reward-type">Premium</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reward-tier free">
+                        <div class="tier-level">Nivel 25</div>
+                        <div class="tier-content">
+                            <img src="images/rewards/ancient_scroll.jpg" alt="Pergamino Antiguo">
+                            <div class="reward-info">
+                                <h4>Pergamino Antiguo</h4>
+                                <p>Desbloquea una nueva habilidad pasiva para una clase a elección.</p>
+                                <span class="reward-type">Gratuito</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reward-tier premium">
+                        <div class="tier-level">Nivel 25</div>
+                        <div class="tier-content">
+                            <img src="images/rewards/ancient_weapon.jpg" alt="Arma Antigua">
+                            <div class="reward-info">
+                                <h4>Arma Antigua</h4>
+                                <p>Arma épica con diseño único y estadísticas mejoradas.</p>
+                                <span class="reward-type">Premium</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reward-tier free">
+                        <div class="tier-level">Nivel 50</div>
+                        <div class="tier-content">
+                            <img src="images/rewards/ancient_title.jpg" alt="Título: Explorador de Ruinas">
+                            <div class="reward-info">
+                                <h4>Título: Explorador de Ruinas</h4>
+                                <p>Título exclusivo para mostrar junto a tu nombre de jugador.</p>
+                                <span class="reward-type">Gratuito</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reward-tier premium">
+                        <div class="tier-level">Nivel 50</div>
+                        <div class="tier-content">
+                            <img src="images/rewards/ancient_armor.jpg" alt="Armadura Antigua">
+                            <div class="reward-info">
+                                <h4>Armadura Antigua</h4>
+                                <p>Pieza de armadura épica con diseño único y estadísticas mejoradas.</p>
+                                <span class="reward-type">Premium</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reward-tier free">
+                        <div class="tier-level">Nivel 75</div>
+                        <div class="tier-content">
+                            <img src="images/rewards/epic_chest.jpg" alt="Cofre Épico">
+                            <div class="reward-info">
+                                <h4>Cofre Épico</h4>
+                                <p>Contiene equipamiento aleatorio de rareza épica o superior.</p>
+                                <span class="reward-type">Gratuito</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reward-tier premium">
+                        <div class="tier-level">Nivel 75</div>
+                        <div class="tier-content">
+                            <img src="images/rewards/ancient_pet.jpg" alt="Mascota Antigua">
+                            <div class="reward-info">
+                                <h4>Mascota Antigua</h4>
+                                <p>Mascota cosmética que te acompaña en tus aventuras.</p>
+                                <span class="reward-type">Premium</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reward-tier free">
+                        <div class="tier-level">Nivel 100</div>
+                        <div class="tier-content">
+                            <img src="images/rewards/ancient_emote.jpg" alt="Emote: Saludo Ancestral">
+                            <div class="reward-info">
+                                <h4>Emote: Saludo Ancestral</h4>
+                                <p>Animación exclusiva para comunicarte con otros jugadores.</p>
+                                <span class="reward-type">Gratuito</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reward-tier premium item-legendary">
+                        <div class="tier-level">Nivel 100</div>
+                        <div class="tier-content">
+                            <img src="images/rewards/ancient_set.jpg" alt="Conjunto Completo de los Antiguos">
+                            <div class="reward-info">
+                                <h4>Conjunto Completo de los Antiguos</h4>
+                                <p>Conjunto legendario completo con bonificaciones especiales al equipar todas las piezas.</p>
+                                <span class="reward-type">Premium</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="past-seasons">
+            <h2>Temporadas Anteriores</h2>
+            <div class="seasons-timeline">
+                <div class="timeline-container">
+                    <div class="timeline-season">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="season-card">
+                                <div class="season-card-header">
+                                    <h3>Temporada 5: Sombras del Abismo</h3>
+                                    <span class="season-dates">Nov 2024 - Feb 2025</span>
+                                </div>
+                                <div class="season-card-image">
+                                    <img src="images/seasons/season5_banner.jpg" alt="Temporada 5: Sombras del Abismo">
+                                </div>
+                                <div class="season-card-content">
+                                    <p>La Temporada 5 introdujo una nueva zona de mazmorras subterráneas con enemigos corruptos por la oscuridad. Los jugadores pudieron obtener el conjunto legendario "Heraldo del Vacío" y nuevas habilidades basadas en magia oscura.</p>
+                                    <div class="season-highlights">
+                                        <div class="highlight">
+                                            <span class="highlight-label">Nueva Zona:</span>
+                                            <span class="highlight-value">Abismo Profundo</span>
+                                        </div>
+                                        <div class="highlight">
+                                            <span class="highlight-label">Nuevo Jefe:</span>
+                                            <span class="highlight-value">Señor del Abismo</span>
+                                        </div>
+                                        <div class="highlight">
+                                            <span class="highlight-label">Recompensa Principal:</span>
+                                            <span class="highlight-value item-legendary">Conjunto Heraldo del Vacío</span>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="season-details-btn">Ver Detalles</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-season">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="season-card">
+                                <div class="season-card-header">
+                                    <h3>Temporada 4: Fuego y Hielo</h3>
+                                    <span class="season-dates">Ago 2024 - Nov 2024</span>
+                                </div>
+                                <div class="season-card-image">
+                                    <img src="images/seasons/season4_banner.jpg" alt="Temporada 4: Fuego y Hielo">
+                                </div>
+                                <div class="season-card-content">
+                                    <p>La Temporada 4 enfrentó a los jugadores a los extremos elementales con nuevas zonas de volcanes y glaciares. Se introdujeron armas con efectos elementales y el conjunto épico "Archimago Elemental".</p>
+                                    <div class="season-highlights">
+                                        <div class="highlight">
+                                            <span class="highlight-label">Nuevas Zonas:</span>
+                                            <span class="highlight-value">Cráter Ardiente, Pico Helado</span>
+                                        </div>
+                                        <div class="highlight">
+                                            <span class="highlight-label">Nuevos Jefes:</span>
+                                            <span class="highlight-value">Elemental de Fuego, Elemental de Hielo</span>
+                                        </div>
+                                        <div class="highlight">
+                                            <span class="highlight-label">Recompensa Principal:</span>
+                                            <span class="highlight-value item-epic">Conjunto Archimago Elemental</span>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="season-details-btn">Ver Detalles</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-season">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="season-card">
+                                <div class="season-card-header">
+                                    <h3>Temporada 3: Gloria de Batalla</h3>
+                                    <span class="season-dates">May 2024 - Ago 2024</span>
+                                </div>
+                                <div class="season-card-image">
+                                    <img src="images/seasons/season3_banner.jpg" alt="Temporada 3: Gloria de Batalla">
+                                </div>
+                                <div class="season-card-content">
+                                    <p>La Temporada 3 se centró en el combate PvP con nuevas arenas y torneos. Los jugadores compitieron por prestigio y recompensas exclusivas, incluyendo el conjunto épico "Señor de la Guerra Bárbaro".</p>
+                                    <div class="season-highlights">
+                                        <div class="highlight">
+                                            <span class="highlight-label">Nueva Característica:</span>
+                                            <span class="highlight-value">Arenas de Combate</span>
+                                        </div>
+                                        <div class="highlight">
+                                            <span class="highlight-label">Evento Especial:</span>
+                                            <span class="highlight-value">Torneo de Campeones</span>
+                                        </div>
+                                        <div class="highlight">
+                                            <span class="highlight-label">Recompensa Principal:</span>
+                                            <span class="highlight-value item-epic">Conjunto Señor de la Guerra</span>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="season-details-btn">Ver Detalles</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-season">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="season-card">
+                                <div class="season-card-header">
+                                    <h3>Temporada 2: Bosques Encantados</h3>
+                                    <span class="season-dates">Feb 2024 - May 2024</span>
+                                </div>
+                                <div class="season-card-image">
+                                    <img src="images/seasons/season2_banner.jpg" alt="Temporada 2: Bosques Encantados">
+                                </div>
+                                <div class="season-card-content">
+                                    <p>La Temporada 2 llevó a los jugadores a explorar bosques místicos habitados por criaturas feéricas y espíritus de la naturaleza. Se introdujeron nuevas armas y armaduras basadas en la naturaleza.</p>
+                                    <div class="season-highlights">
+                                        <div class="highlight">
+                                            <span class="highlight-label">Nueva Zona:</span>
+                                            <span class="highlight-value">Bosque Eterno</span>
+                                        </div>
+                                        <div class="highlight">
+                                            <span class="highlight-label">Nuevo Jefe:</span>
+                                            <span class="highlight-value">Guardián del Bosque</span>
+                                        </div>
+                                        <div class="highlight">
+                                            <span class="highlight-label">Recompensa Principal:</span>
+                                            <span class="highlight-value item-rare">Conjunto Guardián de la Naturaleza</span>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="season-details-btn">Ver Detalles</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-season">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="season-card">
+                                <div class="season-card-header">
+                                    <h3>Temporada 1: Despertar</h3>
+                                    <span class="season-dates">Nov 2023 - Feb 2024</span>
+                                </div>
+                                <div class="season-card-image">
+                                    <img src="images/seasons/season1_banner.jpg" alt="Temporada 1: Despertar">
+                                </div>
+                                <div class="season-card-content">
+                                    <p>La primera temporada de Dark and Darker introdujo a los jugadores al mundo del juego, estableciendo las bases para futuras expansiones. Los jugadores descubrieron las primeras mazmorras y enfrentaron a los primeros jefes.</p>
+                                    <div class="season-highlights">
+                                        <div class="highlight">
+                                            <span class="highlight-label">Zonas Iniciales:</span>
+                                            <span class="highlight-value">Catacumbas, Fortaleza</span>
+                                        </div>
+                                        <div class="highlight">
+                                            <span class="highlight-label">Jefes Iniciales:</span>
+                                            <span class="highlight-value">Caballero Caído, Nigromante</span>
+                                        </div>
+                                        <div class="highlight">
+                                            <span class="highlight-label">Recompensa Principal:</span>
+                                            <span class="highlight-value item-uncommon">Conjunto del Aventurero</span>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="season-details-btn">Ver Detalles</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="season-changes">
+            <h2>Cambios Importantes por Temporada</h2>
+            <div class="changes-container">
+                <div class="changes-tabs">
+                    <button class="tab-btn active" data-tab="balance">Equilibrio</button>
+                    <button class="tab-btn" data-tab="content">Contenido</button>
+                    <button class="tab-btn" data-tab="systems">Sistemas</button>
+                    <button class="tab-btn" data-tab="fixes">Correcciones</button>
+                </div>
+                <div class="changes-content">
+                    <div class="tab-content active" id="balance">
+                        <div class="change-list">
+                            <div class="change-item">
+                                <div class="change-season">Temporada 6</div>
+                                <div class="change-details">
+                                    <h4>Equilibrio de Clases</h4>
+                                    <ul>
+                                        <li>Bárbaro: Aumento del 5% en daño base, reducción del 10% en resistencia.</li>
+                                        <li>Mago: Reducción del 8% en daño de hechizos de área, aumento del 15% en velocidad de lanzamiento.</li>
+                                        <li>Pícaro: Aumento del 10% en daño crítico, reducción del 5% en velocidad de movimiento.</li>
+                                        <li>Clérigo: Aumento del 15% en poder de curación, reducción del 10% en daño de hechizos ofensivos.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="change-item">
+                                <div class="change-season">Temporada 5</div>
+                                <div class="change-details">
+                                    <h4>Equilibrio de Armas</h4>
+                                    <ul>
+                                        <li>Espadas a dos manos: Aumento del 12% en daño, reducción del 5% en velocidad de ataque.</li>
+                                        <li>Dagas: Aumento del 8% en velocidad de ataque, reducción del 3% en daño base.</li>
+                                        <li>Arcos: Reducción del 10% en daño a larga distancia, aumento del 15% en precisión.</li>
+                                        <li>Báculos: Aumento del 7% en poder mágico, reducción del 5% en velocidad de recarga de maná.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="change-item">
+                                <div class="change-season">Temporada 4</div>
+                                <div class="change-details">
+                                    <h4>Equilibrio de Atributos</h4>
+                                    <ul>
+                                        <li>Fuerza: Ahora proporciona 1.2 puntos de daño físico por punto (antes 1.0).</li>
+                                        <li>Inteligencia: Reducción de la bonificación de poder mágico de 1.5 a 1.3 por punto.</li>
+                                        <li>Vitalidad: Aumento de la bonificación de salud de 10 a 12 por punto.</li>
+                                        <li>Agilidad: Ahora proporciona 0.5% de velocidad de movimiento por punto (antes 0.4%).</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="content">
+                        <div class="change-list">
+                            <div class="change-item">
+                                <div class="change-season">Temporada 6</div>
+                                <div class="change-details">
+                                    <h4>Nuevo Contenido</h4>
+                                    <ul>
+                                        <li>Nueva zona: Ruinas de los Antiguos, con 3 niveles de profundidad.</li>
+                                        <li>Nuevo jefe: El Guardián Eterno, con mecánicas basadas en el tiempo.</li>
+                                        <li>10 nuevas armas legendarias con efectos únicos.</li>
+                                        <li>Sistema de artefactos antiguos que otorgan bonificaciones pasivas.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="change-item">
+                                <div class="change-season">Temporada 5</div>
+                                <div class="change-details">
+                                    <h4>Nuevo Contenido</h4>
+                                    <ul>
+                                        <li>Nueva zona: Abismo Profundo, con efectos de corrupción progresiva.</li>
+                                        <li>Nuevo jefe: Señor del Abismo, con invocación de secuaces.</li>
+                                        <li>Nueva clase: Brujo, especializado en magia oscura y maldiciones.</li>
+                                        <li>Sistema de corrupción que afecta a los jugadores en ciertas zonas.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="change-item">
+                                <div class="change-season">Temporada 4</div>
+                                <div class="change-details">
+                                    <h4>Nuevo Contenido</h4>
+                                    <ul>
+                                        <li>Nuevas zonas: Cráter Ardiente y Pico Helado, con efectos ambientales.</li>
+                                        <li>Nuevos jefes: Elemental de Fuego y Elemental de Hielo, con resistencias específicas.</li>
+                                        <li>Sistema de encantamientos elementales para armas y armaduras.</li>
+                                        <li>Nuevas misiones secundarias con recompensas exclusivas.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="systems">
+                        <div class="change-list">
+                            <div class="change-item">
+                                <div class="change-season">Temporada 6</div>
+                                <div class="change-details">
+                                    <h4>Cambios en Sistemas</h4>
+                                    <ul>
+                                        <li>Nuevo sistema de progresión de temporada con 100 niveles.</li>
+                                        <li>Mejora del sistema de comercio entre jugadores con más opciones de filtrado.</li>
+                                        <li>Implementación de sistema de logros con recompensas permanentes.</li>
+                                        <li>Mejora del sistema de grupos con nuevas opciones de comunicación.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="change-item">
+                                <div class="change-season">Temporada 5</div>
+                                <div class="change-details">
+                                    <h4>Cambios en Sistemas</h4>
+                                    <ul>
+                                        <li>Revisión del sistema de combate para mejorar la respuesta y precisión.</li>
+                                        <li>Implementación de sistema de reputación con facciones.</li>
+                                        <li>Mejora del sistema de inventario con más espacio y opciones de organización.</li>
+                                        <li>Nuevo sistema de misiones diarias y semanales.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="change-item">
+                                <div class="change-season">Temporada 4</div>
+                                <div class="change-details">
+                                    <h4>Cambios en Sistemas</h4>
+                                    <ul>
+                                        <li>Implementación del sistema de elementos y resistencias elementales.</li>
+                                        <li>Mejora del sistema de creación de objetos con nuevas recetas.</li>
+                                        <li>Revisión del sistema de experiencia y nivelación para hacerlo más equilibrado.</li>
+                                        <li>Implementación de sistema de clima dinámico en zonas exteriores.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="fixes">
+                        <div class="change-list">
+                            <div class="change-item">
+                                <div class="change-season">Temporada 6</div>
+                                <div class="change-details">
+                                    <h4>Correcciones Importantes</h4>
+                                    <ul>
+                                        <li>Solucionado problema que causaba desconexiones aleatorias en mazmorras de nivel alto.</li>
+                                        <li>Corregido error que permitía a los jugadores atravesar ciertas paredes en la Fortaleza.</li>
+                                        <li>Solucionado problema con el cálculo de daño crítico que no aplicaba correctamente.</li>
+                                        <li>Corregidos varios errores de interfaz y texto en múltiples idiomas.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="change-item">
+                                <div class="change-season">Temporada 5</div>
+                                <div class="change-details">
+                                    <h4>Correcciones Importantes</h4>
+                                    <ul>
+                                        <li>Solucionado problema que causaba que ciertos efectos de estado no se aplicaran correctamente.</li>
+                                        <li>Corregido error que permitía duplicar objetos en ciertas circunstancias.</li>
+                                        <li>Solucionado problema con la generación de mazmorras que creaba salas inaccesibles.</li>
+                                        <li>Corregidos problemas de rendimiento en áreas con muchos enemigos.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="change-item">
+                                <div class="change-season">Temporada 4</div>
+                                <div class="change-details">
+                                    <h4>Correcciones Importantes</h4>
+                                    <ul>
+                                        <li>Solucionado problema que causaba que los efectos elementales se acumularan incorrectamente.</li>
+                                        <li>Corregido error que hacía que ciertos jefes no aparecieran en sus ubicaciones designadas.</li>
+                                        <li>Solucionado problema con el sistema de comercio que a veces no completaba las transacciones.</li>
+                                        <li>Corregidos varios problemas de colisión en las nuevas zonas elementales.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="season-faq">
+            <h2>Preguntas Frecuentes sobre Temporadas</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Qué ocurre con mi progreso al final de una temporada?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Al final de cada temporada, tu nivel de temporada se reinicia, pero mantienes todos los objetos, monedas y recompensas que hayas obtenido. Las recompensas exclusivas de temporada que no hayas desbloqueado ya no estarán disponibles en futuras temporadas, aunque algunas pueden regresar en eventos especiales.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Cómo funciona el Pase de Temporada Premium?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>El Pase de Temporada Premium desbloquea una línea adicional de recompensas en cada nivel de temporada. Puedes adquirirlo en cualquier momento durante la temporada y recibirás retroactivamente todas las recompensas premium de los niveles que ya hayas alcanzado. El pase cuesta 1000 monedas premium y es válido solo para la temporada actual.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Cuál es la mejor manera de subir de nivel en la temporada?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>La experiencia de temporada se obtiene principalmente completando mazmorras, derrotando jefes y completando misiones diarias y semanales. Las misiones semanales ofrecen la mayor cantidad de experiencia, seguidas por los jefes de mazmorra y las misiones diarias. También hay bonificadores de experiencia disponibles a través de ciertos objetos y eventos especiales.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Se añaden nuevas clases en cada temporada?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No necesariamente. Las nuevas clases se añaden ocasionalmente como parte del contenido de temporada, pero no en cada temporada. Hasta ahora, se ha añadido una nueva clase en la Temporada 5 (Brujo) y se espera que se añadan más en futuras temporadas, aunque no hay un calendario fijo para estas adiciones.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Puedo obtener recompensas de temporadas anteriores?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>La mayoría de las recompensas de temporada son exclusivas de su temporada y no están disponibles una vez que esta termina. Sin embargo, algunas recompensas pueden regresar en eventos especiales o en la tienda del juego, generalmente con un costo más alto. Las recompensas legendarias y únicas suelen permanecer exclusivas de su temporada original para mantener su rareza y valor.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Dark and Darker Wiki Interactiva</h3>
+                <p>Una guía completa y calculadora para el juego Dark and Darker.</p>
+                <div class="disclaimer">
+                    <h4>Descargo de Responsabilidad</h4>
+                    <p>Esta wiki no está asociada a Dark and Darker ni a IRONMACE de ninguna forma. Todo el contenido es meramente orientativo y puede no representar exactamente todos los valores correctamente. La información se irá actualizando con el tiempo.</p>
+                </div>
+                <div class="privacy-policy">
+                    <h4>Política de Privacidad</h4>
+                    <p>Los datos de los usuarios no serán usados para fines ilegítimos. Esta página es segura y confiable, y no almacena información personal de los visitantes.</p>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="classes.html">Clases</a></li>
+                    <li><a href="calculator.html">Calculadora</a></li>
+                    <li><a href="guides.html">Guías</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Recursos</h3>
+                <ul>
+                    <li><a href="https://darkanddarker.wiki.spellsandguns.com/" target="_blank">Wiki Oficial</a></li>
+                    <li><a href="https://discord.gg/darkanddarker" target="_blank">Discord Oficial</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2025 Dark and Darker Wiki Interactiva. No afiliado oficialmente con IRONMACE.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/seasons.js"></script>
+</body>
+</html>

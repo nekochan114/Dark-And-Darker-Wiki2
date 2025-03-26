@@ -1,0 +1,718 @@
+/* Estilos específicos para la página de mecánicas */
+.mechanics-header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/mechanics-bg-placeholder.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 3rem 2rem;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.mechanics-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.mechanics-header p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  color: var(--gray-text);
+}
+
+.mechanics-nav {
+  margin-bottom: 2rem;
+}
+
+.mechanics-nav-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.mechanics-nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--dark-bg);
+  border-radius: 0.5rem;
+  border: 1px solid var(--border-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  width: 100px;
+}
+
+.mechanics-nav-item:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary-color);
+}
+
+.nav-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.mechanics-nav-item span {
+  color: var(--light-text);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.mechanics-section {
+  margin-bottom: 3rem;
+  scroll-margin-top: 2rem;
+}
+
+.card {
+  background-color: var(--darker-bg);
+  border-radius: 0.5rem;
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+}
+
+.card-title {
+  background-color: var(--dark-bg);
+  color: var(--primary-color);
+  padding: 1rem 1.5rem;
+  margin: 0;
+  font-size: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.mechanics-content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1.5rem;
+  gap: 2rem;
+}
+
+.mechanics-image {
+  flex: 0 0 300px;
+}
+
+.mechanics-image img {
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border-color);
+}
+
+.mechanics-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.mechanics-text p {
+  color: var(--gray-text);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.mechanics-text h3 {
+  color: var(--light-text);
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.2rem;
+}
+
+.mechanics-text ul {
+  color: var(--gray-text);
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.mechanics-text li {
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.mechanics-text strong {
+  color: var(--light-text);
+}
+
+.mechanics-formula {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.mechanics-formula h4 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.mechanics-formula code {
+  display: block;
+  color: var(--light-text);
+  font-family: monospace;
+  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 0.25rem;
+  overflow-x: auto;
+}
+
+.mechanics-details {
+  padding: 1.5rem;
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.mechanics-table {
+  flex: 1;
+  min-width: 300px;
+}
+
+.mechanics-table h3 {
+  color: var(--light-text);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.mechanics-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+}
+
+.mechanics-table th {
+  background-color: var(--dark-bg);
+  color: var(--primary-color);
+  text-align: left;
+  padding: 0.75rem;
+  border: 1px solid var(--border-color);
+}
+
+.mechanics-table td {
+  padding: 0.75rem;
+  border: 1px solid var(--border-color);
+  color: var(--gray-text);
+}
+
+.mechanics-table tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.mechanics-tips {
+  flex: 1;
+  min-width: 300px;
+}
+
+.mechanics-tips h3 {
+  color: var(--light-text);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.mechanics-tips ul {
+  color: var(--gray-text);
+  padding-left: 1.5rem;
+}
+
+.mechanics-tips li {
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+}
+
+.mechanics-video {
+  padding: 1.5rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.mechanics-video h3 {
+  color: var(--light-text);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.video-placeholder {
+  width: 100%;
+  display: block;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.video-container:hover .play-button {
+  background-color: var(--primary-color);
+}
+
+.video-caption {
+  text-align: center;
+  color: var(--gray-text);
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+}
+
+.mechanics-interactive {
+  padding: 1.5rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.mechanics-interactive h3 {
+  color: var(--light-text);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.spell-explorer {
+  background-color: var(--dark-bg);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  border: 1px solid var(--border-color);
+}
+
+.spell-filters {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.spell-filters select {
+  background-color: var(--darker-bg);
+  color: var(--light-text);
+  border: 1px solid var(--border-color);
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  flex: 1;
+}
+
+.spell-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.spell-item {
+  display: flex;
+  background-color: var(--darker-bg);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  transition: transform 0.3s ease;
+}
+
+.spell-item:hover {
+  transform: translateY(-5px);
+}
+
+.spell-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.spell-info {
+  padding: 0.75rem;
+}
+
+.spell-info h4 {
+  color: var(--light-text);
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.spell-info p {
+  color: var(--gray-text);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.loot-calculator {
+  background-color: var(--dark-bg);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  border: 1px solid var(--border-color);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.calculator-inputs {
+  flex: 1;
+  min-width: 300px;
+}
+
+.input-group {
+  margin-bottom: 1rem;
+}
+
+.input-group label {
+  display: block;
+  color: var(--light-text);
+  margin-bottom: 0.5rem;
+}
+
+.input-group select,
+.input-group input {
+  width: 100%;
+  background-color: var(--darker-bg);
+  color: var(--light-text);
+  border: 1px solid var(--border-color);
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.btn {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--primary-color-dark);
+}
+
+.calculator-results {
+  flex: 1;
+  min-width: 300px;
+  background-color: var(--darker-bg);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  border: 1px solid var(--border-color);
+}
+
+.result-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px dotted var(--border-color);
+}
+
+.result-label {
+  color: var(--gray-text);
+}
+
+.result-value {
+  color: var(--light-text);
+  font-weight: 500;
+}
+
+.result-recommendation {
+  margin-top: 1.5rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.recommendation-label {
+  display: block;
+  color: var(--light-text);
+  margin-bottom: 0.5rem;
+}
+
+.recommendation-value {
+  display: block;
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.perk-planner {
+  background-color: var(--dark-bg);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  border: 1px solid var(--border-color);
+}
+
+.planner-class-select,
+.planner-level {
+  margin-bottom: 1.5rem;
+}
+
+.planner-class-select label,
+.planner-level label {
+  display: inline-block;
+  color: var(--light-text);
+  margin-right: 0.5rem;
+}
+
+.planner-class-select select,
+.planner-level input {
+  background-color: var(--darker-bg);
+  color: var(--light-text);
+  border: 1px solid var(--border-color);
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+#available-points {
+  margin-left: 1rem;
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.planner-perks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.perk-category {
+  flex: 1;
+  min-width: 250px;
+}
+
+.perk-category h4 {
+  color: var(--light-text);
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.perk-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.planner-summary {
+  background-color: var(--darker-bg);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  border: 1px solid var(--border-color);
+}
+
+.planner-summary h4 {
+  color: var(--light-text);
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+#selected-perks {
+  color: var(--gray-text);
+}
+
+.mechanics-gallery {
+  padding: 1.5rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.mechanics-gallery h3 {
+  color: var(--light-text);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.gallery-item {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.gallery-caption {
+  padding: 0.75rem;
+  background-color: var(--darker-bg);
+  color: var(--gray-text);
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.mechanics-icons {
+  padding: 1.5rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.mechanics-icons h3 {
+  color: var(--light-text);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.status-icons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 1rem;
+}
+
+.status-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.status-icon img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 0.5rem;
+}
+
+.status-icon span {
+  color: var(--gray-text);
+  font-size: 0.9rem;
+}
+
+.mechanics-faq {
+  margin-bottom: 3rem;
+}
+
+.faq-container {
+  padding: 1.5rem;
+}
+
+.faq-item {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  cursor: pointer;
+}
+
+.faq-question h3 {
+  color: var(--light-text);
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.faq-toggle {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.faq-answer {
+  padding: 0 0 1rem 0;
+  display: none;
+}
+
+.faq-answer p {
+  color: var(--gray-text);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.faq-item.active .faq-answer {
+  display: block;
+}
+
+.faq-item.active .faq-toggle {
+  content: "-";
+}
+
+/* Colores para rareza de items */
+.item-common {
+  color: var(--item-common-color);
+}
+
+.item-uncommon {
+  color: var(--item-uncommon-color);
+}
+
+.item-rare {
+  color: var(--item-rare-color);
+}
+
+.item-epic {
+  color: var(--item-epic-color);
+}
+
+.item-legendary {
+  color: var(--item-legendary-color);
+}
+
+.item-unique {
+  color: var(--item-unique-color);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .mechanics-content {
+    flex-direction: column;
+  }
+  
+  .mechanics-details {
+    flex-direction: column;
+  }
+  
+  .loot-calculator {
+    flex-direction: column;
+  }
+  
+  .mechanics-nav-item {
+    width: 80px;
+  }
+  
+  .mechanics-table {
+    overflow-x: auto;
+  }
+  
+  .mechanics-table table {
+    min-width: 500px;
+  }
+}
+
+/* Estilos para el footer */
+.disclaimer, .privacy-policy {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.disclaimer h4, .privacy-policy h4 {
+  color: var(--light-text);
+  margin-bottom: 0.5rem;
+}
+
+.disclaimer p, .privacy-policy p {
+  color: var(--gray-text);
+  line-height: 1.4;
+}

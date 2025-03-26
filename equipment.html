@@ -1,0 +1,1295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipamiento - Dark and Darker Wiki</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/equipment.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/logo-placeholder.png" alt="Dark and Darker Logo">
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="classes.html">Clases</a></li>
+                    <li><a href="attributes.html">Atributos</a></li>
+                    <li><a href="equipment.html" class="active">Equipamiento</a></li>
+                    <li><a href="mechanics.html">Mecánicas</a></li>
+                    <li><a href="calculator.html">Calculadora</a></li>
+                    <li><a href="guides.html">Guías</a></li>
+                </ul>
+            </nav>
+            <div class="language-selector">
+                <button id="es-btn" class="active"><img src="images/flags/es.png" alt="Español">ES</button>
+                <button id="en-btn"><img src="images/flags/en.png" alt="English">EN</button>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar...">
+                <button type="submit">🔍</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="equipment-header">
+            <h1>Equipamiento en Dark and Darker</h1>
+            <p>Explora las diferentes categorías de equipamiento, sus estadísticas y cómo pueden mejorar tu personaje en las mazmorras.</p>
+        </section>
+
+        <section class="equipment-filter">
+            <div class="filter-container">
+                <div class="filter-group">
+                    <label>Categoría:</label>
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="weapons">Armas</button>
+                    <button class="filter-btn" data-filter="armor">Armaduras</button>
+                    <button class="filter-btn" data-filter="accessories">Accesorios</button>
+                    <button class="filter-btn" data-filter="consumables">Consumibles</button>
+                </div>
+                <div class="filter-group">
+                    <label>Rareza:</label>
+                    <button class="filter-btn item-common" data-filter="common">Común</button>
+                    <button class="filter-btn item-uncommon" data-filter="uncommon">Poco común</button>
+                    <button class="filter-btn item-rare" data-filter="rare">Raro</button>
+                    <button class="filter-btn item-epic" data-filter="epic">Épico</button>
+                    <button class="filter-btn item-legendary" data-filter="legendary">Legendario</button>
+                    <button class="filter-btn item-unique" data-filter="unique">Único</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="equipment-categories">
+            <div class="category-tabs">
+                <button class="tab-btn active" data-tab="weapons">Armas</button>
+                <button class="tab-btn" data-tab="armor">Armaduras</button>
+                <button class="tab-btn" data-tab="accessories">Accesorios</button>
+                <button class="tab-btn" data-tab="consumables">Consumibles</button>
+            </div>
+
+            <!-- Pestaña de Armas -->
+            <div class="tab-content active" id="weapons-tab">
+                <div class="equipment-grid">
+                    <!-- Armas cuerpo a cuerpo -->
+                    <div class="equipment-category">
+                        <h2>Armas Cuerpo a Cuerpo</h2>
+                        <div class="equipment-items">
+                            <!-- Espada Larga -->
+                            <div class="equipment-item item-rare" data-categories="weapons rare">
+                                <div class="item-image">
+                                    <img src="images/equipment/longsword.png" alt="Espada Larga">
+                                </div>
+                                <div class="item-info">
+                                    <h3 class="item-rare">Espada Larga de Acero Azul</h3>
+                                    <div class="item-stats">
+                                        <div class="stat">
+                                            <span class="stat-name">Daño:</span>
+                                            <span class="stat-value">18-24</span>
+                                        </div>
+                                        <div class="stat">
+                                            <span class="stat-name">Velocidad:</span>
+                                            <span class="stat-value">1.2</span>
+                                        </div>
+                                        <div class="stat">
+                                            <span class="stat-name">Alcance:</span>
+                                            <span class="stat-value">1.5</span>
+                                        </div>
+                                    </div>
+                                    <div class="item-requirements">
+                                        <span>Requiere: Fuerza 14</span>
+                                    </div>
+                                    <div class="item-description">
+                                        <p>Una espada larga forjada con acero azul, conocida por su filo duradero y equilibrio perfecto.</p>
+                                    </div>
+                                    <div class="item-classes">
+                                        <span class="class-tag">Luchador</span>
+                                        <span class="class-tag">Bárbaro</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Hacha de Batalla -->
+                            <div class="equipment-item item-epic" data-categories="weapons epic">
+                                <div class="item-image">
+                                    <img src="images/equipment/battleaxe.png" alt="Hacha de Batalla">
+                                </div>
+                                <div class="item-info">
+                                    <h3 class="item-epic">Hacha de Batalla Dracónica</h3>
+                                    <div class="item-stats">
+                                        <div class="stat">
+                                            <span class="stat-name">Daño:</span>
+                                            <span class="stat-value">22-28</span>
+                                        </div>
+                                        <div class="stat">
+                                            <span class="stat-name">Velocidad:</span>
+                                            <span class="stat-value">1.0</span>
+                                        </div>
+                                        <div class="stat">
+                                            <span class="stat-name">Alcance:</span>
+                                            <span class="stat-value">1.4</span>
+                                        </div>
+                                    </div>
+                                    <div class="item-requirements">
+                                        <span>Requiere: Fuerza 18</span>
+                                    </div>
+                                    <div class="item-description">
+                                        <p>Un hacha de batalla decorada con motivos de dragón. Su filo está encantado con magia elemental de fuego.</p>
+                                    </div>
+                                    <div class="item-special">
+                                        <p>Efecto: +5 daño de fuego en cada golpe</p>
+                                    </div>
+                                    <div class="item-classes">
+                                        <span class="class-tag">Bárbaro</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Daga -->
+                            <div class="equipment-item item-uncommon" data-categories="weapons uncommon">
+                                <div class="item-image">
+                                    <img src="images/equipment/dagger.png" alt="Daga">
+                                </div>
+                                <div class="item-info">
+                                    <h3 class="item-uncommon">Daga de Sombras</h3>
+                                    <div class="item-stats">
+                                        <div class="stat">
+                                            <span class="stat-name">Daño:</span>
+                                            <span class="stat-value">10-15</span>
+                                        </div>
+                                        <div class="stat">
+                                            <span class="stat-name">Velocidad:</span>
+                                            <span class="stat-value">1.8</span>
+                                        </div>
+                                        <div class="stat">
+                                            <span class="stat-name">Alcance:</span>
+                                            <span class="stat-value">1.0</span>
+                                        </div>
+                                    </div>
+                                    <div class="item-requirements">
+                                        <span>Requiere: Destreza 12</span>
+                                    </div>
+                                    <div class="item-description">
+                                        <p>Una daga ligera y afilada, perfecta para ataques rápidos y sigilosos.</p>
+                                    </div>
+                                    <div class="item-classes">
+                                        <span class="class-tag">Pícaro</span>
+                                        <span class="class-tag">Bardo</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Martillo de Guerra -->
+                            <div class="equipment-item item-legendary" data-categories="weapons legendary">
+                                <div class="item-image">
+                                    <img src="images/equipment/warhammer.png" alt="Martillo de Guerra">
+                                </div>
+                                <div class="item-info">
+                                    <h3 class="item-legendary">Martillo de Guerra del Titán</h3>
+                                    <div class="item-stats">
+                                        <div class="stat">
+                                            <span class="stat-name">Daño:</span>
+                                            <span class="stat-value">25-32</span>
+                                        </div>
+                                        <div class="stat">
+                                            <span class="stat-name">Velocidad:</span>
+                                            <span class="stat-value">0.8</span>
+                                        </div>
+                                        <div class="stat">
+                                            <span class="stat-name">Alcance:</span>
+                                            <span class="stat-value">1.6</span>
+                                        </div>
+                                    </div>
+                                    <div class="item-requirements">
+                                        <span>Requiere: Fuerza 22</span>
+                                    </div>
+                                    <div class="item-description">
+                                        <p>Un martillo colosal forjado con metales de otro mundo. Se dice que fue empuñado por un titán en la antigüedad.</p>
+                                    </div>
+                                    <div class="item-special">
+                                        <p>Efecto: 20% de probabilidad de aturdir al enemigo durante 2 segundos</p>
+                                        <p>Efecto: Ignora 15% de la armadura del enemigo</p>
+                                    </div>
+                                    <div class="item-classes">
+                                        <span class="class-tag">Bárbaro</span>
+                                        <span class="class-tag">Clérigo</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Armas a distancia -->
+                    <div class="equipment-category">
+                        <h2>Armas a Distancia</h2>
+                        <div class="equipment-items">
+                            <!-- Arco Largo -->
+                            <div class="equipment-item item-rare" data-categories="weapons rare">
+                                <div class="item-image">
+                                    <img src="images/equipment/longbow.png" alt="Arco Largo">
+                                </div>
+                                <div class="item-info">
+                                    <h3 class="item-rare">Arco Largo de Fresno Élfico</h3>
+                                    <div class="item-stats">
+                                        <div class="stat">
+                                            <span class="stat-name">Daño:</span>
+                                            <span class="stat-value">15-22</span>
+                                        </div>
+                                        <div class="stat">
+                                            <span class="stat-name">Velocidad:</span>
+                                            <span class="stat-value">1.1</span>
+                                        </div>
+                                        <div class="stat">
+                                            <span class="stat-name">Alcance:</span>
+                                            <span class="stat-value">25</span>
+                                        </div>
+                                    </div>
+                                    <div class="item-requirements">
+                                        <span>Requiere: Destreza 16</span>
+                                    </div>
+                                    <div class="item-description">
+                                        <p>Un arco largo tallado en madera de fresno por artesanos élficos. Ofrece precisión excepcional a largas distancias.</p>
+                                    </div>
+                                    <div class="item-classes">
+                                        <span class="class-tag">Explorador</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Ballesta -->
+                            <div class="equipment-item item-epic" data-categories="weapons epic">
+                                <div class="item-image">
+                                    <img src="images/equipment/crossbow.png" alt="Ballesta">
+                                </div>
+                                <div class="item-info">
+                                    <h3 class="item-epic">Ballesta de Repetición Mecánica</h3>
+                                    <div class="item-stats">
+                                        <div class="stat">
+                                            <span class="stat-name">Daño:</span>
+                                            <span class="stat-value">20-25</span>
+                                        </div>
+                                        <div class="stat">
+                                            <span class="stat-name">Velocidad:</span>
+                                            <span class="stat-value">1.3</span>
+                                        </div>
+                                        <div class="stat">
+                                            <span class="stat-name">Alcance:</span>
+                                            <span class="stat-value">20</span>
+                                        </div>
+                                    </div>
+                                    <div class="item-requirements">
+                                        <span>Requiere: Destreza 14, Fuerza 12</span>
+                                    </div>
+                                    <div class="item-description">
+                                        <p>Una ballesta avanzada con mecanismo de recarga rápida. Permite disparar varios virotes sin necesidad de recargar manualmente.</p>
+                                    </div>
+                                    <div class="item-special">
+                                        <p>Efecto: Puede disparar 3 veces antes de recargar</p>
+                                    </div>
+                                    <div class="item-classes">
+                                        <span class="class-tag">Explorador</span>
+                                        <span class="class-tag">Pícaro</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Varita -->
+                            <div class="equipment-item item-unique" data-categories="weapons unique">
+                                <div class="item-image">
+                                    <img src="images/equipment/wand.png" alt="Varita">
+                                </div>
+                                <div class="item-info">
+                                    <h3 class="item-unique">Varita del Último Aliento</h3>
+                                    <div class="item-stats">
+                                        <div class="stat">
+                                            <span class="stat-name">Daño:</span>
+                                            <span class="stat-value">18-24</span>
+                                        </div>
+                                        <div class="stat">
+                                            <span class="stat-name">Velocidad:</span>
+                                            <span class="stat-value">1.5</span>
+                                        </div>
+                                        <div class="stat">
+                                            <span class="stat-name">Alcance:</span>
+                                            <span class="stat-value">18</span>
+                                        </div>
+                                    </div>
+                                    <div class="item-requirements">
+                                        <span>Requiere: Inteligencia 20</span>
+                                    </div>
+                                    <div class="item-description">
+                                        <p>Una varita única tallada del hueso de un dragón ancestral. Canaliza magia elemental de hielo con una potencia devastadora.</p>
+                                    </div>
+                                    <div class="item-special">
+                                        <p>Efecto único: Los enemigos congelados tienen 50% de probabilidad de romperse al recibir un golpe crítico</p>
+                                        <p>Efecto único: Reduce el costo de maná de hechizos de hielo en un 25%</p>
+                                    </div>
+                                    <div class="item-classes">
+                                        <span class="class-tag">Mago</span>
+                                        <span class="class-tag">Hechicero</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Armas mágicas -->
+                    <div class="equipment-category">
+                        <h2>Armas Mágicas</h2>
+                        <div class="equipment-items">
+                            <!-- Bastón -->
+                            <div class="equipment-item item-epic" data-categories="weapons epic">
+                                <div class="item-image">
+                                    <img src="images/equipment/staff.png" alt="Bastón">
+                                </div>
+                                <div class="item-info">
+                                    <h3 class="item-epic">Bastón de la Tormenta Eterna</h3>
+                                    <div class="item-stats">
+                                        <div class="stat">
+                                            <span class="stat-name">Daño:</span>
+                                            <span class="stat-value">16-22</span>
+                                        </div>
+                                        <div class="stat">
+                                            <span class="stat-name">Velocidad:</span>
+                                            <span class="stat-value">1.0</span>
+                                        </div>
+                                        <div class="stat">
+                                            <span class="stat-name">Alcance:</span>
+                                            <span class="stat-value">1.8</span>
+                                        </div>
+                                    </div>
+                                    <div class="item-requirements">
+                                        <span>Requiere: Inteligencia 18</span>
+                                    </div>
+                                    <div class="item-description">
+                                        <p>Un bastón imbuido con la esencia de las tormentas. Relámpagos danzan a lo largo de su superficie cuando se canaliza magia a través de él.</p>
+                                    </div>
+                                    <div class="item-special">
+                                        <p>Efecto: +25% de daño con hechizos de rayo</p>
+                                        <p>Efecto: 15% de probabilidad de encadenar el rayo a un enemigo cercano</p>
+                                    </div>
+                                    <div class="item-classes">
+                                        <span class="class-tag">Mago</span>
+                                        <span class="class-tag">Druida</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Orbe -->
+                            <div class="equipment-item item-legendary" data-categories="weapons legendary">
+                                <div class="item-image">
+                                    <img src="images/equipment/orb.png" alt="Orbe">
+                                </div>
+                                <div class="item-info">
+                                    <h3 class="item-legendary">Orbe de las Almas Perdidas</h3>
+                                    <div class="item-stats">
+                                        <div class="stat">
+                                            <span class="stat-name">Daño:</span>
+                                            <span class="stat-value">22-28</span>
+                                        </div>
+                                        <div class="stat">
+                                            <span class="stat-name">Velocidad:</span>
+                                            <span class="stat-value">1.2</span>
+                                        </div>
+                                        <div class="stat">
+                                            <span class="stat-name">Alcance:</span>
+                                            <span class="stat-value">15</span>
+                                        </div>
+                                    </div>
+                                    <div class="item-requirements">
+                                        <span>Requiere: Inteligencia 20, Voluntad 15</span>
+                                    </div>
+                                    <div class="item-description">
+                                        <p>Un orbe oscuro que contiene las almas de poderosos hechiceros. Susurros de los condenados pueden oírse cuando se usa.</p>
+                                    </div>
+                                    <div class="item-special">
+                                        <p>Efecto: Cada hechizo lanzado tiene 10% de probabilidad de no consumir maná</p>
+                                        <p>Efecto: Los enemigos derrotados restauran 5% de tu maná máximo</p>
+                                    </div>
+                                    <div class="item-classes">
+                                        <span class="class-tag">Brujo</span>
+                                        <span class="class-tag">Hechicero</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Tomo -->
+                            <div class="equipment-item item-rare" data-categories="weapons rare">
+                                <div class="item-image">
+                                    <img src="images/equipment/tome.png" alt="Tomo">
+                                </div>
+                                <div class="item-info">
+                                    <h3 class="item-rare">Tomo de Sabiduría Arcana</h3>
+                                    <div class="item-stats">
+                                        <div class="stat">
+                                            <span class="stat-name">Daño:</span>
+                                            <span class="stat-value">14-18</span>
+                                        </div>
+                                        <div class="stat">
+                                            <span class="stat-name">Velocidad:</span>
+                                            <span class="stat-value">1.3</span>
+                                        </div>
+                                        <div class="stat">
+                                            <span class="stat-name">Alcance:</span>
+                                            <span class="stat-value">12</span>
+                                        </div>
+                                    </div>
+                                    <div class="item-requirements">
+                                        <span>Requiere: Inteligencia 16, Sabiduría 12</span>
+                                    </div>
+                                    <div class="item-description">
+                                        <p>Un antiguo tomo lleno de conocimientos arcanos. Sus páginas brillan con runas mágicas cuando se abre.</p>
+                                    </div>
+                                    <div class="item-special">
+                                        <p>Efecto: Reduce el tiempo de enfriamiento de hechizos en un 10%</p>
+                                    </div>
+                                    <div class="item-classes">
+                                        <span class="class-tag">Mago</span>
+                                        <span class="class-tag">Clérigo</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pestaña de Armaduras -->
+            <div class="tab-content" id="armor-tab">
+                <div class="equipment-grid">
+                    <!-- Armaduras pesadas -->
+                    <div class="equipment-category">
+                        <h2>Armaduras Pesadas</h2>
+                        <div class="equipment-items">
+                            <!-- Armadura de placas -->
+                            <div class="equipment-item item-epic" data-categories="armor epic">
+                                <div class="item-image">
+                                    <img src="images/equipment/plate-armor.png" alt="Armadura de Placas">
+                                </div>
+                                <div class="item-info">
+                                    <h3 class="item-epic">Armadura de Placas del Guardián</h3>
+                                    <div class="item-stats">
+                                        <div class="stat">
+                                            <span class="stat-name">Defensa:</span>
+                                            <span class="stat-value">35</span>
+                                        </div>
+                                        <div class="stat">
+                                            <span class="stat-name">Peso:</span>
+                                            <span class="stat-value">25</span>
+                                        </div>
+                                        <div class="stat">
+                                            <span class="stat-name">Durabilidad:</span>
+                                            <span class="stat-value">120/120</span>
+                                        </div>
+                                    </div>
+                                    <div class="item-requirements">
+                                        <span>Requiere: Fuerza 20</span>
+                                    </div>
+                                    <div class="item-description">
+                                        <p>Una armadura de placas completa forjada con acero encantado. Ofrece protección excepcional contra ataques físicos.</p>
+                                    </div>
+                                    <div class="item-special">
+                                        <p>Efecto: Reduce el daño físico recibido en un 15%</p>
+                                        <p>Efecto: -10% de velocidad de movimiento</p>
+                                    </div>
+                                    <div class="item-classes">
+                                        <span class="class-tag">Luchador</span>
+                                        <span class="class-tag">Clérigo</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Casco de guerra -->
+                            <div class="equipment-item item-rare" data-categories="armor rare">
+                                <div class="item-image">
+                                    <img src="images/equipment/war-helm.png" alt="Casco de Guerra">
+                                </div>
+                                <div class="item-info">
+                                    <h3 class="item-rare">Casco de Guerra del Conquistador</h3>
+                                    <div class="item-stats">
+                                        <div class="stat">
+                                            <span class="stat-name">Defensa:</span>
+                                            <span class="stat-value">12</span>
+                                        </div>
+                                        <div class="stat">
+                                            <span class="stat-name">Peso:</span>
+                                            <span class="stat-value">5</span>
+                                        </div>
+                                        <div class="stat">
+                                            <span class="stat-name">Durabilidad:</span>
+                                            <span class="stat-value">80/80</span>
+                                        </div>
+                                    </div>
+                                    <div class="item-requirements">
+                                        <span>Requiere: Fuerza 15</span>
+                                    </div>
+                                    <div class="item-description">
+                                        <p>Un imponente casco de guerra adornado con cuernos y grabados de batallas antiguas. Protege contra golpes críticos a la cabeza.</p>
+                                    </div>
+                                    <div class="item-special">
+                                        <p>Efecto: 20% de resistencia a golpes críticos</p>
+                                    </div>
+                                    <div class="item-classes">
+                                        <span class="class-tag">Bárbaro</span>
+                                        <span class="class-tag">Luchador</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Armaduras medias -->
+                    <div class="equipment-category">
+                        <h2>Armaduras Medias</h2>
+                        <div class="equipment-items">
+                            <!-- Cota de malla -->
+                            <div class="equipment-item item-uncommon" data-categories="armor uncommon">
+                                <div class="item-image">
+                                    <img src="images/equipment/chainmail.png" alt="Cota de Malla">
+                                </div>
+                                <div class="item-info">
+                                    <h3 class="item-uncommon">Cota de Malla Reforzada</h3>
+                                    <div class="item-stats">
+                                        <div class="stat">
+                                            <span class="stat-name">Defensa:</span>
+                                            <span class="stat-value">22</span>
+                                        </div>
+                                        <div class="stat">
+                                            <span class="stat-name">Peso:</span>
+                                            <span class="stat-value">15</span>
+                                        </div>
+                                        <div class="stat">
+                                            <span class="stat-name">Durabilidad:</span>
+                                            <span class="stat-value">90/90</span>
+                                        </div>
+                                    </div>
+                                    <div class="item-requirements">
+                                        <span>Requiere: Fuerza 12</span>
+                                    </div>
+                                    <div class="item-description">
+                                        <p>Una cota de malla bien elaborada que ofrece buena protección sin sacrificar demasiada movilidad.</p>
+                                    </div>
+                                    <div class="item-classes">
+                                        <span class="class-tag">Explorador</span>
+                                        <span class="class-tag">Bardo</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Guanteletes -->
+                            <div class="equipment-item item-rare" data-categories="armor rare">
+                                <div class="item-image">
+                                    <img src="images/equipment/gauntlets.png" alt="Guanteletes">
+                                </div>
+                                <div class="item-info">
+                                    <h3 class="item-rare">Guanteletes de Puño de Hierro</h3>
+                                    <div class="item-stats">
+                                        <div class="stat">
+                                            <span class="stat-name">Defensa:</span>
+                                            <span class="stat-value">8</span>
+                                        </div>
+                                        <div class="stat">
+                                            <span class="stat-name">Peso:</span>
+                                            <span class="stat-value">3</span>
+                                        </div>
+                                        <div class="stat">
+                                            <span class="stat-name">Durabilidad:</span>
+                                            <span class="stat-value">70/70</span>
+                                        </div>
+                                    </div>
+                                    <div class="item-requirements">
+                                        <span>Requiere: Fuerza 14</span>
+                                    </div>
+                                    <div class="item-description">
+                                        <p>Guanteletes reforzados con placas de metal en los nudillos. Aumentan el daño de ataques desarmados.</p>
+                                    </div>
+                                    <div class="item-special">
+                                        <p>Efecto: +5 de daño en ataques desarmados</p>
+                                    </div>
+                                    <div class="item-classes">
+                                        <span class="class-tag">Luchador</span>
+                                        <span class="class-tag">Monje</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Armaduras ligeras -->
+                    <div class="equipment-category">
+                        <h2>Armaduras Ligeras</h2>
+                        <div class="equipment-items">
+                            <!-- Túnica -->
+                            <div class="equipment-item item-legendary" data-categories="armor legendary">
+                                <div class="item-image">
+                                    <img src="images/equipment/robe.png" alt="Túnica">
+                                </div>
+                                <div class="item-info">
+                                    <h3 class="item-legendary">Túnica del Archimago</h3>
+                                    <div class="item-stats">
+                                        <div class="stat">
+                                            <span class="stat-name">Defensa:</span>
+                                            <span class="stat-value">15</span>
+                                        </div>
+                                        <div class="stat">
+                                            <span class="stat-name">Peso:</span>
+                                            <span class="stat-value">5</span>
+                                        </div>
+                                        <div class="stat">
+                                            <span class="stat-name">Durabilidad:</span>
+                                            <span class="stat-value">60/60</span>
+                                        </div>
+                                    </div>
+                                    <div class="item-requirements">
+                                        <span>Requiere: Inteligencia 22</span>
+                                    </div>
+                                    <div class="item-description">
+                                        <p>Una túnica legendaria tejida con hilos encantados y adornada con runas arcanas. Amplifica enormemente el poder mágico del portador.</p>
+                                    </div>
+                                    <div class="item-special">
+                                        <p>Efecto: +25% de daño con hechizos</p>
+                                        <p>Efecto: Regenera 2 puntos de maná por segundo</p>
+                                        <p>Efecto: Reduce el costo de maná de todos los hechizos en un 15%</p>
+                                    </div>
+                                    <div class="item-classes">
+                                        <span class="class-tag">Mago</span>
+                                        <span class="class-tag">Hechicero</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Armadura de cuero -->
+                            <div class="equipment-item item-uncommon" data-categories="armor uncommon">
+                                <div class="item-image">
+                                    <img src="images/equipment/leather-armor.png" alt="Armadura de Cuero">
+                                </div>
+                                <div class="item-info">
+                                    <h3 class="item-uncommon">Armadura de Cuero Endurecido</h3>
+                                    <div class="item-stats">
+                                        <div class="stat">
+                                            <span class="stat-name">Defensa:</span>
+                                            <span class="stat-value">18</span>
+                                        </div>
+                                        <div class="stat">
+                                            <span class="stat-name">Peso:</span>
+                                            <span class="stat-value">10</span>
+                                        </div>
+                                        <div class="stat">
+                                            <span class="stat-name">Durabilidad:</span>
+                                            <span class="stat-value">75/75</span>
+                                        </div>
+                                    </div>
+                                    <div class="item-requirements">
+                                        <span>Requiere: Destreza 10</span>
+                                    </div>
+                                    <div class="item-description">
+                                        <p>Una armadura de cuero tratado que ofrece buena protección sin sacrificar movilidad. Ideal para aventureros ágiles.</p>
+                                    </div>
+                                    <div class="item-special">
+                                        <p>Efecto: +5% de velocidad de movimiento</p>
+                                    </div>
+                                    <div class="item-classes">
+                                        <span class="class-tag">Pícaro</span>
+                                        <span class="class-tag">Explorador</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pestaña de Accesorios -->
+            <div class="tab-content" id="accessories-tab">
+                <div class="equipment-grid">
+                    <!-- Anillos -->
+                    <div class="equipment-category">
+                        <h2>Anillos</h2>
+                        <div class="equipment-items">
+                            <!-- Anillo de poder -->
+                            <div class="equipment-item item-epic" data-categories="accessories epic">
+                                <div class="item-image">
+                                    <img src="images/equipment/power-ring.png" alt="Anillo de Poder">
+                                </div>
+                                <div class="item-info">
+                                    <h3 class="item-epic">Anillo de Poder Arcano</h3>
+                                    <div class="item-stats">
+                                        <div class="stat">
+                                            <span class="stat-name">Inteligencia:</span>
+                                            <span class="stat-value">+5</span>
+                                        </div>
+                                        <div class="stat">
+                                            <span class="stat-name">Maná máximo:</span>
+                                            <span class="stat-value">+20</span>
+                                        </div>
+                                    </div>
+                                    <div class="item-requirements">
+                                        <span>Requiere: Inteligencia 15</span>
+                                    </div>
+                                    <div class="item-description">
+                                        <p>Un anillo imbuido con energía arcana concentrada. Amplifica el poder mágico del portador.</p>
+                                    </div>
+                                    <div class="item-special">
+                                        <p>Efecto: +15% de daño con hechizos</p>
+                                    </div>
+                                    <div class="item-classes">
+                                        <span class="class-tag">Mago</span>
+                                        <span class="class-tag">Brujo</span>
+                                        <span class="class-tag">Hechicero</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Anillo de vida -->
+                            <div class="equipment-item item-rare" data-categories="accessories rare">
+                                <div class="item-image">
+                                    <img src="images/equipment/life-ring.png" alt="Anillo de Vida">
+                                </div>
+                                <div class="item-info">
+                                    <h3 class="item-rare">Anillo de Vitalidad Eterna</h3>
+                                    <div class="item-stats">
+                                        <div class="stat">
+                                            <span class="stat-name">Vitalidad:</span>
+                                            <span class="stat-value">+4</span>
+                                        </div>
+                                        <div class="stat">
+                                            <span class="stat-name">Salud máxima:</span>
+                                            <span class="stat-value">+25</span>
+                                        </div>
+                                    </div>
+                                    <div class="item-requirements">
+                                        <span>Requiere: Vitalidad 12</span>
+                                    </div>
+                                    <div class="item-description">
+                                        <p>Un anillo con un rubí pulsante que parece latir como un corazón. Fortalece la vitalidad del portador.</p>
+                                    </div>
+                                    <div class="item-special">
+                                        <p>Efecto: Regenera 1 punto de salud cada 5 segundos</p>
+                                    </div>
+                                    <div class="item-classes">
+                                        <span class="class-tag">Todas las clases</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Amuletos -->
+                    <div class="equipment-category">
+                        <h2>Amuletos</h2>
+                        <div class="equipment-items">
+                            <!-- Amuleto de protección -->
+                            <div class="equipment-item item-legendary" data-categories="accessories legendary">
+                                <div class="item-image">
+                                    <img src="images/equipment/protection-amulet.png" alt="Amuleto de Protección">
+                                </div>
+                                <div class="item-info">
+                                    <h3 class="item-legendary">Amuleto del Guardián Eterno</h3>
+                                    <div class="item-stats">
+                                        <div class="stat">
+                                            <span class="stat-name">Defensa:</span>
+                                            <span class="stat-value">+10</span>
+                                        </div>
+                                        <div class="stat">
+                                            <span class="stat-name">Resistencia mágica:</span>
+                                            <span class="stat-value">+15</span>
+                                        </div>
+                                    </div>
+                                    <div class="item-requirements">
+                                        <span>Requiere: Voluntad 18</span>
+                                    </div>
+                                    <div class="item-description">
+                                        <p>Un amuleto legendario forjado con metales celestiales. Se dice que fue creado por los dioses para proteger a sus campeones.</p>
+                                    </div>
+                                    <div class="item-special">
+                                        <p>Efecto: Reduce todo el daño recibido en un 10%</p>
+                                        <p>Efecto: Una vez por combate, evita automáticamente un golpe mortal</p>
+                                    </div>
+                                    <div class="item-classes">
+                                        <span class="class-tag">Todas las clases</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Amuleto de sabiduría -->
+                            <div class="equipment-item item-rare" data-categories="accessories rare">
+                                <div class="item-image">
+                                    <img src="images/equipment/wisdom-amulet.png" alt="Amuleto de Sabiduría">
+                                </div>
+                                <div class="item-info">
+                                    <h3 class="item-rare">Amuleto de Sabiduría Ancestral</h3>
+                                    <div class="item-stats">
+                                        <div class="stat">
+                                            <span class="stat-name">Sabiduría:</span>
+                                            <span class="stat-value">+5</span>
+                                        </div>
+                                        <div class="stat">
+                                            <span class="stat-name">Regeneración de maná:</span>
+                                            <span class="stat-value">+2/s</span>
+                                        </div>
+                                    </div>
+                                    <div class="item-requirements">
+                                        <span>Requiere: Sabiduría 14</span>
+                                    </div>
+                                    <div class="item-description">
+                                        <p>Un amuleto tallado en piedra antigua con símbolos de conocimiento. Contiene la sabiduría de civilizaciones perdidas.</p>
+                                    </div>
+                                    <div class="item-special">
+                                        <p>Efecto: +15% de potencia de curación</p>
+                                    </div>
+                                    <div class="item-classes">
+                                        <span class="class-tag">Clérigo</span>
+                                        <span class="class-tag">Druida</span>
+                                        <span class="class-tag">Bardo</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pestaña de Consumibles -->
+            <div class="tab-content" id="consumables-tab">
+                <div class="equipment-grid">
+                    <!-- Pociones -->
+                    <div class="equipment-category">
+                        <h2>Pociones</h2>
+                        <div class="equipment-items">
+                            <!-- Poción de salud -->
+                            <div class="equipment-item item-common" data-categories="consumables common">
+                                <div class="item-image">
+                                    <img src="images/equipment/health-potion.png" alt="Poción de Salud">
+                                </div>
+                                <div class="item-info">
+                                    <h3 class="item-common">Poción de Salud</h3>
+                                    <div class="item-stats">
+                                        <div class="stat">
+                                            <span class="stat-name">Restaura:</span>
+                                            <span class="stat-value">50 PV</span>
+                                        </div>
+                                        <div class="stat">
+                                            <span class="stat-name">Peso:</span>
+                                            <span class="stat-value">0.5</span>
+                                        </div>
+                                        <div class="stat">
+                                            <span class="stat-name">Duración:</span>
+                                            <span class="stat-value">Instantánea</span>
+                                        </div>
+                                    </div>
+                                    <div class="item-description">
+                                        <p>Una poción básica que restaura puntos de vida. El líquido rojo brilla ligeramente cuando se agita.</p>
+                                    </div>
+                                    <div class="item-classes">
+                                        <span class="class-tag">Todas las clases</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Poción de maná -->
+                            <div class="equipment-item item-common" data-categories="consumables common">
+                                <div class="item-image">
+                                    <img src="images/equipment/mana-potion.png" alt="Poción de Maná">
+                                </div>
+                                <div class="item-info">
+                                    <h3 class="item-common">Poción de Maná</h3>
+                                    <div class="item-stats">
+                                        <div class="stat">
+                                            <span class="stat-name">Restaura:</span>
+                                            <span class="stat-value">40 PM</span>
+                                        </div>
+                                        <div class="stat">
+                                            <span class="stat-name">Peso:</span>
+                                            <span class="stat-value">0.5</span>
+                                        </div>
+                                        <div class="stat">
+                                            <span class="stat-name">Duración:</span>
+                                            <span class="stat-value">Instantánea</span>
+                                        </div>
+                                    </div>
+                                    <div class="item-description">
+                                        <p>Una poción básica que restaura puntos de maná. El líquido azul emite un suave resplandor en la oscuridad.</p>
+                                    </div>
+                                    <div class="item-classes">
+                                        <span class="class-tag">Clases mágicas</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Elixir de fuerza -->
+                            <div class="equipment-item item-uncommon" data-categories="consumables uncommon">
+                                <div class="item-image">
+                                    <img src="images/equipment/strength-elixir.png" alt="Elixir de Fuerza">
+                                </div>
+                                <div class="item-info">
+                                    <h3 class="item-uncommon">Elixir de Fuerza</h3>
+                                    <div class="item-stats">
+                                        <div class="stat">
+                                            <span class="stat-name">Efecto:</span>
+                                            <span class="stat-value">+5 Fuerza</span>
+                                        </div>
+                                        <div class="stat">
+                                            <span class="stat-name">Peso:</span>
+                                            <span class="stat-value">0.5</span>
+                                        </div>
+                                        <div class="stat">
+                                            <span class="stat-name">Duración:</span>
+                                            <span class="stat-value">5 minutos</span>
+                                        </div>
+                                    </div>
+                                    <div class="item-description">
+                                        <p>Un elixir que aumenta temporalmente la fuerza física. El líquido rojo oscuro tiene un sabor amargo y huele a hierro.</p>
+                                    </div>
+                                    <div class="item-classes">
+                                        <span class="class-tag">Clases físicas</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Alimentos -->
+                    <div class="equipment-category">
+                        <h2>Alimentos</h2>
+                        <div class="equipment-items">
+                            <!-- Pan -->
+                            <div class="equipment-item item-common" data-categories="consumables common">
+                                <div class="item-image">
+                                    <img src="images/equipment/bread.png" alt="Pan">
+                                </div>
+                                <div class="item-info">
+                                    <h3 class="item-common">Pan de Aventurero</h3>
+                                    <div class="item-stats">
+                                        <div class="stat">
+                                            <span class="stat-name">Restaura:</span>
+                                            <span class="stat-value">20 PV</span>
+                                        </div>
+                                        <div class="stat">
+                                            <span class="stat-name">Peso:</span>
+                                            <span class="stat-value">0.3</span>
+                                        </div>
+                                        <div class="stat">
+                                            <span class="stat-name">Duración:</span>
+                                            <span class="stat-value">Instantánea</span>
+                                        </div>
+                                    </div>
+                                    <div class="item-description">
+                                        <p>Un pan duro pero nutritivo, perfecto para largos viajes. Se mantiene fresco durante semanas.</p>
+                                    </div>
+                                    <div class="item-classes">
+                                        <span class="class-tag">Todas las clases</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Carne asada -->
+                            <div class="equipment-item item-uncommon" data-categories="consumables uncommon">
+                                <div class="item-image">
+                                    <img src="images/equipment/roasted-meat.png" alt="Carne Asada">
+                                </div>
+                                <div class="item-info">
+                                    <h3 class="item-uncommon">Carne Asada de Bestia</h3>
+                                    <div class="item-stats">
+                                        <div class="stat">
+                                            <span class="stat-name">Restaura:</span>
+                                            <span class="stat-value">40 PV</span>
+                                        </div>
+                                        <div class="stat">
+                                            <span class="stat-name">Efecto:</span>
+                                            <span class="stat-value">+2 Fuerza (5 min)</span>
+                                        </div>
+                                        <div class="stat">
+                                            <span class="stat-name">Peso:</span>
+                                            <span class="stat-value">0.5</span>
+                                        </div>
+                                    </div>
+                                    <div class="item-description">
+                                        <p>Carne jugosa asada a la perfección. Proporciona energía y un impulso temporal de fuerza.</p>
+                                    </div>
+                                    <div class="item-classes">
+                                        <span class="class-tag">Todas las clases</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pergaminos -->
+                    <div class="equipment-category">
+                        <h2>Pergaminos</h2>
+                        <div class="equipment-items">
+                            <!-- Pergamino de identificación -->
+                            <div class="equipment-item item-common" data-categories="consumables common">
+                                <div class="item-image">
+                                    <img src="images/equipment/identify-scroll.png" alt="Pergamino de Identificación">
+                                </div>
+                                <div class="item-info">
+                                    <h3 class="item-common">Pergamino de Identificación</h3>
+                                    <div class="item-stats">
+                                        <div class="stat">
+                                            <span class="stat-name">Efecto:</span>
+                                            <span class="stat-value">Identifica un objeto</span>
+                                        </div>
+                                        <div class="stat">
+                                            <span class="stat-name">Peso:</span>
+                                            <span class="stat-value">0.1</span>
+                                        </div>
+                                        <div class="stat">
+                                            <span class="stat-name">Usos:</span>
+                                            <span class="stat-value">1</span>
+                                        </div>
+                                    </div>
+                                    <div class="item-description">
+                                        <p>Un pergamino con runas arcanas que permite identificar las propiedades mágicas de objetos desconocidos.</p>
+                                    </div>
+                                    <div class="item-classes">
+                                        <span class="class-tag">Todas las clases</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Pergamino de teletransporte -->
+                            <div class="equipment-item item-rare" data-categories="consumables rare">
+                                <div class="item-image">
+                                    <img src="images/equipment/teleport-scroll.png" alt="Pergamino de Teletransporte">
+                                </div>
+                                <div class="item-info">
+                                    <h3 class="item-rare">Pergamino de Teletransporte</h3>
+                                    <div class="item-stats">
+                                        <div class="stat">
+                                            <span class="stat-name">Efecto:</span>
+                                            <span class="stat-value">Teletransporte a la entrada</span>
+                                        </div>
+                                        <div class="stat">
+                                            <span class="stat-name">Peso:</span>
+                                            <span class="stat-value">0.1</span>
+                                        </div>
+                                        <div class="stat">
+                                            <span class="stat-name">Usos:</span>
+                                            <span class="stat-value">1</span>
+                                        </div>
+                                    </div>
+                                    <div class="item-description">
+                                        <p>Un pergamino mágico que permite al usuario teletransportarse instantáneamente a la entrada de la mazmorra.</p>
+                                    </div>
+                                    <div class="item-special">
+                                        <p>Efecto: No puede usarse durante el combate</p>
+                                    </div>
+                                    <div class="item-classes">
+                                        <span class="class-tag">Todas las clases</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="unique-items">
+            <div class="card">
+                <h2 class="card-title">Objetos Únicos</h2>
+                <p>Los objetos únicos son extremadamente raros y poseen propiedades especiales que no se encuentran en ningún otro equipamiento. Solo puede existir uno de cada tipo en el mundo del juego.</p>
+                
+                <div class="unique-items-grid">
+                    <div class="unique-item">
+                        <div class="item-image">
+                            <img src="images/equipment/unique-sword.png" alt="Espada Única">
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-unique">Devorador de Almas</h3>
+                            <div class="item-type">Espada a dos manos</div>
+                            <div class="item-stats">
+                                <div class="stat">
+                                    <span class="stat-name">Daño:</span>
+                                    <span class="stat-value">30-40</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-name">Velocidad:</span>
+                                    <span class="stat-value">1.1</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-name">Alcance:</span>
+                                    <span class="stat-value">1.8</span>
+                                </div>
+                            </div>
+                            <div class="item-requirements">
+                                <span>Requiere: Fuerza 25, Voluntad 15</span>
+                            </div>
+                            <div class="item-description">
+                                <p>Una espada legendaria forjada con metal de otro mundo y templada en la sangre de un demonio antiguo. La hoja parece absorber la luz a su alrededor.</p>
+                            </div>
+                            <div class="item-special">
+                                <p>Efecto único: Cada golpe absorbe 5% de la vida del objetivo y la transfiere al portador</p>
+                                <p>Efecto único: Los enemigos derrotados tienen un 10% de probabilidad de explotar, causando daño en área</p>
+                                <p>Efecto único: Reduce la cordura máxima en un 10%</p>
+                            </div>
+                            <div class="item-lore">
+                                <h4>Historia</h4>
+                                <p>Se dice que esta espada fue forjada por el herrero demoníaco Azrael para el Rey Tirano de Blackmoor. Después de que el rey fuera derrocado, la espada desapareció durante siglos, solo para reaparecer en manos de aventureros desafortunados que invariablemente sucumbieron a su influencia corrupta.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="unique-item">
+                        <div class="item-image">
+                            <img src="images/equipment/unique-staff.png" alt="Bastón Único">
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-unique">Bastón de los Elementos Primordiales</h3>
+                            <div class="item-type">Bastón</div>
+                            <div class="item-stats">
+                                <div class="stat">
+                                    <span class="stat-name">Daño:</span>
+                                    <span class="stat-value">25-35</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-name">Velocidad:</span>
+                                    <span class="stat-value">1.2</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-name">Alcance:</span>
+                                    <span class="stat-value">1.7</span>
+                                </div>
+                            </div>
+                            <div class="item-requirements">
+                                <span>Requiere: Inteligencia 25, Sabiduría 20</span>
+                            </div>
+                            <div class="item-description">
+                                <p>Un bastón antiguo tallado de la rama de un árbol primordial. Cuatro gemas en su parte superior representan los elementos fundamentales: fuego, agua, tierra y aire.</p>
+                            </div>
+                            <div class="item-special">
+                                <p>Efecto único: Los hechizos elementales cambian cíclicamente de elemento cada 30 segundos, aumentando su potencia en un 50%</p>
+                                <p>Efecto único: Reduce el costo de maná de todos los hechizos en un 25%</p>
+                                <p>Efecto único: Otorga inmunidad al elemento actualmente potenciado</p>
+                            </div>
+                            <div class="item-lore">
+                                <h4>Historia</h4>
+                                <p>Creado por el Archimago Zephyrus durante la Era de la Ascensión, este bastón fue utilizado para sellar las grietas elementales que amenazaban con destruir el mundo. Se creía perdido cuando Zephyrus desapareció en el Vórtice Etéreo, pero recientemente ha resurgido, quizás como presagio de nuevos desequilibrios elementales.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="equipment-sets">
+            <div class="card">
+                <h2 class="card-title">Conjuntos de Equipamiento</h2>
+                <p>Los conjuntos de equipamiento proporcionan bonificaciones adicionales cuando se equipan múltiples piezas del mismo conjunto.</p>
+                
+                <div class="sets-grid">
+                    <div class="set-card">
+                        <h3 class="item-epic">Conjunto del Caballero Dragón</h3>
+                        <div class="set-pieces">
+                            <div class="set-piece">
+                                <img src="images/equipment/dragon-helmet.png" alt="Casco de Dragón">
+                                <span class="item-epic">Casco del Caballero Dragón</span>
+                            </div>
+                            <div class="set-piece">
+                                <img src="images/equipment/dragon-armor.png" alt="Armadura de Dragón">
+                                <span class="item-epic">Armadura del Caballero Dragón</span>
+                            </div>
+                            <div class="set-piece">
+                                <img src="images/equipment/dragon-gauntlets.png" alt="Guanteletes de Dragón">
+                                <span class="item-epic">Guanteletes del Caballero Dragón</span>
+                            </div>
+                            <div class="set-piece">
+                                <img src="images/equipment/dragon-boots.png" alt="Botas de Dragón">
+                                <span class="item-epic">Botas del Caballero Dragón</span>
+                            </div>
+                        </div>
+                        <div class="set-bonuses">
+                            <h4>Bonificaciones de Conjunto:</h4>
+                            <ul>
+                                <li><span class="bonus-pieces">2 piezas:</span> +15 de resistencia al fuego</li>
+                                <li><span class="bonus-pieces">3 piezas:</span> +10% de reducción de daño físico</li>
+                                <li><span class="bonus-pieces">4 piezas:</span> Aura de fuego que causa 5 de daño por segundo a los enemigos cercanos</li>
+                            </ul>
+                        </div>
+                        <div class="set-description">
+                            <p>Forjado con escamas y huesos de dragones antiguos, este conjunto otorga al portador parte de la fuerza y resistencia de estas poderosas criaturas.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="set-card">
+                        <h3 class="item-legendary">Conjunto del Archimago</h3>
+                        <div class="set-pieces">
+                            <div class="set-piece">
+                                <img src="images/equipment/archmage-hood.png" alt="Capucha del Archimago">
+                                <span class="item-legendary">Capucha del Archimago</span>
+                            </div>
+                            <div class="set-piece">
+                                <img src="images/equipment/archmage-robe.png" alt="Túnica del Archimago">
+                                <span class="item-legendary">Túnica del Archimago</span>
+                            </div>
+                            <div class="set-piece">
+                                <img src="images/equipment/archmage-gloves.png" alt="Guantes del Archimago">
+                                <span class="item-legendary">Guantes del Archimago</span>
+                            </div>
+                            <div class="set-piece">
+                                <img src="images/equipment/archmage-boots.png" alt="Botas del Archimago">
+                                <span class="item-legendary">Botas del Archimago</span>
+                            </div>
+                        </div>
+                        <div class="set-bonuses">
+                            <h4>Bonificaciones de Conjunto:</h4>
+                            <ul>
+                                <li><span class="bonus-pieces">2 piezas:</span> +20% de regeneración de maná</li>
+                                <li><span class="bonus-pieces">3 piezas:</span> +15% de daño con hechizos</li>
+                                <li><span class="bonus-pieces">4 piezas:</span> Los hechizos tienen un 10% de probabilidad de no consumir maná</li>
+                            </ul>
+                        </div>
+                        <div class="set-description">
+                            <p>Vestimenta ceremonial de los más poderosos magos de la Academia Arcana. Cada pieza está imbuida con encantamientos que amplifican el poder mágico del portador.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Dark and Darker Wiki Interactiva</h3>
+                <p>Una guía completa y calculadora para el juego Dark and Darker.</p>
+                <div class="disclaimer">
+                    <h4>Descargo de Responsabilidad</h4>
+                    <p>Esta wiki no está asociada a Dark and Darker ni a IRONMACE de ninguna forma. Todo el contenido es meramente orientativo y puede no representar exactamente todos los valores correctamente. La información se irá actualizando con el tiempo.</p>
+                </div>
+                <div class="privacy-policy">
+                    <h4>Política de Privacidad</h4>
+                    <p>Los datos de los usuarios no serán usados para fines ilegítimos. Esta página es segura y confiable, y no almacena información personal de los visitantes.</p>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="classes.html">Clases</a></li>
+                    <li><a href="calculator.html">Calculadora</a></li>
+                    <li><a href="guides.html">Guías</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Recursos</h3>
+                <ul>
+                    <li><a href="https://darkanddarker.wiki.spellsandguns.com/" target="_blank">Wiki Oficial</a></li>
+                    <li><a href="https://discord.gg/darkanddarker" target="_blank">Discord Oficial</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2025 Dark and Darker Wiki Interactiva. No afiliado oficialmente con IRONMACE.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/equipment.js"></script>
+</body>
+</html>

@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mecánicas - Dark and Darker Wiki</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mechanics.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Dark and Darker Wiki Logo">
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="classes.html">Clases</a></li>
+                    <li><a href="attributes.html">Atributos</a></li>
+                    <li><a href="equipment.html">Equipamiento</a></li>
+                    <li><a href="mechanics.html" class="active">Mecánicas</a></li>
+                    <li><a href="calculator.html">Calculadora</a></li>
+                    <li><a href="guides.html">Guías</a></li>
+                    <li><a href="skins.html">Skins</a></li>
+                    <li><a href="seasons.html">Temporadas</a></li>
+                    <li><a href="leaderboard.html">Clasificación</a></li>
+                </ul>
+            </nav>
+            <div class="language-selector">
+                <button id="es-btn" class="active"><img src="images/flags/es.png" alt="Español">ES</button>
+                <button id="en-btn"><img src="images/flags/en.png" alt="English">EN</button>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar...">
+                <button type="submit">🔍</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="mechanics-header">
+            <h1>Mecánicas de Dark and Darker</h1>
+            <p>Comprende las mecánicas fundamentales del juego para dominar las mazmorras y sobrevivir a los peligros que acechan en la oscuridad.</p>
+        </section>
+
+        <section class="mechanics-nav">
+            <div class="mechanics-nav-container">
+                <a href="#combat" class="mechanics-nav-item">
+                    <div class="nav-icon">⚔️</div>
+                    <span>Combate</span>
+                </a>
+                <a href="#movement" class="mechanics-nav-item">
+                    <div class="nav-icon">👣</div>
+                    <span>Movimiento</span>
+                </a>
+                <a href="#stealth" class="mechanics-nav-item">
+                    <div class="nav-icon">🥷</div>
+                    <span>Sigilo</span>
+                </a>
+                <a href="#magic" class="mechanics-nav-item">
+                    <div class="nav-icon">✨</div>
+                    <span>Magia</span>
+                </a>
+                <a href="#looting" class="mechanics-nav-item">
+                    <div class="nav-icon">💰</div>
+                    <span>Saqueo</span>
+                </a>
+                <a href="#traps" class="mechanics-nav-item">
+                    <div class="nav-icon">⚠️</div>
+                    <span>Trampas</span>
+                </a>
+                <a href="#perks" class="mechanics-nav-item">
+                    <div class="nav-icon">🌟</div>
+                    <span>Ventajas</span>
+                </a>
+                <a href="#status" class="mechanics-nav-item">
+                    <div class="nav-icon">🔄</div>
+                    <span>Estados</span>
+                </a>
+            </div>
+        </section>
+
+        <section id="combat" class="mechanics-section">
+            <div class="card">
+                <h2 class="card-title">Sistema de Combate</h2>
+                <div class="mechanics-content">
+                    <div class="mechanics-image">
+                        <img src="images/mechanics/combat.jpg" alt="Sistema de Combate">
+                    </div>
+                    <div class="mechanics-text">
+                        <p>El sistema de combate en Dark and Darker combina elementos de precisión, tiempo y estrategia. Cada arma tiene su propio patrón de ataque, velocidad y alcance que determinan su efectividad en diferentes situaciones.</p>
+                        
+                        <h3>Ataques Básicos</h3>
+                        <ul>
+                            <li><strong>Ataque Ligero:</strong> Rápido pero con menos daño. Consume menos resistencia.</li>
+                            <li><strong>Ataque Pesado:</strong> Más lento pero con mayor daño y posibilidad de romper la guardia del enemigo.</li>
+                            <li><strong>Ataque a Distancia:</strong> Requiere precisión y consideración del movimiento del objetivo.</li>
+                        </ul>
+                        
+                        <h3>Defensa</h3>
+                        <ul>
+                            <li><strong>Bloqueo:</strong> Reduce el daño recibido pero consume resistencia.</li>
+                            <li><strong>Esquiva:</strong> Evita completamente el daño pero requiere tiempo preciso.</li>
+                            <li><strong>Parada:</strong> Contraataque que puede aturdir al enemigo si se ejecuta con precisión.</li>
+                        </ul>
+                        
+                        <h3>Golpes Críticos</h3>
+                        <p>Los ataques a la cabeza causan daño crítico, aumentando significativamente el daño infligido. La precisión y el posicionamiento son cruciales para lograr golpes críticos consistentes.</p>
+                        
+                        <div class="mechanics-formula">
+                            <h4>Fórmula de Daño Básico</h4>
+                            <code>Daño Final = (Daño Base × Multiplicador de Arma) × (1 + Bonificadores) - Reducción de Daño</code>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mechanics-details">
+                    <div class="mechanics-table">
+                        <h3>Multiplicadores de Daño por Zona</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Zona</th>
+                                    <th>Multiplicador</th>
+                                    <th>Notas</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Cabeza</td>
+                                    <td>2.0x</td>
+                                    <td>Golpe crítico, daño significativamente mayor</td>
+                                </tr>
+                                <tr>
+                                    <td>Torso</td>
+                                    <td>1.0x</td>
+                                    <td>Daño estándar</td>
+                                </tr>
+                                <tr>
+                                    <td>Brazos</td>
+                                    <td>0.8x</td>
+                                    <td>Daño reducido</td>
+                                </tr>
+                                <tr>
+                                    <td>Piernas</td>
+                                    <td>0.7x</td>
+                                    <td>Daño reducido, posibilidad de ralentizar</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="mechanics-tips">
+                        <h3>Consejos de Combate</h3>
+                        <ul>
+                            <li>Gestiona tu resistencia cuidadosamente; quedarse sin ella durante el combate puede ser fatal.</li>
+                            <li>Aprende los patrones de ataque de diferentes armas para anticipar movimientos enemigos.</li>
+                            <li>Combina ataques ligeros y pesados para romper la defensa de oponentes.</li>
+                            <li>Utiliza el entorno a tu favor, especialmente en espacios estrechos o con obstáculos.</li>
+                            <li>Coordina con tu equipo para flanquear a enemigos y evitar ser rodeado.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="mechanics-video">
+                    <h3>Demostración de Combate</h3>
+                    <div class="video-container">
+                        <img src="images/mechanics/combat-demo.jpg" alt="Demostración de Combate" class="video-placeholder">
+                        <div class="play-button">▶</div>
+                    </div>
+                    <p class="video-caption">Haz clic para ver una demostración detallada de las mecánicas de combate.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="movement" class="mechanics-section">
+            <div class="card">
+                <h2 class="card-title">Sistema de Movimiento</h2>
+                <div class="mechanics-content">
+                    <div class="mechanics-image">
+                        <img src="images/mechanics/movement.jpg" alt="Sistema de Movimiento">
+                    </div>
+                    <div class="mechanics-text">
+                        <p>El movimiento en Dark and Darker es un aspecto crucial que afecta directamente a la supervivencia y efectividad en combate. La velocidad, el sigilo y la gestión de la resistencia son factores clave a considerar.</p>
+                        
+                        <h3>Tipos de Movimiento</h3>
+                        <ul>
+                            <li><strong>Caminar:</strong> Movimiento estándar, equilibrio entre velocidad y sigilo.</li>
+                            <li><strong>Correr:</strong> Mayor velocidad pero consume resistencia y genera más ruido.</li>
+                            <li><strong>Agacharse:</strong> Reduce la velocidad pero aumenta el sigilo y permite pasar por espacios reducidos.</li>
+                            <li><strong>Saltar:</strong> Permite superar obstáculos pero consume resistencia y genera ruido.</li>
+                        </ul>
+                        
+                        <h3>Factores que Afectan al Movimiento</h3>
+                        <ul>
+                            <li><strong>Peso del Equipamiento:</strong> A mayor peso, menor velocidad de movimiento.</li>
+                            <li><strong>Atributo de Agilidad:</strong> Afecta a la velocidad base y la regeneración de resistencia.</li>
+                            <li><strong>Terreno:</strong> Diferentes superficies afectan a la velocidad y al ruido generado.</li>
+                            <li><strong>Estados:</strong> Efectos como "Ralentizado" o "Congelado" limitan el movimiento.</li>
+                        </ul>
+                        
+                        <div class="mechanics-formula">
+                            <h4>Fórmula de Velocidad de Movimiento</h4>
+                            <code>Velocidad Final = Velocidad Base × (1 - Penalización por Peso) × (1 + Bonificadores de Agilidad) × Modificadores de Estado</code>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mechanics-details">
+                    <div class="mechanics-table">
+                        <h3>Penalizaciones por Peso</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Carga</th>
+                                    <th>Penalización</th>
+                                    <th>Efectos Adicionales</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Ligera (0-30%)</td>
+                                    <td>0%</td>
+                                    <td>Regeneración de resistencia normal</td>
+                                </tr>
+                                <tr>
+                                    <td>Media (31-70%)</td>
+                                    <td>10%</td>
+                                    <td>Regeneración de resistencia -15%</td>
+                                </tr>
+                                <tr>
+                                    <td>Pesada (71-99%)</td>
+                                    <td>25%</td>
+                                    <td>Regeneración de resistencia -30%</td>
+                                </tr>
+                                <tr>
+                                    <td>Sobrecarga (100%+)</td>
+                                    <td>50%</td>
+                                    <td>Sin regeneración de resistencia, daño por tiempo</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="mechanics-tips">
+                        <h3>Consejos de Movimiento</h3>
+                        <ul>
+                            <li>Mantén tu carga por debajo del 70% para evitar penalizaciones severas de movimiento.</li>
+                            <li>Alterna entre correr y caminar para gestionar tu resistencia eficientemente.</li>
+                            <li>Utiliza el agachamiento al acercarte a enemigos para reducir las posibilidades de ser detectado.</li>
+                            <li>Considera el ruido que generas al moverte, especialmente en áreas con muchos enemigos.</li>
+                            <li>Invierte en el atributo de Agilidad para mejorar tu velocidad base y regeneración de resistencia.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="stealth" class="mechanics-section">
+            <div class="card">
+                <h2 class="card-title">Sistema de Sigilo</h2>
+                <div class="mechanics-content">
+                    <div class="mechanics-image">
+                        <img src="images/mechanics/stealth.jpg" alt="Sistema de Sigilo">
+                    </div>
+                    <div class="mechanics-text">
+                        <p>El sigilo en Dark and Darker permite a los jugadores evitar encuentros no deseados, preparar emboscadas y obtener ventajas tácticas. Es especialmente útil para clases como el Pícaro, pero todos los personajes pueden beneficiarse de técnicas sigilosas.</p>
+                        
+                        <h3>Factores de Detección</h3>
+                        <ul>
+                            <li><strong>Visibilidad:</strong> Afectada por la iluminación, cobertura y distancia.</li>
+                            <li><strong>Ruido:</strong> Generado por movimiento, acciones y equipamiento.</li>
+                            <li><strong>Línea de Visión:</strong> Los enemigos no pueden detectarte si no están mirando en tu dirección.</li>
+                            <li><strong>Habilidades de Percepción:</strong> Algunos enemigos y jugadores tienen mayor capacidad de detección.</li>
+                        </ul>
+                        
+                        <h3>Técnicas de Sigilo</h3>
+                        <ul>
+                            <li><strong>Agacharse:</strong> Reduce significativamente la visibilidad y el ruido.</li>
+                            <li><strong>Moverse Lentamente:</strong> Genera menos ruido que correr o caminar normalmente.</li>
+                            <li><strong>Aprovechar la Oscuridad:</strong> Las áreas oscuras proporcionan cobertura natural.</li>
+                            <li><strong>Habilidades de Invisibilidad:</strong> Algunas clases pueden volverse temporalmente invisibles.</li>
+                        </ul>
+                        
+                        <h3>Ataques Furtivos</h3>
+                        <p>Los ataques realizados desde el sigilo causan daño adicional, especialmente para clases como el Pícaro. La posición y el ángulo de ataque son cruciales para maximizar este daño.</p>
+                    </div>
+                </div>
+                
+                <div class="mechanics-details">
+                    <div class="mechanics-table">
+                        <h3>Multiplicadores de Daño Furtivo</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Clase</th>
+                                    <th>Multiplicador Base</th>
+                                    <th>Con Habilidades</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Pícaro</td>
+                                    <td>2.5x</td>
+                                    <td>Hasta 4.0x</td>
+                                </tr>
+                                <tr>
+                                    <td>Explorador</td>
+                                    <td>1.8x</td>
+                                    <td>Hasta 2.5x</td>
+                                </tr>
+                                <tr>
+                                    <td>Otras clases</td>
+                                    <td>1.5x</td>
+                                    <td>Hasta 2.0x</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="mechanics-tips">
+                        <h3>Consejos de Sigilo</h3>
+                        <ul>
+                            <li>Apaga las antorchas para crear zonas de oscuridad que faciliten el sigilo.</li>
+                            <li>Utiliza flechas o hechizos para crear distracciones y desviar la atención de enemigos.</li>
+                            <li>Coordina ataques sigilosos con tu equipo para eliminar rápidamente a grupos de enemigos.</li>
+                            <li>Aprende los patrones de patrulla de los enemigos para moverte durante sus puntos ciegos.</li>
+                            <li>Invierte en equipamiento que reduzca el ruido y mejore tus capacidades de sigilo.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="magic" class="mechanics-section">
+            <div class="card">
+                <h2 class="card-title">Sistema de Magia</h2>
+                <div class="mechanics-content">
+                    <div class="mechanics-image">
+                        <img src="images/mechanics/magic.jpg" alt="Sistema de Magia">
+                    </div>
+                    <div class="mechanics-text">
+                        <p>La magia en Dark and Darker ofrece poderosas habilidades ofensivas, defensivas y de utilidad. El sistema mágico se basa en puntos de maná, tiempo de lanzamiento y enfriamiento, y efectos variados según la escuela de magia.</p>
+                        
+                        <h3>Escuelas de Magia</h3>
+                        <ul>
+                            <li><strong>Fuego:</strong> Hechizos de daño directo y por área. Alta potencia pero consumo elevado.</li>
+                            <li><strong>Hielo:</strong> Hechizos de control y ralentización. Equilibrio entre daño y utilidad.</li>
+                            <li><strong>Relámpago:</strong> Hechizos rápidos y precisos. Menor tiempo de lanzamiento pero menor área de efecto.</li>
+                            <li><strong>Arcana:</strong> Hechizos de utilidad y manipulación. Versatilidad a costa de potencia directa.</li>
+                            <li><strong>Divina:</strong> Hechizos de curación y protección. Enfocados en apoyo y supervivencia.</li>
+                            <li><strong>Nigromancia:</strong> Hechizos de drenaje de vida y debilitamiento. Efectos a lo largo del tiempo.</li>
+                        </ul>
+                        
+                        <h3>Mecánicas de Lanzamiento</h3>
+                        <ul>
+                            <li><strong>Tiempo de Lanzamiento:</strong> Período durante el cual el personaje debe mantenerse inmóvil.</li>
+                            <li><strong>Tiempo de Enfriamiento:</strong> Período antes de poder lanzar el mismo hechizo nuevamente.</li>
+                            <li><strong>Costo de Maná:</strong> Cantidad de recursos mágicos consumidos por el hechizo.</li>
+                            <li><strong>Canalización:</strong> Algunos hechizos requieren mantener la concentración para efectos continuos.</li>
+                        </ul>
+                        
+                        <div class="mechanics-formula">
+                            <h4>Fórmula de Daño Mágico</h4>
+                            <code>Daño Mágico = Poder Base × (1 + Bonificador de Inteligencia) × (1 + Bonificadores de Hechizo) - Resistencia Mágica</code>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mechanics-details">
+                    <div class="mechanics-table">
+                        <h3>Comparativa de Escuelas de Magia</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Escuela</th>
+                                    <th>Daño</th>
+                                    <th>Utilidad</th>
+                                    <th>Costo</th>
+                                    <th>Velocidad</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Fuego</td>
+                                    <td>Alto</td>
+                                    <td>Baja</td>
+                                    <td>Alto</td>
+                                    <td>Media</td>
+                                </tr>
+                                <tr>
+                                    <td>Hielo</td>
+                                    <td>Medio</td>
+                                    <td>Alta</td>
+                                    <td>Medio</td>
+                                    <td>Baja</td>
+                                </tr>
+                                <tr>
+                                    <td>Relámpago</td>
+                                    <td>Alto</td>
+                                    <td>Media</td>
+                                    <td>Medio</td>
+                                    <td>Alta</td>
+                                </tr>
+                                <tr>
+                                    <td>Arcana</td>
+                                    <td>Bajo</td>
+                                    <td>Muy Alta</td>
+                                    <td>Variable</td>
+                                    <td>Media</td>
+                                </tr>
+                                <tr>
+                                    <td>Divina</td>
+                                    <td>Bajo</td>
+                                    <td>Alta</td>
+                                    <td>Medio</td>
+                                    <td>Media</td>
+                                </tr>
+                                <tr>
+                                    <td>Nigromancia</td>
+                                    <td>Medio</td>
+                                    <td>Media</td>
+                                    <td>Alto</td>
+                                    <td>Baja</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="mechanics-tips">
+                        <h3>Consejos de Magia</h3>
+                        <ul>
+                            <li>Posiciónate adecuadamente antes de lanzar hechizos con tiempo de lanzamiento largo.</li>
+                            <li>Combina hechizos de diferentes escuelas para crear sinergias (ej. congelar enemigos y luego usar hechizos de área).</li>
+                            <li>Gestiona tu maná cuidadosamente; quedarse sin recursos mágicos en momentos críticos puede ser fatal.</li>
+                            <li>Utiliza hechizos de utilidad para controlar el campo de batalla y crear ventajas tácticas.</li>
+                            <li>Invierte en equipamiento que reduzca el costo de maná o aumente la potencia de tus hechizos.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="mechanics-interactive">
+                    <h3>Explorador de Hechizos</h3>
+                    <div class="spell-explorer">
+                        <div class="spell-filters">
+                            <select id="spell-school">
+                                <option value="all">Todas las escuelas</option>
+                                <option value="fire">Fuego</option>
+                                <option value="ice">Hielo</option>
+                                <option value="lightning">Relámpago</option>
+                                <option value="arcane">Arcana</option>
+                                <option value="divine">Divina</option>
+                                <option value="necromancy">Nigromancia</option>
+                            </select>
+                            <select id="spell-level">
+                                <option value="all">Todos los niveles</option>
+                                <option value="1">Nivel 1</option>
+                                <option value="2">Nivel 2</option>
+                                <option value="3">Nivel 3</option>
+                            </select>
+                        </div>
+                        <div class="spell-list">
+                            <div class="spell-item" data-school="fire" data-level="1">
+                                <img src="images/spells/fireball.png" alt="Bola de Fuego">
+                                <div class="spell-info">
+                                    <h4>Bola de Fuego</h4>
+                                    <p>Lanza una esfera de fuego que explota al impactar, causando daño en área.</p>
+                                </div>
+                            </div>
+                            <div class="spell-item" data-school="ice" data-level="1">
+                                <img src="images/spells/frostbolt.png" alt="Descarga de Escarcha">
+                                <div class="spell-info">
+                                    <h4>Descarga de Escarcha</h4>
+                                    <p>Proyectil de hielo que daña y ralentiza al objetivo.</p>
+                                </div>
+                            </div>
+                            <div class="spell-item" data-school="lightning" data-level="2">
+                                <img src="images/spells/chainlightning.png" alt="Relámpago en Cadena">
+                                <div class="spell-info">
+                                    <h4>Relámpago en Cadena</h4>
+                                    <p>Descarga eléctrica que salta entre enemigos cercanos.</p>
+                                </div>
+                            </div>
+                            <div class="spell-item" data-school="divine" data-level="1">
+                                <img src="images/spells/heal.png" alt="Curación">
+                                <div class="spell-info">
+                                    <h4>Curación</h4>
+                                    <p>Restaura puntos de vida al objetivo.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="looting" class="mechanics-section">
+            <div class="card">
+                <h2 class="card-title">Sistema de Saqueo</h2>
+                <div class="mechanics-content">
+                    <div class="mechanics-image">
+                        <img src="images/mechanics/looting.jpg" alt="Sistema de Saqueo">
+                    </div>
+                    <div class="mechanics-text">
+                        <p>El saqueo es una mecánica fundamental en Dark and Darker, permitiendo a los jugadores obtener equipamiento, consumibles y recursos valiosos. La gestión eficiente del inventario y el conocimiento de los puntos de saqueo son clave para maximizar las ganancias.</p>
+                        
+                        <h3>Fuentes de Botín</h3>
+                        <ul>
+                            <li><strong>Cofres:</strong> Contienen objetos aleatorios según su rareza. Pueden estar cerrados con llave o trampeados.</li>
+                            <li><strong>Enemigos:</strong> Dejan caer objetos al ser derrotados, con mayor calidad según la dificultad del enemigo.</li>
+                            <li><strong>Habitaciones del Tesoro:</strong> Áreas especiales con mayor concentración de objetos valiosos, a menudo protegidas.</li>
+                            <li><strong>Objetos del Entorno:</strong> Estanterías, barriles y otros elementos interactivos pueden contener objetos.</li>
+                            <li><strong>Jugadores:</strong> Los jugadores derrotados dejan caer parte de su equipamiento y objetos.</li>
+                        </ul>
+                        
+                        <h3>Rareza de Objetos</h3>
+                        <ul>
+                            <li><strong class="item-common">Común (Blanco):</strong> Objetos básicos con estadísticas estándar.</li>
+                            <li><strong class="item-uncommon">Poco Común (Verde):</strong> Objetos mejorados con ligeras bonificaciones.</li>
+                            <li><strong class="item-rare">Raro (Azul):</strong> Objetos con bonificaciones significativas y ocasionalmente efectos especiales.</li>
+                            <li><strong class="item-epic">Épico (Violeta):</strong> Objetos poderosos con múltiples bonificaciones y efectos especiales.</li>
+                            <li><strong class="item-legendary">Legendario (Naranja):</strong> Objetos extremadamente poderosos con efectos únicos.</li>
+                            <li><strong class="item-unique">Único (Crema):</strong> Objetos de un solo ejemplar con propiedades excepcionales.</li>
+                        </ul>
+                        
+                        <h3>Gestión del Inventario</h3>
+                        <p>El espacio de inventario es limitado, lo que obliga a los jugadores a tomar decisiones estratégicas sobre qué objetos conservar. El peso, el valor y la utilidad deben considerarse cuidadosamente.</p>
+                    </div>
+                </div>
+                
+                <div class="mechanics-details">
+                    <div class="mechanics-table">
+                        <h3>Probabilidad de Objetos por Rareza</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Fuente</th>
+                                    <th class="item-common">Común</th>
+                                    <th class="item-uncommon">Poco Común</th>
+                                    <th class="item-rare">Raro</th>
+                                    <th class="item-epic">Épico</th>
+                                    <th class="item-legendary">Legendario</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Cofre Normal</td>
+                                    <td>70%</td>
+                                    <td>20%</td>
+                                    <td>8%</td>
+                                    <td>2%</td>
+                                    <td>0.1%</td>
+                                </tr>
+                                <tr>
+                                    <td>Cofre Mágico</td>
+                                    <td>40%</td>
+                                    <td>35%</td>
+                                    <td>18%</td>
+                                    <td>6%</td>
+                                    <td>1%</td>
+                                </tr>
+                                <tr>
+                                    <td>Enemigo Común</td>
+                                    <td>85%</td>
+                                    <td>12%</td>
+                                    <td>3%</td>
+                                    <td>0%</td>
+                                    <td>0%</td>
+                                </tr>
+                                <tr>
+                                    <td>Enemigo Élite</td>
+                                    <td>50%</td>
+                                    <td>30%</td>
+                                    <td>15%</td>
+                                    <td>5%</td>
+                                    <td>0.5%</td>
+                                </tr>
+                                <tr>
+                                    <td>Jefe</td>
+                                    <td>20%</td>
+                                    <td>30%</td>
+                                    <td>30%</td>
+                                    <td>15%</td>
+                                    <td>5%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="mechanics-tips">
+                        <h3>Consejos de Saqueo</h3>
+                        <ul>
+                            <li>Prioriza objetos de alto valor y bajo peso para maximizar la eficiencia del inventario.</li>
+                            <li>Aprende a identificar rápidamente el valor de los objetos para tomar decisiones ágiles durante el saqueo.</li>
+                            <li>Coordina con tu equipo para distribuir el botín según las necesidades de cada clase.</li>
+                            <li>Utiliza bolsas y contenedores para aumentar tu capacidad de carga.</li>
+                            <li>Considera el riesgo vs. recompensa al decidir si explorar áreas peligrosas con mejor botín.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="mechanics-interactive">
+                    <h3>Calculadora de Valor de Saqueo</h3>
+                    <div class="loot-calculator">
+                        <div class="calculator-inputs">
+                            <div class="input-group">
+                                <label for="item-type">Tipo de Objeto:</label>
+                                <select id="item-type">
+                                    <option value="weapon">Arma</option>
+                                    <option value="armor">Armadura</option>
+                                    <option value="accessory">Accesorio</option>
+                                    <option value="consumable">Consumible</option>
+                                </select>
+                            </div>
+                            <div class="input-group">
+                                <label for="item-rarity">Rareza:</label>
+                                <select id="item-rarity">
+                                    <option value="common">Común</option>
+                                    <option value="uncommon">Poco Común</option>
+                                    <option value="rare">Raro</option>
+                                    <option value="epic">Épico</option>
+                                    <option value="legendary">Legendario</option>
+                                </select>
+                            </div>
+                            <div class="input-group">
+                                <label for="item-level">Nivel del Objeto:</label>
+                                <input type="number" id="item-level" min="1" max="50" value="1">
+                            </div>
+                            <div class="input-group">
+                                <label for="item-weight">Peso (kg):</label>
+                                <input type="number" id="item-weight" min="0.1" max="20" step="0.1" value="1.0">
+                            </div>
+                            <button id="calculate-value" class="btn">Calcular Valor</button>
+                        </div>
+                        <div class="calculator-results">
+                            <div class="result-item">
+                                <span class="result-label">Valor Base:</span>
+                                <span class="result-value" id="base-value">0</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-label">Valor por Rareza:</span>
+                                <span class="result-value" id="rarity-value">0</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-label">Valor por Nivel:</span>
+                                <span class="result-value" id="level-value">0</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-label">Valor Total:</span>
+                                <span class="result-value" id="total-value">0</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-label">Valor/Peso:</span>
+                                <span class="result-value" id="value-weight-ratio">0</span>
+                            </div>
+                            <div class="result-recommendation">
+                                <span class="recommendation-label">Recomendación:</span>
+                                <span class="recommendation-value" id="loot-recommendation">Calcular para ver recomendación</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="traps" class="mechanics-section">
+            <div class="card">
+                <h2 class="card-title">Sistema de Trampas</h2>
+                <div class="mechanics-content">
+                    <div class="mechanics-image">
+                        <img src="images/mechanics/traps.jpg" alt="Sistema de Trampas">
+                    </div>
+                    <div class="mechanics-text">
+                        <p>Las trampas representan un peligro constante en las mazmorras de Dark and Darker. Pueden causar daño, aplicar estados negativos o alertar a enemigos cercanos. Detectarlas y desactivarlas es una habilidad crucial para la supervivencia.</p>
+                        
+                        <h3>Tipos de Trampas</h3>
+                        <ul>
+                            <li><strong>Trampas de Presión:</strong> Se activan al pisar sobre ellas. Pueden disparar dardos, liberar gas o activar mecanismos.</li>
+                            <li><strong>Trampas de Alambre:</strong> Hilos casi invisibles que activan mecanismos al romperse.</li>
+                            <li><strong>Trampas Mágicas:</strong> Runas o símbolos arcanos que liberan energía mágica cuando se activan.</li>
+                            <li><strong>Cofres Trampa:</strong> Contenedores que ocultan mecanismos dañinos activados al abrirlos.</li>
+                            <li><strong>Trampas de Alarma:</strong> Alertan a enemigos cercanos sin causar daño directo.</li>
+                        </ul>
+                        
+                        <h3>Detección y Desactivación</h3>
+                        <ul>
+                            <li><strong>Percepción:</strong> Habilidad pasiva que aumenta las posibilidades de detectar trampas.</li>
+                            <li><strong>Habilidades de Clase:</strong> Pícaros y exploradores tienen ventajas en la detección y desactivación.</li>
+                            <li><strong>Herramientas:</strong> Ganzúas y kits de desactivación aumentan las probabilidades de éxito.</li>
+                            <li><strong>Hechizos:</strong> Algunos hechizos pueden revelar o desactivar trampas a distancia.</li>
+                        </ul>
+                        
+                        <h3>Consecuencias de Activación</h3>
+                        <p>Las trampas activadas pueden causar daño directo, aplicar estados como envenenamiento o parálisis, o alertar a enemigos cercanos. La gravedad de las consecuencias aumenta con la profundidad de la mazmorra.</p>
+                    </div>
+                </div>
+                
+                <div class="mechanics-details">
+                    <div class="mechanics-table">
+                        <h3>Trampas Comunes y sus Efectos</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Trampa</th>
+                                    <th>Daño</th>
+                                    <th>Efectos</th>
+                                    <th>Dificultad de Detección</th>
+                                    <th>Dificultad de Desactivación</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Placa de Presión</td>
+                                    <td>10-20</td>
+                                    <td>Ninguno</td>
+                                    <td>Fácil</td>
+                                    <td>Fácil</td>
+                                </tr>
+                                <tr>
+                                    <td>Lanzador de Dardos</td>
+                                    <td>15-25</td>
+                                    <td>Veneno (5 daño/s, 10s)</td>
+                                    <td>Media</td>
+                                    <td>Media</td>
+                                </tr>
+                                <tr>
+                                    <td>Trampa de Oso</td>
+                                    <td>30-40</td>
+                                    <td>Inmovilización (5s)</td>
+                                    <td>Media</td>
+                                    <td>Difícil</td>
+                                </tr>
+                                <tr>
+                                    <td>Runa Explosiva</td>
+                                    <td>40-60</td>
+                                    <td>Daño en área</td>
+                                    <td>Difícil</td>
+                                    <td>Muy Difícil</td>
+                                </tr>
+                                <tr>
+                                    <td>Gas Paralizante</td>
+                                    <td>5-10</td>
+                                    <td>Parálisis (3s)</td>
+                                    <td>Difícil</td>
+                                    <td>Media</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="mechanics-tips">
+                        <h3>Consejos para Evitar Trampas</h3>
+                        <ul>
+                            <li>Muévete lentamente en áreas desconocidas, observando el suelo y las paredes en busca de mecanismos sospechosos.</li>
+                            <li>Utiliza antorchas o hechizos de luz para mejorar la visibilidad y detectar trampas más fácilmente.</li>
+                            <li>Deja que los miembros del grupo con mayor percepción vayan adelante para detectar trampas.</li>
+                            <li>Aprende los patrones comunes de colocación de trampas (entradas, pasillos estrechos, cerca de tesoros).</li>
+                            <li>Considera sacrificar algunos objetos lanzándolos para activar trampas a distancia.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="mechanics-gallery">
+                    <h3>Galería de Trampas Comunes</h3>
+                    <div class="gallery-container">
+                        <div class="gallery-item">
+                            <img src="images/traps/pressure-plate.jpg" alt="Placa de Presión">
+                            <div class="gallery-caption">Placa de Presión</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/traps/dart-trap.jpg" alt="Trampa de Dardos">
+                            <div class="gallery-caption">Trampa de Dardos</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/traps/bear-trap.jpg" alt="Trampa de Oso">
+                            <div class="gallery-caption">Trampa de Oso</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/traps/rune-trap.jpg" alt="Runa Explosiva">
+                            <div class="gallery-caption">Runa Explosiva</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="perks" class="mechanics-section">
+            <div class="card">
+                <h2 class="card-title">Sistema de Ventajas</h2>
+                <div class="mechanics-content">
+                    <div class="mechanics-image">
+                        <img src="images/mechanics/perks.jpg" alt="Sistema de Ventajas">
+                    </div>
+                    <div class="mechanics-text">
+                        <p>Las ventajas (perks) en Dark and Darker son habilidades especiales que permiten personalizar y especializar tu personaje más allá de su clase base. Estas ventajas pueden mejorar atributos, otorgar nuevas capacidades o modificar mecánicas existentes.</p>
+                        
+                        <h3>Obtención de Ventajas</h3>
+                        <ul>
+                            <li><strong>Subida de Nivel:</strong> Cada nivel otorga puntos para desbloquear o mejorar ventajas.</li>
+                            <li><strong>Misiones Especiales:</strong> Algunas ventajas raras se obtienen completando desafíos específicos.</li>
+                            <li><strong>Entrenamiento:</strong> Ciertas ventajas mejoran con el uso repetido de habilidades relacionadas.</li>
+                            <li><strong>Objetos Únicos:</strong> Algunos equipamientos legendarios o únicos otorgan ventajas especiales.</li>
+                        </ul>
+                        
+                        <h3>Categorías de Ventajas</h3>
+                        <ul>
+                            <li><strong>Ofensivas:</strong> Aumentan el daño, precisión o velocidad de ataque.</li>
+                            <li><strong>Defensivas:</strong> Mejoran la resistencia, reducción de daño o regeneración.</li>
+                            <li><strong>Utilidad:</strong> Proporcionan opciones adicionales de movimiento, detección o interacción.</li>
+                            <li><strong>Mágicas:</strong> Modifican o mejoran habilidades mágicas y regeneración de maná.</li>
+                            <li><strong>Sociales:</strong> Afectan a las interacciones con PNJs o mejoran las capacidades de grupo.</li>
+                        </ul>
+                        
+                        <h3>Limitaciones</h3>
+                        <p>Los personajes tienen un límite de ventajas activas simultáneamente, lo que obliga a tomar decisiones estratégicas sobre qué combinación utilizar según la situación. Algunas ventajas son incompatibles entre sí.</p>
+                    </div>
+                </div>
+                
+                <div class="mechanics-details">
+                    <div class="mechanics-table">
+                        <h3>Ventajas Destacadas por Clase</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Clase</th>
+                                    <th>Ventaja</th>
+                                    <th>Efecto</th>
+                                    <th>Requisito</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Bárbaro</td>
+                                    <td>Furia Berserker</td>
+                                    <td>+25% daño, -15% defensa cuando la salud está por debajo del 30%</td>
+                                    <td>Fuerza 18</td>
+                                </tr>
+                                <tr>
+                                    <td>Luchador</td>
+                                    <td>Maestría en Escudos</td>
+                                    <td>Reduce el costo de resistencia al bloquear en un 30%</td>
+                                    <td>Vitalidad 15</td>
+                                </tr>
+                                <tr>
+                                    <td>Pícaro</td>
+                                    <td>Paso Sombrío</td>
+                                    <td>Invisibilidad por 3s después de matar a un enemigo</td>
+                                    <td>Destreza 20</td>
+                                </tr>
+                                <tr>
+                                    <td>Mago</td>
+                                    <td>Canalización Arcana</td>
+                                    <td>20% de probabilidad de no consumir maná al lanzar hechizos</td>
+                                    <td>Inteligencia 22</td>
+                                </tr>
+                                <tr>
+                                    <td>Clérigo</td>
+                                    <td>Bendición Divina</td>
+                                    <td>Los hechizos de curación tienen un 15% de efecto adicional</td>
+                                    <td>Sabiduría 18</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="mechanics-tips">
+                        <h3>Consejos para Ventajas</h3>
+                        <ul>
+                            <li>Elige ventajas que complementen tu estilo de juego y fortalezcan las capacidades de tu clase.</li>
+                            <li>Considera las sinergias entre ventajas para crear combinaciones poderosas.</li>
+                            <li>Adapta tus ventajas activas según el desafío que vayas a enfrentar.</li>
+                            <li>Algunas ventajas aparentemente débiles pueden ser muy efectivas en situaciones específicas.</li>
+                            <li>Coordina las ventajas con tu equipo para maximizar la eficiencia del grupo.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="mechanics-interactive">
+                    <h3>Planificador de Ventajas</h3>
+                    <div class="perk-planner">
+                        <div class="planner-class-select">
+                            <label for="planner-class">Selecciona tu Clase:</label>
+                            <select id="planner-class">
+                                <option value="barbarian">Bárbaro</option>
+                                <option value="fighter">Luchador</option>
+                                <option value="rogue">Pícaro</option>
+                                <option value="ranger">Explorador</option>
+                                <option value="wizard">Mago</option>
+                                <option value="cleric">Clérigo</option>
+                                <option value="bard">Bardo</option>
+                                <option value="warlock">Brujo</option>
+                            </select>
+                        </div>
+                        <div class="planner-level">
+                            <label for="planner-level-input">Nivel del Personaje:</label>
+                            <input type="number" id="planner-level-input" min="1" max="50" value="10">
+                            <span id="available-points">Puntos Disponibles: 10</span>
+                        </div>
+                        <div class="planner-perks">
+                            <div class="perk-category">
+                                <h4>Ventajas Ofensivas</h4>
+                                <div class="perk-list" id="offensive-perks">
+                                    <!-- Se llenará dinámicamente con JavaScript -->
+                                </div>
+                            </div>
+                            <div class="perk-category">
+                                <h4>Ventajas Defensivas</h4>
+                                <div class="perk-list" id="defensive-perks">
+                                    <!-- Se llenará dinámicamente con JavaScript -->
+                                </div>
+                            </div>
+                            <div class="perk-category">
+                                <h4>Ventajas de Utilidad</h4>
+                                <div class="perk-list" id="utility-perks">
+                                    <!-- Se llenará dinámicamente con JavaScript -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="planner-summary">
+                            <h4>Resumen de Ventajas Seleccionadas</h4>
+                            <div id="selected-perks">
+                                <p>Ninguna ventaja seleccionada</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="status" class="mechanics-section">
+            <div class="card">
+                <h2 class="card-title">Estados y Condiciones</h2>
+                <div class="mechanics-content">
+                    <div class="mechanics-image">
+                        <img src="images/mechanics/status.jpg" alt="Estados y Condiciones">
+                    </div>
+                    <div class="mechanics-text">
+                        <p>Los estados y condiciones en Dark and Darker son efectos temporales que pueden afectar a personajes y enemigos, alterando sus capacidades o causando efectos a lo largo del tiempo. Pueden ser beneficiosos o perjudiciales, y su gestión es crucial para el éxito en combate.</p>
+                        
+                        <h3>Estados Negativos</h3>
+                        <ul>
+                            <li><strong>Envenenado:</strong> Causa daño periódico a lo largo del tiempo.</li>
+                            <li><strong>Quemado:</strong> Daño periódico más intenso pero de menor duración que el veneno.</li>
+                            <li><strong>Congelado:</strong> Reduce la velocidad de movimiento y ataque.</li>
+                            <li><strong>Aturdido:</strong> Impide realizar acciones durante un breve período.</li>
+                            <li><strong>Cegado:</strong> Reduce significativamente el campo de visión y la precisión.</li>
+                            <li><strong>Silenciado:</strong> Impide el lanzamiento de hechizos.</li>
+                            <li><strong>Debilitado:</strong> Reduce el daño causado y la defensa.</li>
+                        </ul>
+                        
+                        <h3>Estados Positivos</h3>
+                        <ul>
+                            <li><strong>Regeneración:</strong> Restaura salud periódicamente.</li>
+                            <li><strong>Fortalecido:</strong> Aumenta el daño causado.</li>
+                            <li><strong>Protegido:</strong> Reduce el daño recibido.</li>
+                            <li><strong>Acelerado:</strong> Aumenta la velocidad de movimiento y ataque.</li>
+                            <li><strong>Bendecido:</strong> Aumenta las probabilidades de golpes críticos.</li>
+                            <li><strong>Inspirado:</strong> Reduce el costo de maná de los hechizos.</li>
+                        </ul>
+                        
+                        <h3>Resistencia y Inmunidad</h3>
+                        <p>Algunos equipamientos, habilidades o consumibles pueden proporcionar resistencia o inmunidad a ciertos estados. Estas protecciones son especialmente valiosas contra enemigos que utilizan frecuentemente efectos de estado.</p>
+                    </div>
+                </div>
+                
+                <div class="mechanics-details">
+                    <div class="mechanics-table">
+                        <h3>Detalles de Estados Negativos</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Estado</th>
+                                    <th>Efecto</th>
+                                    <th>Duración Típica</th>
+                                    <th>Cura/Resistencia</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Envenenado</td>
+                                    <td>5-10 daño cada 2s</td>
+                                    <td>10-20s</td>
+                                    <td>Antídoto, Purificación</td>
+                                </tr>
+                                <tr>
+                                    <td>Quemado</td>
+                                    <td>10-15 daño cada 1s</td>
+                                    <td>5-10s</td>
+                                    <td>Poción de Hielo, Resistencia al Fuego</td>
+                                </tr>
+                                <tr>
+                                    <td>Congelado</td>
+                                    <td>-50% velocidad</td>
+                                    <td>3-8s</td>
+                                    <td>Poción de Calor, Resistencia al Hielo</td>
+                                </tr>
+                                <tr>
+                                    <td>Aturdido</td>
+                                    <td>Incapacitación total</td>
+                                    <td>1-3s</td>
+                                    <td>Amuleto de Claridad, Voluntad alta</td>
+                                </tr>
+                                <tr>
+                                    <td>Cegado</td>
+                                    <td>-70% precisión, visión reducida</td>
+                                    <td>5-10s</td>
+                                    <td>Poción de Visión Clara, Percepción alta</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="mechanics-tips">
+                        <h3>Consejos para Gestionar Estados</h3>
+                        <ul>
+                            <li>Lleva siempre consumibles para contrarrestar estados negativos comunes (antídotos, pociones de curación).</li>
+                            <li>Aprende qué enemigos causan qué tipos de estados para prepararte adecuadamente.</li>
+                            <li>Prioriza eliminar enemigos que puedan aplicar estados debilitantes como aturdimiento o silencio.</li>
+                            <li>Coordina con tu equipo para aplicar estados beneficiosos en momentos críticos.</li>
+                            <li>Invierte en equipamiento con resistencias a estados si enfrentas frecuentemente ciertos tipos de enemigos.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="mechanics-icons">
+                    <h3>Iconos de Estado</h3>
+                    <div class="status-icons-grid">
+                        <div class="status-icon">
+                            <img src="images/status/poisoned.png" alt="Envenenado">
+                            <span>Envenenado</span>
+                        </div>
+                        <div class="status-icon">
+                            <img src="images/status/burning.png" alt="Quemado">
+                            <span>Quemado</span>
+                        </div>
+                        <div class="status-icon">
+                            <img src="images/status/frozen.png" alt="Congelado">
+                            <span>Congelado</span>
+                        </div>
+                        <div class="status-icon">
+                            <img src="images/status/stunned.png" alt="Aturdido">
+                            <span>Aturdido</span>
+                        </div>
+                        <div class="status-icon">
+                            <img src="images/status/blinded.png" alt="Cegado">
+                            <span>Cegado</span>
+                        </div>
+                        <div class="status-icon">
+                            <img src="images/status/silenced.png" alt="Silenciado">
+                            <span>Silenciado</span>
+                        </div>
+                        <div class="status-icon">
+                            <img src="images/status/regeneration.png" alt="Regeneración">
+                            <span>Regeneración</span>
+                        </div>
+                        <div class="status-icon">
+                            <img src="images/status/strengthened.png" alt="Fortalecido">
+                            <span>Fortalecido</span>
+                        </div>
+                        <div class="status-icon">
+                            <img src="images/status/protected.png" alt="Protegido">
+                            <span>Protegido</span>
+                        </div>
+                        <div class="status-icon">
+                            <img src="images/status/hasted.png" alt="Acelerado">
+                            <span>Acelerado</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mechanics-faq">
+            <div class="card">
+                <h2 class="card-title">Preguntas Frecuentes</h2>
+                
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>¿Cómo funciona exactamente el cálculo de daño crítico?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>El daño crítico se calcula multiplicando el daño base por un multiplicador que varía según la zona de impacto y los bonificadores del personaje. Los golpes a la cabeza tienen un multiplicador base de 2.0x, que puede aumentar con habilidades y equipamiento específico. La probabilidad de golpe crítico también puede incrementarse con atributos como Destreza y ventajas específicas.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>¿Qué determina la calidad del botín que encuentro?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>La calidad del botín está determinada por varios factores: la profundidad de la mazmorra (niveles más profundos ofrecen mejor botín), el tipo de contenedor (cofres mágicos son mejores que cofres normales), la dificultad de los enemigos derrotados, y tu suerte como atributo. También existen bonificadores temporales que pueden mejorar la calidad del botín, como pociones de fortuna o bendiciones específicas.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>¿Cómo puedo reducir el tiempo de enfriamiento de mis habilidades?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>El tiempo de enfriamiento de habilidades puede reducirse mediante varios métodos: equipamiento con la propiedad de "Reducción de Enfriamiento", ventajas específicas como "Preparación Rápida" o "Flujo Arcano", consumibles como "Elixir de Celeridad", y aumentando atributos relevantes como Inteligencia para hechizos o Destreza para habilidades físicas. La reducción máxima posible es del 40% para evitar desequilibrios en el juego.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>¿Las trampas pueden ser utilizadas contra enemigos?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Sí, las trampas pueden afectar tanto a jugadores como a enemigos. Una táctica común es atraer enemigos hacia trampas ya existentes para que sufran sus efectos. Además, algunas clases como el Pícaro pueden colocar sus propias trampas con habilidades específicas. Estas trampas colocadas por jugadores suelen tener un tiempo limitado de actividad y pueden ser detectadas por enemigos con alta percepción.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>¿Qué ocurre si muero en una mazmorra?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Al morir en una mazmorra, perderás parte del equipamiento que llevabas (aproximadamente un 30-50%, con mayor probabilidad de perder objetos de menor rareza). Los objetos en tu inventario seguro (bolsa especial) se conservarán. Serás devuelto al punto de inicio y perderás todo el progreso no guardado en esa incursión. Otros jugadores podrán saquear tu cuerpo para obtener los objetos que hayas dejado caer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Dark and Darker Wiki Interactiva</h3>
+                <p>Una guía completa y calculadora para el juego Dark and Darker.</p>
+                <div class="disclaimer">
+                    <h4>Descargo de Responsabilidad</h4>
+                    <p>Esta wiki no está asociada a Dark and Darker ni a IRONMACE de ninguna forma. Todo el contenido es meramente orientativo y puede no representar exactamente todos los valores correctamente. La información se irá actualizando con el tiempo.</p>
+                </div>
+                <div class="privacy-policy">
+                    <h4>Política de Privacidad</h4>
+                    <p>Los datos de los usuarios no serán usados para fines ilegítimos. Esta página es segura y confiable, y no almacena información personal de los visitantes.</p>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="classes.html">Clases</a></li>
+                    <li><a href="calculator.html">Calculadora</a></li>
+                    <li><a href="guides.html">Guías</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Recursos</h3>
+                <ul>
+                    <li><a href="https://darkanddarker.wiki.spellsandguns.com/" target="_blank">Wiki Oficial</a></li>
+                    <li><a href="https://discord.gg/darkanddarker" target="_blank">Discord Oficial</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2025 Dark and Darker Wiki Interactiva. No afiliado oficialmente con IRONMACE.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/mechanics.js"></script>
+</body>
+</html>

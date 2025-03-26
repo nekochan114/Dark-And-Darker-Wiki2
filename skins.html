@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skins - Dark and Darker Wiki</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/skins.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Dark and Darker Wiki Logo">
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="classes.html">Clases</a></li>
+                    <li><a href="attributes.html">Atributos</a></li>
+                    <li><a href="equipment.html">Equipamiento</a></li>
+                    <li><a href="mechanics.html">Mecánicas</a></li>
+                    <li><a href="calculator.html">Calculadora</a></li>
+                    <li><a href="guides.html">Guías</a></li>
+                    <li><a href="skins.html" class="active">Skins</a></li>
+                    <li><a href="seasons.html">Temporadas</a></li>
+                    <li><a href="leaderboard.html">Clasificación</a></li>
+                </ul>
+            </nav>
+            <div class="language-selector">
+                <button id="es-btn" class="active"><img src="images/flags/es.png" alt="Español">ES</button>
+                <button id="en-btn"><img src="images/flags/en.png" alt="English">EN</button>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar...">
+                <button type="submit">🔍</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="skins-header">
+            <h1>Skins de Dark and Darker</h1>
+            <p>Explora todas las skins disponibles en el juego, sus atributos especiales y cómo obtenerlas.</p>
+        </section>
+
+        <section class="skins-filter">
+            <div class="filter-container">
+                <div class="filter-group">
+                    <label>Filtrar por Clase:</label>
+                    <button class="filter-btn active" data-filter="all">Todas</button>
+                    <button class="filter-btn" data-filter="barbarian">Bárbaro</button>
+                    <button class="filter-btn" data-filter="fighter">Luchador</button>
+                    <button class="filter-btn" data-filter="rogue">Pícaro</button>
+                    <button class="filter-btn" data-filter="ranger">Explorador</button>
+                    <button class="filter-btn" data-filter="wizard">Mago</button>
+                    <button class="filter-btn" data-filter="cleric">Clérigo</button>
+                    <button class="filter-btn" data-filter="bard">Bardo</button>
+                    <button class="filter-btn" data-filter="warlock">Brujo</button>
+                </div>
+                <div class="filter-group">
+                    <label>Filtrar por Rareza:</label>
+                    <button class="filter-btn active" data-filter="all">Todas</button>
+                    <button class="filter-btn item-common" data-filter="common">Común</button>
+                    <button class="filter-btn item-uncommon" data-filter="uncommon">Poco Común</button>
+                    <button class="filter-btn item-rare" data-filter="rare">Raro</button>
+                    <button class="filter-btn item-epic" data-filter="epic">Épico</button>
+                    <button class="filter-btn item-legendary" data-filter="legendary">Legendario</button>
+                    <button class="filter-btn item-unique" data-filter="unique">Único</button>
+                </div>
+                <div class="filter-group">
+                    <label>Filtrar por Género:</label>
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="male">Masculino</button>
+                    <button class="filter-btn" data-filter="female">Femenino</button>
+                </div>
+                <div class="filter-group">
+                    <label>Filtrar por Origen:</label>
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="base">Base</button>
+                    <button class="filter-btn" data-filter="season">Temporada</button>
+                    <button class="filter-btn" data-filter="event">Evento</button>
+                    <button class="filter-btn" data-filter="shop">Tienda</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="skins-grid">
+            <!-- Bárbaro -->
+            <div class="skin-card" data-class="barbarian" data-rarity="common" data-gender="male" data-origin="base">
+                <div class="skin-header item-common">
+                    <h3>Bárbaro Básico</h3>
+                    <span class="skin-rarity">Común</span>
+                </div>
+                <div class="skin-images">
+                    <div class="skin-image-container">
+                        <img src="images/skins/barbarian_base_m.jpg" alt="Bárbaro Básico Masculino">
+                        <span class="gender-tag">♂</span>
+                    </div>
+                </div>
+                <div class="skin-details">
+                    <div class="skin-stats">
+                        <div class="stat">
+                            <span class="stat-name">Fuerza</span>
+                            <span class="stat-value">+0</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-name">Vitalidad</span>
+                            <span class="stat-value">+0</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-name">Conocimiento</span>
+                            <span class="stat-value">+0</span>
+                        </div>
+                    </div>
+                    <div class="skin-description">
+                        <p>Skin básica disponible para todos los jugadores. No proporciona bonificaciones de atributos.</p>
+                    </div>
+                    <div class="skin-acquisition">
+                        <h4>Cómo obtener:</h4>
+                        <p>Disponible por defecto</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skin-card" data-class="barbarian" data-rarity="common" data-gender="female" data-origin="base">
+                <div class="skin-header item-common">
+                    <h3>Bárbaro Básico</h3>
+                    <span class="skin-rarity">Común</span>
+                </div>
+                <div class="skin-images">
+                    <div class="skin-image-container">
+                        <img src="images/skins/barbarian_base_f.jpg" alt="Bárbaro Básico Femenino">
+                        <span class="gender-tag">♀</span>
+                    </div>
+                </div>
+                <div class="skin-details">
+                    <div class="skin-stats">
+                        <div class="stat">
+                            <span class="stat-name">Fuerza</span>
+                            <span class="stat-value">+0</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-name">Vitalidad</span>
+                            <span class="stat-value">+0</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-name">Conocimiento</span>
+                            <span class="stat-value">+0</span>
+                        </div>
+                    </div>
+                    <div class="skin-description">
+                        <p>Skin básica disponible para todos los jugadores. No proporciona bonificaciones de atributos.</p>
+                    </div>
+                    <div class="skin-acquisition">
+                        <h4>Cómo obtener:</h4>
+                        <p>Disponible por defecto</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skin-card" data-class="barbarian" data-rarity="epic" data-gender="male" data-origin="season">
+                <div class="skin-header item-epic">
+                    <h3>Señor de la Guerra Bárbaro</h3>
+                    <span class="skin-rarity">Épico</span>
+                </div>
+                <div class="skin-images">
+                    <div class="skin-image-container">
+                        <img src="images/skins/barbarian_warlord_m.jpg" alt="Señor de la Guerra Bárbaro Masculino">
+                        <span class="gender-tag">♂</span>
+                    </div>
+                </div>
+                <div class="skin-details">
+                    <div class="skin-stats">
+                        <div class="stat">
+                            <span class="stat-name">Fuerza</span>
+                            <span class="stat-value">+2</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-name">Vitalidad</span>
+                            <span class="stat-value">+1</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-name">Intimidación</span>
+                            <span class="stat-value">+10%</span>
+                        </div>
+                    </div>
+                    <div class="skin-description">
+                        <p>Adornado con trofeos de guerra y símbolos de autoridad, este conjunto representa a un líder bárbaro que ha demostrado su valía en innumerables batallas.</p>
+                    </div>
+                    <div class="skin-acquisition">
+                        <h4>Cómo obtener:</h4>
+                        <p>Recompensa de Temporada 3, Nivel 45</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Luchador -->
+            <div class="skin-card" data-class="fighter" data-rarity="common" data-gender="male" data-origin="base">
+                <div class="skin-header item-common">
+                    <h3>Luchador Básico</h3>
+                    <span class="skin-rarity">Común</span>
+                </div>
+                <div class="skin-images">
+                    <div class="skin-image-container">
+                        <img src="images/skins/fighter_base_m.jpg" alt="Luchador Básico Masculino">
+                        <span class="gender-tag">♂</span>
+                    </div>
+                </div>
+                <div class="skin-details">
+                    <div class="skin-stats">
+                        <div class="stat">
+                            <span class="stat-name">Fuerza</span>
+                            <span class="stat-value">+0</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-name">Vitalidad</span>
+                            <span class="stat-value">+0</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-name">Defensa</span>
+                            <span class="stat-value">+0</span>
+                        </div>
+                    </div>
+                    <div class="skin-description">
+                        <p>Skin básica disponible para todos los jugadores. No proporciona bonificaciones de atributos.</p>
+                    </div>
+                    <div class="skin-acquisition">
+                        <h4>Cómo obtener:</h4>
+                        <p>Disponible por defecto</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skin-card" data-class="fighter" data-rarity="legendary" data-gender="male" data-origin="event">
+                <div class="skin-header item-legendary">
+                    <h3>Campeón de la Arena</h3>
+                    <span class="skin-rarity">Legendario</span>
+                </div>
+                <div class="skin-images">
+                    <div class="skin-image-container">
+                        <img src="images/skins/fighter_champion_m.jpg" alt="Campeón de la Arena Masculino">
+                        <span class="gender-tag">♂</span>
+                    </div>
+                </div>
+                <div class="skin-details">
+                    <div class="skin-stats">
+                        <div class="stat">
+                            <span class="stat-name">Fuerza</span>
+                            <span class="stat-value">+2</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-name">Vitalidad</span>
+                            <span class="stat-value">+2</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-name">Defensa</span>
+                            <span class="stat-value">+5%</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-name">Resistencia</span>
+                            <span class="stat-value">+10%</span>
+                        </div>
+                    </div>
+                    <div class="skin-description">
+                        <p>Armadura ornamentada otorgada a los campeones de la gran arena. Sus elaborados detalles y acabados en oro simbolizan la gloria alcanzada en combate.</p>
+                    </div>
+                    <div class="skin-acquisition">
+                        <h4>Cómo obtener:</h4>
+                        <p>Evento especial "Torneo de Campeones" (Limitado)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pícaro -->
+            <div class="skin-card" data-class="rogue" data-rarity="common" data-gender="female" data-origin="base">
+                <div class="skin-header item-common">
+                    <h3>Pícaro Básico</h3>
+                    <span class="skin-rarity">Común</span>
+                </div>
+                <div class="skin-images">
+                    <div class="skin-image-container">
+                        <img src="images/skins/rogue_base_f.jpg" alt="Pícaro Básico Femenino">
+                        <span class="gender-tag">♀</span>
+                    </div>
+                </div>
+                <div class="skin-details">
+                    <div class="skin-stats">
+                        <div class="stat">
+                            <span class="stat-name">Destreza</span>
+                            <span class="stat-value">+0</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-name">Agilidad</span>
+                            <span class="stat-value">+0</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-name">Sigilo</span>
+                            <span class="stat-value">+0</span>
+                        </div>
+                    </div>
+                    <div class="skin-description">
+                        <p>Skin básica disponible para todos los jugadores. No proporciona bonificaciones de atributos.</p>
+                    </div>
+                    <div class="skin-acquisition">
+                        <h4>Cómo obtener:</h4>
+                        <p>Disponible por defecto</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skin-card" data-class="rogue" data-rarity="unique" data-gender="female" data-origin="shop">
+                <div class="skin-header item-unique">
+                    <h3>Sombra Nocturna</h3>
+                    <span class="skin-rarity">Único</span>
+                </div>
+                <div class="skin-images">
+                    <div class="skin-image-container">
+                        <img src="images/skins/rogue_nightshadow_f.jpg" alt="Sombra Nocturna Femenino">
+                        <span class="gender-tag">♀</span>
+                    </div>
+                </div>
+                <div class="skin-details">
+                    <div class="skin-stats">
+                        <div class="stat">
+                            <span class="stat-name">Destreza</span>
+                            <span class="stat-value">+3</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-name">Agilidad</span>
+                            <span class="stat-value">+2</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-name">Sigilo</span>
+                            <span class="stat-value">+15%</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-name">Daño Crítico</span>
+                            <span class="stat-value">+10%</span>
+                        </div>
+                    </div>
+                    <div class="skin-description">
+                        <p>Un conjunto legendario utilizado por la asesina más temida del reino. Se dice que aquellos que la ven con este atuendo rara vez viven para contarlo.</p>
+                    </div>
+                    <div class="skin-special-effect">
+                        <h4>Efecto Especial:</h4>
+                        <p>Invisibilidad mejorada: Permanece invisible 1 segundo adicional después de realizar acciones.</p>
+                    </div>
+                    <div class="skin-acquisition">
+                        <h4>Cómo obtener:</h4>
+                        <p>Compra exclusiva en tienda (5000 monedas premium)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mago -->
+            <div class="skin-card" data-class="wizard" data-rarity="common" data-gender="male" data-origin="base">
+                <div class="skin-header item-common">
+                    <h3>Mago Básico</h3>
+                    <span class="skin-rarity">Común</span>
+                </div>
+                <div class="skin-images">
+                    <div class="skin-image-container">
+                        <img src="images/skins/wizard_base_m.jpg" alt="Mago Básico Masculino">
+                        <span class="gender-tag">♂</span>
+                    </div>
+                </div>
+                <div class="skin-details">
+                    <div class="skin-stats">
+                        <div class="stat">
+                            <span class="stat-name">Inteligencia</span>
+                            <span class="stat-value">+0</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-name">Conocimiento</span>
+                            <span class="stat-value">+0</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-name">Poder Mágico</span>
+                            <span class="stat-value">+0</span>
+                        </div>
+                    </div>
+                    <div class="skin-description">
+                        <p>Skin básica disponible para todos los jugadores. No proporciona bonificaciones de atributos.</p>
+                    </div>
+                    <div class="skin-acquisition">
+                        <h4>Cómo obtener:</h4>
+                        <p>Disponible por defecto</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skin-card" data-class="wizard" data-rarity="epic" data-gender="male" data-origin="season">
+                <div class="skin-header item-epic">
+                    <h3>Archimago Elemental</h3>
+                    <span class="skin-rarity">Épico</span>
+                </div>
+                <div class="skin-images">
+                    <div class="skin-image-container">
+                        <img src="images/skins/wizard_archmage_m.jpg" alt="Archimago Elemental Masculino">
+                        <span class="gender-tag">♂</span>
+                    </div>
+                </div>
+                <div class="skin-details">
+                    <div class="skin-stats">
+                        <div class="stat">
+                            <span class="stat-name">Inteligencia</span>
+                            <span class="stat-value">+3</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-name">Conocimiento</span>
+                            <span class="stat-value">+1</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-name">Poder Mágico</span>
+                            <span class="stat-value">+8%</span>
+                        </div>
+                    </div>
+                    <div class="skin-description">
+                        <p>Túnicas elaboradas con materiales encantados que amplifican el poder mágico. Los símbolos arcanos tejidos en la tela brillan con energía elemental.</p>
+                    </div>
+                    <div class="skin-acquisition">
+                        <h4>Cómo obtener:</h4>
+                        <p>Recompensa de Temporada 4, Nivel 50</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Clérigo -->
+            <div class="skin-card" data-class="cleric" data-rarity="rare" data-gender="female" data-origin="event">
+                <div class="skin-header item-rare">
+                    <h3>Sacerdotisa de la Luz</h3>
+                    <span class="skin-rarity">Raro</span>
+                </div>
+                <div class="skin-images">
+                    <div class="skin-image-container">
+                        <img src="images/skins/cleric_lightpriest_f.jpg" alt="Sacerdotisa de la Luz Femenino">
+                        <span class="gender-tag">♀</span>
+                    </div>
+                </div>
+                <div class="skin-details">
+                    <div class="skin-stats">
+                        <div class="stat">
+                            <span class="stat-name">Sabiduría</span>
+                            <span class="stat-value">+2</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-name">Fe</span>
+                            <span class="stat-value">+1</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-name">Poder de Curación</span>
+                            <span class="stat-value">+5%</span>
+                        </div>
+                    </div>
+                    <div class="skin-description">
+                        <p>Vestimentas ceremoniales utilizadas por los más devotos seguidores de la deidad de la luz. Los adornos dorados reflejan la luz divina.</p>
+                    </div>
+                    <div class="skin-acquisition">
+                        <h4>Cómo obtener:</h4>
+                        <p>Evento "Festival de la Luz" (Anual)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bardo -->
+            <div class="skin-card" data-class="bard" data-rarity="uncommon" data-gender="male" data-origin="shop">
+                <div class="skin-header item-uncommon">
+                    <h3>Trovador Errante</h3>
+                    <span class="skin-rarity">Poco Común</span>
+                </div>
+                <div class="skin-images">
+                    <div class="skin-image-container">
+                        <img src="images/skins/bard_wanderer_m.jpg" alt="Trovador Errante Masculino">
+                        <span class="gender-tag">♂</span>
+                    </div>
+                </div>
+                <div class="skin-details">
+                    <div class="skin-stats">
+                        <div class="stat">
+                            <span class="stat-name">Carisma</span>
+                            <span class="stat-value">+1</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-name">Agilidad</span>
+                            <span class="stat-value">+1</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-name">Inspiración</span>
+                            <span class="stat-value">+3%</span>
+                        </div>
+                    </div>
+                    <div class="skin-description">
+                        <p>Atuendo colorido y práctico, ideal para los bardos que viajan de pueblo en pueblo compartiendo historias y canciones.</p>
+                    </div>
+                    <div class="skin-acquisition">
+                        <h4>Cómo obtener:</h4>
+                        <p>Compra en tienda (800 monedas premium)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Brujo -->
+            <div class="skin-card" data-class="warlock" data-rarity="legendary" data-gender="female" data-origin="season">
+                <div class="skin-header item-legendary">
+                    <h3>Heraldo del Vacío</h3>
+                    <span class="skin-rarity">Legendario</span>
+                </div>
+                <div class="skin-images">
+                    <div class="skin-image-container">
+                        <img src="images/skins/warlock_voidherald_f.jpg" alt="Heraldo del Vacío Femenino">
+                        <span class="gender-tag">♀</span>
+                    </div>
+                </div>
+                <div class="skin-details">
+                    <div class="skin-stats">
+                        <div class="stat">
+                            <span class="stat-name">Inteligencia</span>
+                            <span class="stat-value">+2</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-name">Oscuridad</span>
+                            <span class="stat-value">+3</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-name">Poder Oscuro</span>
+                            <span class="stat-value">+12%</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-name">Resistencia Mágica</span>
+                            <span class="stat-value">+8%</span>
+                        </div>
+                    </div>
+                    <div class="skin-description">
+                        <p>Vestimentas que parecen absorber la luz a su alrededor. Patrones que cambian constantemente se mueven por la tela como si tuvieran vida propia.</p>
+                    </div>
+                    <div class="skin-special-effect">
+                        <h4>Efecto Especial:</h4>
+                        <p>Aura de vacío: Los enemigos cercanos sufren una reducción del 5% en su regeneración de maná.</p>
+                    </div>
+                    <div class="skin-acquisition">
+                        <h4>Cómo obtener:</h4>
+                        <p>Recompensa final de Temporada 5</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skin-sets">
+            <h2>Conjuntos Especiales</h2>
+            <div class="sets-container">
+                <div class="set-card">
+                    <div class="set-header item-epic">
+                        <h3>Conjunto de la Guardia Real</h3>
+                        <span class="set-rarity">Épico</span>
+                    </div>
+                    <div class="set-images">
+                        <div class="set-image-grid">
+                            <div class="set-image">
+                                <img src="images/skins/royal_guard_fighter.jpg" alt="Guardia Real - Luchador">
+                                <span>Luchador</span>
+                            </div>
+                            <div class="set-image">
+                                <img src="images/skins/royal_guard_cleric.jpg" alt="Guardia Real - Clérigo">
+                                <span>Clérigo</span>
+                            </div>
+                            <div class="set-image">
+                                <img src="images/skins/royal_guard_wizard.jpg" alt="Guardia Real - Mago">
+                                <span>Mago</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="set-details">
+                        <div class="set-description">
+                            <p>Armaduras ceremoniales utilizadas por la élite de la guardia real. Cada variante está adaptada a las necesidades de diferentes clases mientras mantiene la estética unificada.</p>
+                        </div>
+                        <div class="set-bonuses">
+                            <h4>Bonificaciones de Conjunto:</h4>
+                            <ul>
+                                <li>2 piezas: +2 a todos los atributos principales</li>
+                                <li>3 piezas: +5% resistencia a daño físico y mágico</li>
+                            </ul>
+                        </div>
+                        <div class="set-acquisition">
+                            <h4>Cómo obtener:</h4>
+                            <p>Evento especial "Coronación Real" (Limitado)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="set-card">
+                    <div class="set-header item-legendary">
+                        <h3>Conjunto de los Antiguos</h3>
+                        <span class="set-rarity">Legendario</span>
+                    </div>
+                    <div class="set-images">
+                        <div class="set-image-grid">
+                            <div class="set-image">
+                                <img src="images/skins/ancient_barbarian.jpg" alt="Antiguos - Bárbaro">
+                                <span>Bárbaro</span>
+                            </div>
+                            <div class="set-image">
+                                <img src="images/skins/ancient_warlock.jpg" alt="Antiguos - Brujo">
+                                <span>Brujo</span>
+                            </div>
+                            <div class="set-image">
+                                <img src="images/skins/ancient_ranger.jpg" alt="Antiguos - Explorador">
+                                <span>Explorador</span>
+                            </div>
+                            <div class="set-image">
+                                <img src="images/skins/ancient_rogue.jpg" alt="Antiguos - Pícaro">
+                                <span>Pícaro</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="set-details">
+                        <div class="set-description">
+                            <p>Vestimentas inspiradas en una civilización perdida hace milenios. Cada pieza contiene runas y símbolos cuyo significado se ha perdido en el tiempo.</p>
+                        </div>
+                        <div class="set-bonuses">
+                            <h4>Bonificaciones de Conjunto:</h4>
+                            <ul>
+                                <li>2 piezas: +3 a todos los atributos principales</li>
+                                <li>3 piezas: +8% velocidad de movimiento</li>
+                                <li>4 piezas: Habilidad especial "Conocimiento Ancestral" (Reduce el tiempo de enfriamiento de todas las habilidades en un 10%)</li>
+                            </ul>
+                        </div>
+                        <div class="set-acquisition">
+                            <h4>Cómo obtener:</h4>
+                            <p>Recompensas de la Temporada 6 (Niveles 30, 45, 60 y 75)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skin-effects">
+            <h2>Efectos Visuales Especiales</h2>
+            <div class="effects-container">
+                <div class="effect-card">
+                    <div class="effect-header">
+                        <h3>Aura Elemental</h3>
+                    </div>
+                    <div class="effect-preview">
+                        <img src="images/effects/elemental_aura.jpg" alt="Aura Elemental">
+                    </div>
+                    <div class="effect-details">
+                        <div class="effect-description">
+                            <p>Un aura de energía elemental que rodea al personaje, cambiando de color según el entorno y las habilidades utilizadas.</p>
+                        </div>
+                        <div class="effect-compatibility">
+                            <h4>Compatible con:</h4>
+                            <p>Mago, Brujo, Clérigo</p>
+                        </div>
+                        <div class="effect-acquisition">
+                            <h4>Cómo obtener:</h4>
+                            <p>Compra en tienda (1200 monedas premium)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="effect-card">
+                    <div class="effect-header">
+                        <h3>Estela Fantasmal</h3>
+                    </div>
+                    <div class="effect-preview">
+                        <img src="images/effects/ghost_trail.jpg" alt="Estela Fantasmal">
+                    </div>
+                    <div class="effect-details">
+                        <div class="effect-description">
+                            <p>Deja una estela etérea al moverse que se desvanece rápidamente. El color varía según la clase del personaje.</p>
+                        </div>
+                        <div class="effect-compatibility">
+                            <h4>Compatible con:</h4>
+                            <p>Todas las clases</p>
+                        </div>
+                        <div class="effect-acquisition">
+                            <h4>Cómo obtener:</h4>
+                            <p>Recompensa por completar 100 mazmorras</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="effect-card">
+                    <div class="effect-header">
+                        <h3>Armas Encantadas</h3>
+                    </div>
+                    <div class="effect-preview">
+                        <img src="images/effects/enchanted_weapons.jpg" alt="Armas Encantadas">
+                    </div>
+                    <div class="effect-details">
+                        <div class="effect-description">
+                            <p>Las armas equipadas brillan con energía mágica y dejan estelas de luz al atacar.</p>
+                        </div>
+                        <div class="effect-compatibility">
+                            <h4>Compatible con:</h4>
+                            <p>Bárbaro, Luchador, Pícaro, Explorador</p>
+                        </div>
+                        <div class="effect-acquisition">
+                            <h4>Cómo obtener:</h4>
+                            <p>Evento "Forja Arcana" (Anual)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Dark and Darker Wiki Interactiva</h3>
+                <p>Una guía completa y calculadora para el juego Dark and Darker.</p>
+                <div class="disclaimer">
+                    <h4>Descargo de Responsabilidad</h4>
+                    <p>Esta wiki no está asociada a Dark and Darker ni a IRONMACE de ninguna forma. Todo el contenido es meramente orientativo y puede no representar exactamente todos los valores correctamente. La información se irá actualizando con el tiempo.</p>
+                </div>
+                <div class="privacy-policy">
+                    <h4>Política de Privacidad</h4>
+                    <p>Los datos de los usuarios no serán usados para fines ilegítimos. Esta página es segura y confiable, y no almacena información personal de los visitantes.</p>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="classes.html">Clases</a></li>
+                    <li><a href="calculator.html">Calculadora</a></li>
+                    <li><a href="guides.html">Guías</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Recursos</h3>
+                <ul>
+                    <li><a href="https://darkanddarker.wiki.spellsandguns.com/" target="_blank">Wiki Oficial</a></li>
+                    <li><a href="https://discord.gg/darkanddarker" target="_blank">Discord Oficial</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2025 Dark and Darker Wiki Interactiva. No afiliado oficialmente con IRONMACE.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/skins.js"></script>
+</body>
+</html>
